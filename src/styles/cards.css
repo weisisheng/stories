@@ -1,6 +1,10 @@
-.cards {
+.cards-container {
   border: 1px solid black;
+  border-right: none;
   padding: 1rem;
+}
+
+.cards {
   position: relative;
   right: -8vw;
 }

@@ -21,7 +21,7 @@ const Cards = () => {
   }
 
   return (
-    <div>
+    <div className="cards-container">
       <Helmet>
         <link
           rel="stylesheet"
