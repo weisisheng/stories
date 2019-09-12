@@ -2,26 +2,26 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faFacebook,
+  faFacebookF,
   faInstagram,
   faPinterest,
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons'
 
-import '../styles/footer.css'
+import '../styles/social.css'
 
-const Footer = () => {
+const Social = () => {
   return (
-    <div className="footer">
+    <div className="social">
       <ul>
         <li>
-          <FontAwesomeIcon icon={faFacebook} />
-        </li>
-        <li>
-          <FontAwesomeIcon icon={faInstagram} />
+          <FontAwesomeIcon icon={faFacebookF} />
         </li>
         <li>
           <FontAwesomeIcon icon={faTwitter} />
+        </li>
+        <li>
+          <FontAwesomeIcon icon={faInstagram} />
         </li>
         <li>
           <FontAwesomeIcon icon={faPinterest} />
@@ -31,4 +31,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Social

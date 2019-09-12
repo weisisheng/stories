@@ -1,4 +1,6 @@
-.cards-container {
+/* Custom styling on top of materialize-css styles for carousel. See materialize docs for customization */
+
+.carousel-container {
   border: 1px solid black;
   border-right: none;
   padding: 1rem;
