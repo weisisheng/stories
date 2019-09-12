@@ -1,12 +1,10 @@
-
 .carousel-container {
   border: 1px solid black;
   border-right: none;
   padding: 1rem;
   max-height: 100%;
   display: flex;
-  align-content: center;
-  justify-content: center;
+  align-items: center;
 }
 
 .carousel {
@@ -20,14 +18,9 @@
   height: 300px;
   text-align: center;
   background-color: grey;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
   padding: 1rem;
   color: black;
   margin: 1rem;
-  opacity: 1;
   width: 100%;
 }
 

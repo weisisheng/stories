@@ -16,23 +16,24 @@ import '../styles/carousel.css'
 const Cards = () => {
   return (
     <div className="carousel-container">
-      <Carousel
-        className="carousel"
-        slidesPerPage={3}
-        slidesPerScroll={1}
-        animationSpeed={1500}
-        arrows
-        infinite
-      >
-        <CarouselItem image="one" />
-        <CarouselItem image="two" />
-        <CarouselItem image="three" />
-        <CarouselItem image="four" />
-        <CarouselItem image="five" />
-        <CarouselItem image="six" />
-        <CarouselItem image="seven" />
-        <CarouselItem image="eight" />
-      </Carousel>
+      <div className="carousel">
+        <Carousel
+          slidesPerPage={3}
+          slidesPerScroll={1}
+          animationSpeed={1500}
+          arrows
+          infinite
+        >
+          <CarouselItem image="one" />
+          <CarouselItem image="two" />
+          <CarouselItem image="three" />
+          <CarouselItem image="four" />
+          <CarouselItem image="five" />
+          <CarouselItem image="six" />
+          <CarouselItem image="seven" />
+          <CarouselItem image="eight" />
+        </Carousel>
+      </div>
     </div>
   )
 }
