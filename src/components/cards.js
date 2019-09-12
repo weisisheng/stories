@@ -43,6 +43,18 @@ const Cards = () => {
         <div className="carousel-item card-image">
           <a href="#one">four</a>
         </div>
+        <div className="carousel-item card-image">
+          <a href="#one">five</a>
+        </div>
+        <div className="carousel-item card-image">
+          <a href="#one">six</a>
+        </div>
+        <div className="carousel-item card-image">
+          <a href="#one">seven</a>
+        </div>
+        <div className="carousel-item card-image">
+          <a href="#one">eight</a>
+        </div>
       </div>
     </div>
   )
