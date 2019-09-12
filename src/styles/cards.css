@@ -9,3 +9,11 @@
   position: relative;
   right: -7vw;
 }
+
+.carousel-inner {
+  display: flex;
+}
+
+.carousel-item {
+  display: block;
+}
