@@ -1,0 +1,11 @@
+.cards {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  align-content: center;
+  justify-content: right;
+  padding: 1rem;
+  position: relative;
+  right: -7vw;
+}
