@@ -5,7 +5,7 @@
   align-items: center;
 }
 
-.slider-container > .slider {
+.slider {
   position: relative;
   right: -9vw;
   border: 1px solid black;
@@ -23,20 +23,20 @@
   width: 100%;
 }
 
-.arrows {
+.slider-container > .arrows {
   align-self: baseline;
   margin-left: 10vw;
   padding-top: 1rem;
 }
-.arrows > button {
+.slider-container > .arrows > button {
   background: transparent;
   border: none;
   font-size: 2rem;
 }
 
-.arrows > button:focus {
+.slider-container > .arrows > button:focus {
   outline: none;
 }
-.arrows > button:hover {
+.slider-container > .arrows > button:hover {
   cursor: pointer;
 }
