@@ -1,28 +1,23 @@
-/* Custom styling on top of materialize-css styles for carousel. See materialize docs for customization */
 
 .carousel-container {
   border: 1px solid black;
   border-right: none;
   padding: 1rem;
-}
-
-.cards {
-  position: relative;
-  right: -9vw;
+  max-height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 .carousel {
-  min-height: 100%;
-}
-
-.carousel .carousel-item {
-  min-height: 300px;
+  position: relative;
+  right: -9vw;
 }
 
 .card-image {
   border: 1px solid;
   border-radius: 1rem;
-  height: 500px;
+  height: 300px;
   text-align: center;
   background-color: grey;
   display: flex;
@@ -31,7 +26,9 @@
   align-items: flex-start;
   padding: 1rem;
   color: black;
+  margin: 1rem;
   opacity: 1;
+  width: 100%;
 }
 
 .cardImage > a {
