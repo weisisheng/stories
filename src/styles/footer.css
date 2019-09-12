@@ -15,9 +15,9 @@
 }
 .footer > ul > li {
   padding: 6px;
-  color: gray;
+  color: #979797;
 }
 .footer > ul > li > a {
-  color: gray;
+  color: #979797;
   text-decoration: none;
 }

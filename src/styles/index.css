@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap');
+
 html,
 body {
   margin: 0;
@@ -5,8 +7,7 @@ body {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica,
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding: 1rem;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     center / cover no-repeat url('../images/home-bg-image.png');

@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap');
+
+
 .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .main > .logo-container {
@@ -16,11 +21,12 @@
 }
 
 .main > .logo-container > h4 {
+  font-family: 'Roboto', sans-serif;
   margin: 0 auto;
   margin-top: -3rem;
   text-align: center;
   padding-bottom: 2rem;
-  color: #707070;
+  color: #979797;
 }
 
 .main > .logo-container:after {
@@ -29,19 +35,23 @@
   margin: 0 auto;
   width: 30%;
   padding-top: 20px;
-  border-bottom: 2px solid #707070;
-  margin-top: -2rem;
+  border-bottom: 2px solid #979797;
+  margin-top: -1.5rem;
 }
 
 .main > .title {
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-size: 3rem;
-  color: #FFFFFF;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
 }
 
 .main > p {
+  font-family: 'Roboto', sans-serif;
   color: #fec420;
+  margin-bottom: 2rem;
 }
 
 .main > ul {
