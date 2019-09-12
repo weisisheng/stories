@@ -8,7 +8,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 import SliderItem from './sliderItem'
-import SliderButtons from './sliderButtons'
 import '../styles/slider.css'
 
 const Slider = () => {
