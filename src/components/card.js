@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Carousel from 'react-bootstrap/Carousel'
 
 import '../styles/card.css'
 
 const Card = () => {
-  return <div className="card">image here</div>
+  return <Carousel.Item className="card">image here</Carousel.Item>
 }
 
 export default Card
