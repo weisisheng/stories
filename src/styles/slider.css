@@ -27,14 +27,14 @@
 .BrainhubCarousel__custom-arrowLeft {
   position: absolute;
   align-self: flex-end;
-  left: 2vw;
-  bottom: 10vh;
+  left: 1vw;
+  bottom: 5vh;
 }
 
 .BrainhubCarousel__custom-arrowRight {
   position: absolute;
-  left: 4vw;
-  bottom: 10vh;
+  left: 5vw;
+  bottom: 5vh;
 }
 
 .arrow-left,
