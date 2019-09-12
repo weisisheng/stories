@@ -1,0 +1,28 @@
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  padding-top: 1rem;
+  border: 1px solid black;
+}
+
+.buttons-container > .arrows {
+  align-self: baseline;
+  margin-left: 10vw;
+  padding-top: 1rem;
+}
+
+.buttons-container > .arrows > button {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+}
+
+.buttons-container > .arrows > button:focus {
+  outline: none;
+}
+.buttons-container > .arrows > button:hover {
+  cursor: pointer;
+}

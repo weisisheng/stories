@@ -1,8 +1,5 @@
-.slider-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.slider-wrapper {
+  border: 1px solid black;
 }
 
 .slider {
@@ -23,20 +20,25 @@
   width: 100%;
 }
 
-.slider-container > .arrows {
-  align-self: baseline;
-  margin-left: 10vw;
-  padding-top: 1rem;
-}
-.slider-container > .arrows > button {
-  background: transparent;
-  border: none;
-  font-size: 2rem;
+.BrainhubCarousel {
+  overflow: inherit;
 }
 
-.slider-container > .arrows > button:focus {
-  outline: none;
+.BrainhubCarousel__custom-arrowLeft {
+  position: absolute;
+  align-self: flex-end;
+  left: 2vw;
+  bottom: 10vh;
 }
-.slider-container > .arrows > button:hover {
-  cursor: pointer;
+
+.BrainhubCarousel__custom-arrowRight {
+  position: absolute;
+  left: 4vw;
+  bottom: 10vh;
+}
+
+.arrow-left,
+.arrow-right {
+  color: grey;
+  font-size: 2rem;
 }
