@@ -6,7 +6,7 @@ import Image from '../components/image'
 import SEO from '../components/seo'
 
 import Main from '../components/main'
-import Cards from '../components/carousel'
+import Slider from '../components/slider'
 import Social from '../components/social'
 
 import '../styles/index.css'
@@ -17,7 +17,7 @@ const IndexPage = () => (
     <Social />
     <div className="site">
       <Main />
-      <Cards />
+      <Slider />
     </div>
   </Layout>
 )
