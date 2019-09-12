@@ -1,24 +1,30 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faFacebook,
+  faInstagram,
+  faPinterest,
+  faTwitter,
+} from '@fortawesome/free-brands-svg-icons'
 
-import '../styles/social.css'
+import '../styles/footer.css'
 
 const Footer = () => {
   return (
-    <div className="social">
+    <div className="footer">
       <ul>
-        <li>&copy; 2020 Rocky Mountain Health Plans</li>
-        <li>|</li>
         <li>
-          <Link to="/terms/">Terms & Conditions</Link>
+          <FontAwesomeIcon icon={faFacebook} />
         </li>
-        <li>|</li>
         <li>
-          <Link to="/privacy/">Privacy & Disclosure</Link>
+          <FontAwesomeIcon icon={faInstagram} />
         </li>
-        <li>|</li>
         <li>
-          <Link to="/accessibility/">Accessibility</Link>
+          <FontAwesomeIcon icon={faTwitter} />
+        </li>
+        <li>
+          <FontAwesomeIcon icon={faPinterest} />
         </li>
       </ul>
     </div>
