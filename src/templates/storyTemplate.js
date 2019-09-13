@@ -1,22 +1,26 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
-}) {
-  const { markdownRemark } = data // data.markdownRemark holds our post data
-  const { frontmatter, html } = markdownRemark
+import Footer from '../components/footer'
+
+import '../styles/stories.css'
+export default ({ data }) => {
+  const story = data.markdownRemark
+
+  const style = {
+    backgroundImage: `url(${story.frontmatter.backgroundImage})`,
+  }
+
   return (
-    <div className="story-container">
-      <div className="story">
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.story}</h2>
-      </div>
+    <div className="story-container" style={style}>
+      <h1>{story.frontmatter.title}</h1>
+      <h6>{story.frontmatter.story}</h6>
+      <Footer />
     </div>
   )
 }
-export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+export const query = graphql`
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
         path
@@ -24,6 +28,7 @@ export const pageQuery = graphql`
         title
         story
         videoSourceURL
+        backgroundImage
       }
     }
   }

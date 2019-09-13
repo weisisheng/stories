@@ -8,11 +8,10 @@ body {
 
 body {
   font-family: 'Roboto', sans-serif;
-  padding: 1rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    center / cover no-repeat url('../images/home-bg-image.png');
 }
 .site {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    center / cover no-repeat url('../images/home-bg-image.png');
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 40vw 1fr;
