@@ -3,6 +3,8 @@ import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus, faPlay } from '@fortawesome/free-solid-svg-icons'
 
+import '../styles/playShare.css'
+
 const PlayShare = () => {
   const handlePlay = () => {}
   const handleShare = () => {}

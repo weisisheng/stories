@@ -1,10 +1,12 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Footer from '../components/footer'
 import Img from 'gatsby-image'
-import PlayShare from '../components/playShare'
 
+import PlayShare from '../components/playShare'
+import logoSmall from '../images/logo-small.png'
 import '../styles/stories.css'
+
 export default ({ data }) => {
   const story = data.markdownRemark
 
@@ -16,6 +18,9 @@ export default ({ data }) => {
       <div className="image-overlay"></div>
       <div className="story-content">
         <div className="story-text">
+          <Link to="/">
+            <img className="story-logo" src={logoSmall} />
+          </Link>
           <h2 className="title we-protect">We Protect</h2>
           <h1 className="title">{story.frontmatter.title}</h1>
           <PlayShare />
