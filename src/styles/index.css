@@ -4,14 +4,28 @@ html,
 body {
   margin: 0;
   overflow: hidden;
-}
-
-body {
+  position: relative;
   font-family: 'Roboto', sans-serif;
 }
+
+.index-bg-image {
+  height: 100vh;
+}
+
+.index-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
 .site {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    center / cover no-repeat url('../images/home-bg-image.png');
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 0;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 40vw 1fr;

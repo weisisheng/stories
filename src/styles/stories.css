@@ -4,7 +4,7 @@
 }
 
 .story-container > .story-bg-image {
-  max-height: 100vh;
+  height: 100vh;
 }
 
 .story-container > .image-overlay {
