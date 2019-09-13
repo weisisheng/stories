@@ -1,4 +1,5 @@
 import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 import Carousel from '@brainhubeu/react-carousel'
 import '@brainhubeu/react-carousel/lib/style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -12,21 +13,40 @@ import aaron from '../people/aaron.png'
 import SliderItem from './sliderItem'
 import '../styles/slider.css'
 
-// {
-//   allFile(filter:{extension:{regex:"/(jpeg|jpg|gif|png)/"},  sourceInstanceName:{eq:"photos"}}) {
-//     edges {
-//       node {
+// const Image = () => {
+//   const data = useStaticQuery(graphql`
+//     query {
+//       placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
 //         childImageSharp {
-//           sizes(maxWidth: 2000) {
-//             ...GatsbyImageSharpSizes
+//           fluid(maxWidth: 300) {
+//             ...GatsbyImageSharpFluid
 //           }
 //         }
 //       }
 //     }
-//   }
+//   `)
+
+//   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 // }
 
 const Slider = () => {
+  const people = useStaticQuery(graphql`
+    query {
+      allFile(filter: { sourceInstanceName: { eq: "people" } }) {
+        edges {
+          node {
+            name
+            childImageSharp {
+              fluid {
+                src
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <Carousel
       className="slider"
@@ -43,14 +63,13 @@ const Slider = () => {
       }
       addArrowClickHandler
     >
-      <SliderItem src={aaron} />
-      <SliderItem src={aaron} />
-      <SliderItem src={aaron} />
-      <SliderItem src={aaron} />
-      <SliderItem src={aaron} />
-      <SliderItem src={aaron} />
-      <SliderItem src={aaron} />
-      <SliderItem src={aaron} />
+      {people.allFile.edges.map(person => (
+        <SliderItem
+          key={person.node.childImageSharp.fluid.src}
+          name={person.node.name}
+          src={person.node.childImageSharp.fluid.src}
+        />
+      ))}
     </Carousel>
   )
 }

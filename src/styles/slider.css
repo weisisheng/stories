@@ -4,9 +4,17 @@
 }
 
 .slider-card-image {
-  text-align: center;
-  color: black;
-  padding-left: 1.5rem;
+  text-decoration: none;
+  margin-left: 1.5rem;
+}
+
+.slider-card-image > h4 {
+  text-align: left;
+  position: absolute;
+  bottom: 4vw;
+  left: 3vw;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .BrainhubCarousel {
