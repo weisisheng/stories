@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Footer from '../components/footer'
 import Img from 'gatsby-image'
+import PlayShare from '../components/playShare'
 
 import '../styles/stories.css'
 export default ({ data }) => {
@@ -17,6 +18,7 @@ export default ({ data }) => {
         <div className="story-text">
           <h2 className="title we-protect">We Protect</h2>
           <h1 className="title">{story.frontmatter.title}</h1>
+          <PlayShare />
           <p>{story.frontmatter.story}</p>
         </div>
         <div className="story-video">
