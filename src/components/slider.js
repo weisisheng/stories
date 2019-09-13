@@ -7,24 +7,24 @@ import {
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
 
-import aaron from '../images/people/aaron.png'
+import aaron from '../people/aaron.png'
 
 import SliderItem from './sliderItem'
 import '../styles/slider.css'
 
-{
-  allFile(filter:{extension:{regex:"/(jpeg|jpg|gif|png)/"},  sourceInstanceName:{eq:"photos"}}) {
-    edges {
-      node {
-        childImageSharp {
-          sizes(maxWidth: 2000) {
-            ...GatsbyImageSharpSizes
-          }
-        }
-      }
-    }
-  }
-}
+// {
+//   allFile(filter:{extension:{regex:"/(jpeg|jpg|gif|png)/"},  sourceInstanceName:{eq:"photos"}}) {
+//     edges {
+//       node {
+//         childImageSharp {
+//           sizes(maxWidth: 2000) {
+//             ...GatsbyImageSharpSizes
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 const Slider = () => {
   return (
