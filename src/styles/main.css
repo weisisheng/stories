@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap');
 
-
 .main {
   display: flex;
   flex-direction: column;
@@ -44,6 +43,7 @@
   text-transform: uppercase;
   text-align: center;
   font-size: 3rem;
+  /* transform: scale(1, 1.2); */
   color: #ffffff;
   margin-bottom: 0.5rem;
 }
