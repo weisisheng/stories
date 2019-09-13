@@ -3,10 +3,10 @@ import { Link } from 'gatsby'
 
 const SliderItem = props => {
   return (
-    <Link className="slider-card-image" to={props.name}>
+    <a className="slider-card-image" href={props.name}>
       <img src={props.src} />
       <h4>{props.name}</h4>
-    </Link>
+    </a>
   )
 }
 

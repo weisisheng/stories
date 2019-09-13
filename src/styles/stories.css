@@ -1,0 +1,43 @@
+.story-container {
+  color: white;
+  position: relative;
+}
+
+.story-container > .story-bg-image {
+  max-height: 100vh;
+}
+
+.story-container > .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.story-content {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 40vw 1fr;
+  min-height: 100vh;
+  max-width: 100vw;
+  padding: 2.5rem;
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.story-content > .story-text > .title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+.story-content > .story-text > .we-protect {
+  font-size: 3.5rem;
+  font-weight: 100;
+  margin-top: 3rem;
+}

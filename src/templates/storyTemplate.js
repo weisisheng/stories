@@ -1,19 +1,28 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Footer from '../components/footer'
+import Img from 'gatsby-image'
 
 import '../styles/stories.css'
 export default ({ data }) => {
   const story = data.markdownRemark
 
-  const style = {
-    backgroundImage: `url(${story.frontmatter.backgroundImage})`,
-  }
+  const bgImage = story.frontmatter.backgroundImage.childImageSharp.fluid
 
   return (
-    <div className="story-container" style={style}>
-      <h1>{story.frontmatter.title}</h1>
-      <h6>{story.frontmatter.story}</h6>
+    <div className="story-container">
+      <Img fluid={bgImage} className="story-bg-image" />
+      <div className="image-overlay"></div>
+      <div className="story-content">
+        <div className="story-text">
+          <h2 className="title we-protect">We Protect</h2>
+          <h1 className="title">{story.frontmatter.title}</h1>
+          <p>{story.frontmatter.story}</p>
+        </div>
+        <div className="story-video">
+          <iframe style={{ display: 'none' }} />
+        </div>
+      </div>
       <Footer />
     </div>
   )
@@ -28,7 +37,13 @@ export const query = graphql`
         title
         story
         videoSourceURL
-        backgroundImage
+        backgroundImage {
+          childImageSharp {
+            fluid(maxWidth: 1800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
