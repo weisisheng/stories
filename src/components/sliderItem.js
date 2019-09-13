@@ -2,11 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 const SliderItem = props => {
-  return (
-    <div className="slider-card-image">
-      {props.image}
-    </div>
-  )
+  return <img src={props.src} className="slider-card-image"></img>
 }
 
 export default SliderItem

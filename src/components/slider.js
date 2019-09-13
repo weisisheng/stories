@@ -7,6 +7,8 @@ import {
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
 
+import aaron from '../images/people/aaron.png'
+
 import SliderItem from './sliderItem'
 import '../styles/slider.css'
 
@@ -14,6 +16,7 @@ const Slider = () => {
   return (
     <Carousel
       className="slider"
+      itemWidth={225}
       slidesPerPage={3}
       slidesPerScroll={1}
       animationSpeed={1500}
@@ -26,14 +29,14 @@ const Slider = () => {
       }
       addArrowClickHandler
     >
-      <SliderItem image="one" />
-      <SliderItem image="two" />
-      <SliderItem image="three" />
-      <SliderItem image="four" />
-      <SliderItem image="five" />
-      <SliderItem image="six" />
-      <SliderItem image="seven" />
-      <SliderItem image="eight" />
+      <SliderItem src={aaron} />
+      <SliderItem src={aaron} />
+      <SliderItem src={aaron} />
+      <SliderItem src={aaron} />
+      <SliderItem src={aaron} />
+      <SliderItem src={aaron} />
+      <SliderItem src={aaron} />
+      <SliderItem src={aaron} />
     </Carousel>
   )
 }
