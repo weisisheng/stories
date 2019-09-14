@@ -3,6 +3,7 @@ import { graphql, Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faPlay,
+  faTimes,
   faChevronLeft,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
@@ -54,6 +55,9 @@ export default ({ data, pageContext }) => {
           </button>
         </div>
       </div>
+      <Link to="/" className="close">
+        <FontAwesomeIcon icon={faTimes} />
+      </Link>
       <TransitionButtons next={next.fields.slug} prev={prev.fields.slug} />
       <Footer />
     </div>
