@@ -6,6 +6,7 @@ body {
   overflow: hidden;
   position: relative;
   font-family: 'Roboto', sans-serif;
+  background-color: black;
 }
 
 .index-bg-image {

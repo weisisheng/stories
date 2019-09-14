@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Footer from '../components/footer'
 import Img from 'gatsby-image'
+import SEO from '../components/seo'
 
 import PlayShare from '../components/playShare'
 import logoSmall from '../images/logo-small.png'
@@ -14,6 +15,7 @@ export default ({ data }) => {
 
   return (
     <div className="story-container">
+      <SEO title={story.frontmatter.name} />
       <Img fluid={bgImage} className="story-bg-image" />
       <div className="image-overlay"></div>
       <div className="story-content">
