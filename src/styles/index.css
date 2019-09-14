@@ -11,7 +11,7 @@ body {
 }
 .site {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    center / cover no-repeat url('../images/home-bg-image.png');
+    center / cover no-repeat url('../images/home-bg-image.jpg');
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 40vw 1fr;

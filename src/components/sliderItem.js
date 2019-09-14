@@ -1,12 +1,13 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
+import Img from 'gatsby-image'
 
 const SliderItem = props => {
   return (
-    <a className="slider-card-image" href={props.name}>
-      <img src={props.src} />
+    <Link className="slider-card-image" to={`/${props.name}`}>
+      <Img fluid={props.source} alt={props.alt} />
       <h4>{props.name}</h4>
-    </a>
+    </Link>
   )
 }
 

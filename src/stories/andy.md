@@ -8,5 +8,5 @@ Andy started integrating custom hand controls on vehicles to allow driving witho
 To make these unique vehicles a reality, Andy also owns and operates his own fabrication company Runnit CNC in Grand Junction, where he and his team live by the motto “Dream. Design. Build.” to come up with new and innovative mobility solutions.  Always an adrenaline junkie, Andy unleashes his drive through Runnit Racing and being part of the local off-road community.  Keep an eye out and you’ll soon see Andy and others racing on their newly-built track in the North Desert!"
 videoSourceURL: ""
 videoImage: ../images/andy-video-image.png
-backgroundImage: ../images/andy-story-bg.png
+backgroundImage: ../images/andy-story-bg.jpg
 ---
