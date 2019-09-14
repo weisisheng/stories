@@ -1,6 +1,6 @@
 ---
 path: "/andy"
-name: "andy"
+name: "Andy"
 title: "The Drive"
 story: "When Andy Blood gets behind the wheel to race, there’s only one thing on his mind: Go! 
 It’s grit, determination and drive that have carried Andy forward since a 30-foot fall and T-12 spinal cord injury from a 2004 work accident caused him to become paraplegic.  After two dark years, Andy began bringing a new dream to life - the freedom to drive again. 
