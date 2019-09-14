@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, Link } from 'gatsby'
+import { graphql, Link, useStaticQuery } from 'gatsby'
 import Footer from '../components/footer'
 import Img from 'gatsby-image'
 import SEO from '../components/seo'
@@ -12,6 +12,7 @@ export default ({ data }) => {
   const story = data.markdownRemark
 
   const bgImage = story.frontmatter.backgroundImage.childImageSharp.fluid
+  const videoImage = story.frontmatter.videoImage.childImageSharp.fluid
 
   return (
     <div className="story-container">
@@ -29,7 +30,7 @@ export default ({ data }) => {
           <p>{story.frontmatter.story}</p>
         </div>
         <div className="story-video">
-          <iframe style={{ display: 'none' }} />
+          <Img fluid={videoImage} className="story-video-image" />
         </div>
       </div>
       <Footer />
@@ -49,6 +50,13 @@ export const query = graphql`
         backgroundImage {
           childImageSharp {
             fluid(maxWidth: 1800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        videoImage {
+          childImageSharp {
+            fluid(maxWidth: 700) {
               ...GatsbyImageSharpFluid
             }
           }
