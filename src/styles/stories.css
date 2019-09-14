@@ -60,3 +60,29 @@
   height: 30vh;
   overflow: scroll;
 }
+
+.story-video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.story-video > .story-video-image {
+  max-height: auto;
+  width: 80%;
+  position: absolute;
+  bottom: 2.5rem
+}
+
+.story-video > .story-video-button {
+  position: absolute;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  left: 45%;
+  bottom: 50%;
+}

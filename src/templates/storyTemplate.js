@@ -1,5 +1,7 @@
 import React from 'react'
-import { graphql, Link, useStaticQuery } from 'gatsby'
+import { graphql, Link } from 'gatsby'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlay } from '@fortawesome/free-solid-svg-icons'
 import Footer from '../components/footer'
 import Img from 'gatsby-image'
 import SEO from '../components/seo'
@@ -17,7 +19,11 @@ export default ({ data }) => {
   return (
     <div className="story-container">
       <SEO title={story.frontmatter.name} />
-      <Img fluid={bgImage} className="story-bg-image" />
+      <Img
+        fluid={bgImage}
+        className="story-bg-image"
+        alt={story.frontmatter.name}
+      />
       <div className="image-overlay"></div>
       <div className="story-content">
         <div className="story-text">
@@ -30,7 +36,12 @@ export default ({ data }) => {
           <p>{story.frontmatter.story}</p>
         </div>
         <div className="story-video">
-          <Img fluid={videoImage} className="story-video-image" />
+          <Img
+            fluid={videoImage}
+            className="story-video-image"
+            alt={story.frontmatter.name}
+          />
+          <button className="story-video-button"><FontAwesomeIcon icon={faPlay} /></button>
         </div>
       </div>
       <Footer />
