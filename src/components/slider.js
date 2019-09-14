@@ -37,7 +37,6 @@ const Slider = () => {
       itemWidth={245}
       slidesPerPage={3}
       slidesPerScroll={1}
-      // animationSpeed={1500}
       infinite
       arrowLeft={
         <FontAwesomeIcon className="arrow-left" icon={faChevronLeft} />
@@ -47,13 +46,14 @@ const Slider = () => {
       }
       addArrowClickHandler
     >
-      {people.allFile.edges.map(person => (
-        <SliderItem
-          key={person.node.childImageSharp.fluid.src}
-          name={person.node.name}
-          src={person.node.childImageSharp.fluid.src}
-        />
-      ))}
+      {people.allFile.edges
+        .map(person => (
+          <SliderItem
+            key={person.node.childImageSharp.fluid.src}
+            name={person.node.name}
+            src={person.node.childImageSharp.fluid.src}
+          />
+        ))}
     </Carousel>
   )
 }

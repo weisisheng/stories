@@ -27,13 +27,16 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+
+  const stories = result.data.allMarkdownRemark.edges
+
+  stories.forEach(({ node }, index) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve(`./src/templates/storyTemplate.js`),
       context: {
-        // Data passed to context is available
-        // in page queries as GraphQL variables.
+        prev: index === 0 ? null : stories[index - 1].node,
+        next: index === stories.length - 1 ? null : stories[index + 1].node,
         slug: node.fields.slug,
       },
     })

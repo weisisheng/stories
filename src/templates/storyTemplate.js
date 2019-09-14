@@ -1,12 +1,17 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlay } from '@fortawesome/free-solid-svg-icons'
+import {
+  faPlay,
+  faChevronLeft,
+  faChevronRight,
+} from '@fortawesome/free-solid-svg-icons'
 import Footer from '../components/footer'
 import Img from 'gatsby-image'
 import SEO from '../components/seo'
 
 import PlayShare from '../components/playShare'
+import TransitionButtons from '../components/transitionButtons'
 import logoSmall from '../images/logo-small.png'
 import '../styles/stories.css'
 
@@ -47,6 +52,7 @@ export default ({ data }) => {
           </button>
         </div>
       </div>
+      <TransitionButtons />
       <Footer />
     </div>
   )
