@@ -41,7 +41,10 @@ export default ({ data }) => {
             className="story-video-image"
             alt={story.frontmatter.name}
           />
-          <button className="story-video-button"><FontAwesomeIcon icon={faPlay} /></button>
+          <h4>{story.frontmatter.name}</h4>
+          <button className="story-video-button">
+            <FontAwesomeIcon icon={faPlay} />
+          </button>
         </div>
       </div>
       <Footer />

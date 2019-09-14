@@ -1,7 +1,7 @@
 ---
 path: "/andy"
 name: "andy"
-title: "We Protect The Drive"
+title: "The Drive"
 story: "When Andy Blood gets behind the wheel to race, there’s only one thing on his mind: Go! 
 It’s grit, determination and drive that have carried Andy forward since a 30-foot fall and T-12 spinal cord injury from a 2004 work accident caused him to become paraplegic.  After two dark years, Andy began bringing a new dream to life - the freedom to drive again. 
 Andy started integrating custom hand controls on vehicles to allow driving without pedals, and through the process he became committed to helping people with similar injuries regain their mobility and independence. With his wife, Sara Garriques, Andy founded the Blood Brothers Foundation to fund vehicle modifications such as ramps, floor lifts and hand controls so others living with physical disabilities can also find a sense of freedom.

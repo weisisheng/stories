@@ -15,7 +15,7 @@
   bottom: 0;
   min-width: 100vw;
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
 .story-content {
@@ -64,6 +64,7 @@
 .story-video {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -71,11 +72,18 @@
 .story-video > .story-video-image {
   max-height: auto;
   width: 80%;
+  bottom: 2rem;
+}
+
+.story-video > h4 {
   position: absolute;
-  bottom: 2.5rem
+  bottom: 9rem;
+  left: 5rem;
+  text-transform: uppercase;
 }
 
 .story-video > .story-video-button {
+  cursor: pointer;
   position: absolute;
   color: #ffffff;
   background-color: transparent;
