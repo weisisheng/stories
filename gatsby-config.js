@@ -20,13 +20,6 @@ module.exports = {
         path: `${__dirname}/src/stories`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `people`,
-        path: `${__dirname}/src/people`,
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
