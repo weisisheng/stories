@@ -1,6 +1,7 @@
 .story-container {
   color: white;
   position: relative;
+  z-index: 0;
 }
 
 .story-container > .story-bg-image {

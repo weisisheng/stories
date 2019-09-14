@@ -34,7 +34,7 @@ const Slider = () => {
   return (
     <Carousel
       className="slider"
-      itemWidth={225}
+      itemWidth={245}
       slidesPerPage={3}
       slidesPerScroll={1}
       // animationSpeed={1500}
