@@ -58,7 +58,8 @@
 .story-content > .story-text > p {
   margin-top: 1rem;
   font-size: 0.8rem;
-  height: 30vh;
+  line-height: 1.5;
+  height: 25vh;
   overflow: scroll;
 }
 

@@ -8,24 +8,24 @@ import {
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
 
-import aaron from '../people/aaron.png'
-
 import SliderItem from './sliderItem'
 import '../styles/slider.css'
 
 const Slider = () => {
   const people = useStaticQuery(graphql`
     query {
-      allFile(
-        filter: { sourceInstanceName: { eq: "people" } }
-        sort: { order: ASC, fields: name }
-      ) {
+      allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___name] }) {
         edges {
           node {
-            name
-            childImageSharp {
-              fluid {
-                src
+            frontmatter {
+              name
+              path
+              homePageImage {
+                childImageSharp {
+                  fluid(maxWidth: 300) {
+                    src
+                  }
+                }
               }
             }
           }
@@ -49,11 +49,12 @@ const Slider = () => {
       }
       addArrowClickHandler
     >
-      {people.allFile.edges.map(person => (
+      {people.allMarkdownRemark.edges.map(person => (
         <SliderItem
-          key={person.node.childImageSharp.fluid.src}
-          name={person.node.name}
-          src={person.node.childImageSharp.fluid.src}
+          key={person.node.frontmatter.homePageImage.childImageSharp.fluid.src}
+          path={person.node.frontmatter.path}
+          src={person.node.frontmatter.homePageImage.childImageSharp.fluid.src}
+          name={person.node.frontmatter.name}
         />
       ))}
     </Carousel>
