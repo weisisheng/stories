@@ -16,7 +16,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const result = await graphql(`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___name] }) {
         edges {
           node {
             fields {
@@ -35,8 +35,14 @@ exports.createPages = async ({ graphql, actions }) => {
       path: node.fields.slug,
       component: path.resolve(`./src/templates/storyTemplate.js`),
       context: {
-        prev: index === 0 ? null : stories[index - 1].node,
-        next: index === stories.length - 1 ? null : stories[index + 1].node,
+        prev:
+          index === 0
+            ? stories[stories.length - 1].node
+            : stories[index - 1].node,
+        next:
+          index === stories.length - 1
+            ? stories[0].node
+            : stories[index + 1].node,
         slug: node.fields.slug,
       },
     })

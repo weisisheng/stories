@@ -8,20 +8,28 @@ import {
 
 import '../styles/transition-buttons.css'
 
-const TransitionButtons = () => {
+const TransitionButtons = props => {
   return (
     <>
-      <Link to="/" className="transition-button-left">
+      <Link to={props.prev} className="transition-button-left">
         <FontAwesomeIcon icon={faChevronLeft} />
         <span
-          style={{ fontSize: '1rem', paddingLeft: '1rem', fontWeight: 'bold' }}
+          style={{
+            fontSize: '1rem',
+            paddingLeft: '1rem',
+            fontWeight: 'bold',
+          }}
         >
           Previous Story
         </span>
       </Link>
-      <Link to="/" className="transition-button-right">
+      <Link to={props.next} className="transition-button-right">
         <span
-          style={{ fontSize: '1rem', paddingRight: '1rem', fontWeight: 'bold' }}
+          style={{
+            fontSize: '1rem',
+            paddingRight: '1rem',
+            fontWeight: 'bold',
+          }}
         >
           Next Story
         </span>

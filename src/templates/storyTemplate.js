@@ -15,9 +15,11 @@ import TransitionButtons from '../components/transitionButtons'
 import logoSmall from '../images/logo-small.png'
 import '../styles/stories.css'
 
-export default ({ data }) => {
+export default ({ data, pageContext }) => {
   const story = data.markdownRemark
 
+  const { next, prev } = pageContext
+  console.log(next, prev)
   const bgImage = story.frontmatter.backgroundImage.childImageSharp.fluid
   const videoImage = story.frontmatter.videoImage.childImageSharp.fluid
 
@@ -52,7 +54,7 @@ export default ({ data }) => {
           </button>
         </div>
       </div>
-      <TransitionButtons />
+      <TransitionButtons next={next.fields.slug} prev={prev.fields.slug} />
       <Footer />
     </div>
   )

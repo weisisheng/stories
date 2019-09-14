@@ -16,7 +16,10 @@ import '../styles/slider.css'
 const Slider = () => {
   const people = useStaticQuery(graphql`
     query {
-      allFile(filter: { sourceInstanceName: { eq: "people" } }) {
+      allFile(
+        filter: { sourceInstanceName: { eq: "people" } }
+        sort: { order: ASC, fields: name }
+      ) {
         edges {
           node {
             name
@@ -46,14 +49,13 @@ const Slider = () => {
       }
       addArrowClickHandler
     >
-      {people.allFile.edges
-        .map(person => (
-          <SliderItem
-            key={person.node.childImageSharp.fluid.src}
-            name={person.node.name}
-            src={person.node.childImageSharp.fluid.src}
-          />
-        ))}
+      {people.allFile.edges.map(person => (
+        <SliderItem
+          key={person.node.childImageSharp.fluid.src}
+          name={person.node.name}
+          src={person.node.childImageSharp.fluid.src}
+        />
+      ))}
     </Carousel>
   )
 }
