@@ -1,7 +1,6 @@
 .slider {
   position: relative;
-  right: -5vw;
-  margin-top: 3rem;
+  right: -4.5vw;
 }
 
 .slider-card-image {
@@ -25,14 +24,14 @@
 .BrainhubCarousel__custom-arrowLeft {
   position: absolute;
   align-self: flex-end;
-  left: 2vw;
-  bottom: 4vh;
+  left: 1vw;
+  bottom: 5vh;
 }
 
 .BrainhubCarousel__custom-arrowRight {
   position: absolute;
-  left: 7vw;
-  bottom: 4vh;
+  left: 5vw;
+  bottom: 5vh;
 }
 
 .arrow-left,

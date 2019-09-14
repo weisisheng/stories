@@ -14,20 +14,6 @@ import SliderItem from './sliderItem'
 import '../styles/slider.css'
 
 const Slider = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     placeholderImage: file(relativePath: { eq: "home-bg-image.png" }) {
-  //       childImageSharp {
-  //         fluid(maxWidth: 1800) {
-  //           ...GatsbyImageSharpFluid
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
-
-  // const bgImage = data.placeholderImage.childImageSharp.fluid
-
   const people = useStaticQuery(graphql`
     query {
       allFile(filter: { sourceInstanceName: { eq: "people" } }) {
@@ -35,8 +21,8 @@ const Slider = () => {
           node {
             name
             childImageSharp {
-              fluid(maxWidth: 300) {
-                ...GatsbyImageSharpFluid
+              fluid {
+                src
               }
             }
           }
@@ -65,8 +51,7 @@ const Slider = () => {
         <SliderItem
           key={person.node.childImageSharp.fluid.src}
           name={person.node.name}
-          source={person.node.childImageSharp.fluid}
-          alt={person.node.name}
+          src={person.node.childImageSharp.fluid.src}
         />
       ))}
     </Carousel>
