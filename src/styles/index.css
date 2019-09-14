@@ -4,12 +4,12 @@ html,
 body {
   margin: 0;
   overflow: hidden;
+  position: relative;
   font-family: 'Roboto', sans-serif;
 }
 
 .index-bg-image {
   height: 100vh;
-  position: relative;
 }
 
 .index-image-overlay {
