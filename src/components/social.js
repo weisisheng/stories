@@ -1,5 +1,4 @@
 import React from 'react'
-// import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faFacebookF,
@@ -19,6 +18,7 @@ const Social = () => {
             style={{ color: '#979797' }}
             href="https://www.facebook.com/RMHPColorado"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faFacebookF} />
           </a>
@@ -28,6 +28,7 @@ const Social = () => {
             style={{ color: '#979797' }}
             href="https://twitter.com/rmhp"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faTwitter} />
           </a>
@@ -37,6 +38,7 @@ const Social = () => {
             style={{ color: '#979797' }}
             href="https://www.instagram.com/rmhpcolorado/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
@@ -46,6 +48,7 @@ const Social = () => {
             style={{ color: '#979797' }}
             href="https://www.pinterest.com/rmhpcolorado/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faPinterest} />
           </a>

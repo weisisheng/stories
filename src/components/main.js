@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import webby from '../images/award-icons/webby.png'
 import filmFestival from '../images/award-icons/film-festival.png'
 import goldenLeaf from '../images/award-icons/golden-leaf.png'
@@ -12,7 +11,7 @@ const Main = () => {
   return (
     <div className="main">
       <div className="logo-container">
-        <img className="logo" src={logo} />
+        <img className="logo" src={logo} alt="RMHP Logo" />
         <h4>presents</h4>
       </div>
       <h1 className="title">
@@ -23,16 +22,16 @@ const Main = () => {
       <p>Eight inspiring, real-life stories of the people we protect</p>
       <ul>
         <li>
-          <img src={webby}></img>
+          <img src={webby} alt="Webby" />
         </li>
         <li>
-          <img src={filmFestival}></img>
+          <img src={filmFestival} alt="Film Festival" />
         </li>
         <li>
-          <img src={goldenLeaf}></img>
+          <img src={goldenLeaf} alt="Golden Leaf" />
         </li>
         <li>
-          <img src={specialSelection}></img>
+          <img src={specialSelection} alt="Special Selection" />
         </li>
       </ul>
     </div>

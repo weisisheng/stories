@@ -1,12 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faPlay,
-  faTimes,
-  faChevronLeft,
-  faChevronRight,
-} from '@fortawesome/free-solid-svg-icons'
+import { faPlay, faTimes } from '@fortawesome/free-solid-svg-icons'
 import Footer from '../components/footer'
 import Img from 'gatsby-image'
 import SEO from '../components/seo'
@@ -36,7 +31,7 @@ export default ({ data, pageContext }) => {
       <div className="story-content">
         <div className="story-text">
           <Link to="/">
-            <img className="story-logo" src={logoSmall} />
+            <img className="story-logo" src={logoSmall} alt="RMHP Logo" />
           </Link>
           <h2 className="title we-protect">We Protect</h2>
           <h1 className="title">{story.frontmatter.title}</h1>
