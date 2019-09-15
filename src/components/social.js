@@ -15,16 +15,40 @@ const Social = () => {
     <div className="social">
       <ul>
         <li>
-          <FontAwesomeIcon icon={faFacebookF} />
+          <a
+            style={{ color: '#979797' }}
+            href="https://www.facebook.com/RMHPColorado"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faFacebookF} />
+          </a>
         </li>
         <li>
-          <FontAwesomeIcon icon={faTwitter} />
+          <a
+            style={{ color: '#979797' }}
+            href="https://twitter.com/rmhp"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
         </li>
         <li>
-          <FontAwesomeIcon icon={faInstagram} />
+          <a
+            style={{ color: '#979797' }}
+            href="https://www.instagram.com/rmhpcolorado/"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
         </li>
         <li>
-          <FontAwesomeIcon icon={faPinterest} />
+          <a
+            style={{ color: '#979797' }}
+            href="https://www.pinterest.com/rmhpcolorado/"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faPinterest} />
+          </a>
         </li>
       </ul>
     </div>

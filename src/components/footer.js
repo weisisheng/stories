@@ -10,15 +10,30 @@ const Footer = () => {
         <li>&copy; 2020 Rocky Mountain Health Plans</li>
         <li>|</li>
         <li>
-          <Link to="/terms/">Terms & Conditions</Link>
+          <a
+            href="https://www.rmhp.org/legal/terms-and-conditions?_ga=2.265132173.305463178.1568489940-139732968.1567635357"
+            target="_blank"
+          >
+            Terms & Conditions
+          </a>
         </li>
         <li>|</li>
         <li>
-          <Link to="/privacy/">Privacy & Disclosure</Link>
+          <a
+            href="https://www.rmhp.org/legal/website-privacy-policy?_ga=2.63296173.305463178.1568489940-139732968.1567635357"
+            target="_blank"
+          >
+            Privacy & Disclosure
+          </a>
         </li>
         <li>|</li>
         <li>
-          <Link to="/accessibility/">Accessibility</Link>
+          <a
+            href="https://www.rmhp.org/legal/accessibility?_ga=2.264646797.305463178.1568489940-139732968.1567635357"
+            target="_blank"
+          >
+            Accessibility
+          </a>
         </li>
       </ul>
     </footer>
