@@ -42,7 +42,10 @@ export default ({ data, pageContext }) => {
 
           {story.frontmatter.name === 'Javier' ||
           story.frontmatter.name === 'Andy' ? (
-            <ReadMore name={story.frontmatter.name} story={story.frontmatter.story}/>
+            <ReadMore
+              name={story.frontmatter.name}
+              story={story.frontmatter.story}
+            />
           ) : null}
         </div>
         <div className="story-video">

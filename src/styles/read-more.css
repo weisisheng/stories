@@ -12,3 +12,7 @@
 .read-more > button:focus {
   outline: none;
 }
+
+.read-more > .modal-content {
+  padding: 1rem;
+}
