@@ -1,0 +1,14 @@
+.read-more {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.read-more > button {
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+}
+
+.read-more > button:focus {
+  outline: none;
+}

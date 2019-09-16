@@ -2,12 +2,13 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faTimes } from '@fortawesome/free-solid-svg-icons'
+
 import Footer from '../components/footer'
 import Img from 'gatsby-image'
 import SEO from '../components/seo'
-
 import PlayShare from '../components/playShare'
 import TransitionButtons from '../components/transitionButtons'
+import ReadMore from '../components/readMore'
 import logoSmall from '../images/logo-small.png'
 import '../styles/stories.css'
 
@@ -38,6 +39,11 @@ export default ({ data, pageContext }) => {
             share={story.frontmatter.path}
           />
           <p>{story.frontmatter.story}</p>
+
+          {story.frontmatter.name === 'Javier' ||
+          story.frontmatter.name === 'Andy' ? (
+            <ReadMore name={story.frontmatter.name} />
+          ) : null}
         </div>
         <div className="story-video">
           <Img
