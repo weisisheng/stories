@@ -46,18 +46,16 @@ const TransitionButtons = props => {
   }
 
   return (
-    <>
-      <Link
-        to={props.prev}
-        className="transition-button-left"
-        onKeyDown={
-          leftArrow
-            ? navigate(props.prev)
-            : rightArrow
-            ? navigate(props.next)
-            : null
-        }
-      >
+    <div
+      onKeyDown={
+        leftArrow
+          ? navigate(props.prev)
+          : rightArrow
+          ? navigate(props.next)
+          : null
+      }
+    >
+      <Link to={props.prev} className="transition-button-left">
         <FontAwesomeIcon icon={faChevronLeft} />
         <span
           style={{
@@ -81,7 +79,7 @@ const TransitionButtons = props => {
         </span>
         <FontAwesomeIcon icon={faChevronRight} />
       </Link>
-    </>
+    </div>
   )
 }
 
