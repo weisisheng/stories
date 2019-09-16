@@ -14,7 +14,7 @@ const ReadMore = props => {
     <div className="read-more">
       <button onClick={handleShow}>Read More&nbsp; [+]</button>
       <Modal show={show} onHide={handleClose} centered size="lg">
-        <div>H III</div>
+        <div>{props.story}</div>
       </Modal>
     </div>
   )
