@@ -22,3 +22,11 @@
   cursor: pointer;
   text-decoration: none;
 }
+
+.transition-button-left:hover,
+.transition-button-right:hover {
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+}

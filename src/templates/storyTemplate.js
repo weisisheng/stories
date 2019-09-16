@@ -33,7 +33,10 @@ export default ({ data, pageContext }) => {
           </Link>
           <h2 className="title we-protect">We Protect</h2>
           <h1 className="title">{story.frontmatter.title}</h1>
-          <PlayShare />
+          <PlayShare
+            to={`${story.frontmatter.path}/video`}
+            share={story.frontmatter.path}
+          />
           <p>{story.frontmatter.story}</p>
         </div>
         <div className="story-video">
@@ -51,7 +54,7 @@ export default ({ data, pageContext }) => {
           </Link>
         </div>
       </div>
-      <Link to="/" className="close">
+      <Link to="/" className="close-story">
         <FontAwesomeIcon icon={faTimes} />
       </Link>
       <TransitionButtons next={next.fields.slug} prev={prev.fields.slug} />

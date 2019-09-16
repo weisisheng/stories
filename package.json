@@ -10,6 +10,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.10.2",
     "@fortawesome/free-solid-svg-icons": "^5.10.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "bootstrap": "^4.3.1",
     "gatsby": "^2.15.14",
     "gatsby-image": "^2.2.18",
     "gatsby-plugin-manifest": "^2.2.16",
@@ -21,8 +22,10 @@
     "gatsby-transformer-sharp": "^2.2.14",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
+    "react-bootstrap": "^1.0.0-beta.12",
     "react-dom": "^16.9.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-social-sharing": "^3.0.1"
   },
   "devDependencies": {
     "prettier": "^1.18.2"

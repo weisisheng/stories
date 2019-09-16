@@ -25,6 +25,11 @@
   cursor: pointer;
 }
 
+.play-share > div > .play,
+.share:focus {
+  outline: none;
+}
+
 .play-share > div > .share {
   color: #ffffff;
   background-color: transparent;
