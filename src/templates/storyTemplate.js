@@ -13,9 +13,7 @@ import '../styles/stories.css'
 
 export default ({ data, pageContext }) => {
   const story = data.markdownRemark
-
   const { next, prev } = pageContext
-  console.log(next, prev)
   const bgImage = story.frontmatter.backgroundImage.childImageSharp.fluid
   const videoImage = story.frontmatter.videoImage.childImageSharp.fluid
 
@@ -45,7 +43,10 @@ export default ({ data, pageContext }) => {
             alt={story.frontmatter.name}
           />
           <h4>{story.frontmatter.name}</h4>
-          <Link className="story-video-button">
+          <Link
+            to={`${story.frontmatter.path}/video`}
+            className="story-video-button"
+          >
             <FontAwesomeIcon icon={faPlay} />
           </Link>
         </div>

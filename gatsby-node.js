@@ -46,5 +46,12 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: node.fields.slug,
       },
     })
+    createPage({
+      path: `${node.fields.slug}/video`,
+      component: path.resolve(`./src/templates/videoTemplate.js`),
+      context: {
+        slug: node.fields.slug,
+      },
+    })
   })
 }
