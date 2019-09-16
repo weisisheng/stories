@@ -4,6 +4,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode, basePath: `stories` })
+    console.log(slug)
 
     createNodeField({
       node,
@@ -47,7 +48,7 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
     createPage({
-      path: `${node.fields.slug}/video`,
+      path: `${node.fields.slug}video`,
       component: path.resolve(`./src/templates/videoTemplate.js`),
       context: {
         slug: node.fields.slug,

@@ -11,7 +11,7 @@ export default ({ data, pageContext }) => {
   const story = data.markdownRemark
 
   return (
-    <div className="video-container">
+    <div style={{ backgroundColor: 'grey' }} className="video-container">
       <SEO title={`${story.frontmatter.name} Video`} />
       {/* <FontAwesomeIcon className="" icon={faChevronLeft} /> */}
       <Social />
