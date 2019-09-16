@@ -7,13 +7,23 @@ import SEO from '../components/seo'
 
 import '../styles/video.css'
 
-export default ({ data, pageContext }) => {
+export default ({ data }) => {
   const story = data.markdownRemark
 
+  const prevPath = story.frontmatter.name.toLowerCase()
+
   return (
-    <div style={{ backgroundColor: 'grey' }} className="video-container">
+    <div className="video-container">
       <SEO title={`${story.frontmatter.name} Video`} />
-      {/* <FontAwesomeIcon className="" icon={faChevronLeft} /> */}
+      <Link to={prevPath} className="video-back-button">
+        <FontAwesomeIcon icon={faChevronLeft} />
+      </Link>
+      <iframe
+        title={`${story.frontmatter.name} Video`}
+        allowfullscreen
+        className="video-iframe"
+        src={story.frontmatter.videoSourceURL}
+      ></iframe>
       <Social />
     </div>
   )
