@@ -45,9 +45,9 @@ export default ({ data, pageContext }) => {
             alt={story.frontmatter.name}
           />
           <h4>{story.frontmatter.name}</h4>
-          <button className="story-video-button">
+          <Link className="story-video-button">
             <FontAwesomeIcon icon={faPlay} />
-          </button>
+          </Link>
         </div>
       </div>
       <Link to="/" className="close">

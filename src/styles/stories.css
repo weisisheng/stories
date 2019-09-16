@@ -53,9 +53,24 @@
 .story-content > .story-text > p {
   margin-top: 1rem;
   font-size: 0.8rem;
-  line-height: 1.5;
+  line-height: 1.4;
   height: 25vh;
-  overflow: scroll;
+  overflow-y: auto;
+}
+
+.story-content > .story-text > p::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+.story-content > .story-text > p::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+}
+
+.story-content > .story-text > p::-webkit-scrollbar-thumb {
+  background-color: #979797;
 }
 
 .story-video {
@@ -82,6 +97,9 @@
 }
 
 .story-video > .story-video-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   position: absolute;
   color: #ffffff;
