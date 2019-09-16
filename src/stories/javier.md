@@ -7,7 +7,7 @@ According to Javier, “somehow, my spirit gets fulfilled through the sounds of 
 Javier calls Grand Junction home after years studying with maestros from the Académica de Música in Zacatecas, México to the University of Denver’s Lamont School of Music.  Here, he founded and performs with Mariachi San Jose sharing traditional music and continuing to build upon the rich musical heritage of the Western Slope. 
 His first professor once told him, “Whatever you play, Javier, play it with your heart.” Whether making music with his family, teaching a master class or performing with his local Mariachi band, those words have never left Javier’s heart or hands."
 homePageImage: ../images/javier.png
-videoSourceURL: "?autoplay=1"
+videoSourceURL: ""
 videoImage: ../images/javier-video-image.png
 backgroundImage: ../images/javier-story-bg.jpg
 ---
