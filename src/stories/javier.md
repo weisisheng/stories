@@ -8,6 +8,6 @@ Javier calls Grand Junction home after years studying with maestros from the Aca
 His first professor once told him, “Whatever you play, Javier, play it with your heart.” Whether making music with his family, teaching a master class or performing with his local Mariachi band, those words have never left Javier’s heart or hands."
 homePageImage: ../images/javier.png
 videoSourceURL: ""
-videoImage: ../images/javier-video-image.png
+videoImage: ../images/javier-video-image.jpg
 backgroundImage: ../images/javier-story-bg.jpg
 ---

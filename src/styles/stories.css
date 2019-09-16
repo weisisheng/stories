@@ -85,6 +85,7 @@
   max-height: auto;
   width: 80%;
   bottom: 2rem;
+  border-radius: 20px;
 }
 
 .story-video > h4 {
