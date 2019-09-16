@@ -31,7 +31,7 @@ export default ({ data, pageContext }) => {
           <Link to="/">
             <img className="story-logo" src={logoSmall} alt="RMHP Logo" />
           </Link>
-          <h2 className="title we-protect">We Protect</h2>
+          <h3 className="title we-protect">We Protect</h3>
           <h1 className="title">{story.frontmatter.title}</h1>
           <PlayShare
             to={`${story.frontmatter.path}/video`}

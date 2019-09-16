@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap');
+
 .story-container {
   color: white;
   position: relative;
@@ -39,15 +41,22 @@
 }
 
 .story-content > .story-text > .title {
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 3rem;
   margin-top: -2rem;
+  margin-bottom: 0;
+}
+
+.story-content > .story-text > h1.title {
+  letter-spacing: 2px;
 }
 
 .story-content > .story-text > .we-protect {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 100;
+  margin-bottom: 2rem;
 }
 
 .story-content > .story-text > p {
@@ -89,11 +98,12 @@
 }
 
 .story-video > h4 {
+  font-family: 'Roboto', sans-serif;
   position: absolute;
-  bottom: 8rem;
+  bottom: 7rem;
   left: 5rem;
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 

@@ -8,6 +8,10 @@
   margin-left: 1.5rem;
 }
 
+.slider-card-image > img {
+  border-radius: 20px;
+}
+
 .slider-card-image > h4 {
   text-align: left;
   position: absolute;
