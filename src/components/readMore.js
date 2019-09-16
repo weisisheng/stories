@@ -15,6 +15,7 @@ const ReadMore = props => {
     <div className="read-more">
       <button onClick={handleShow}>Read More&nbsp; [+]</button>
       <Modal show={show} onHide={handleClose} centered size="lg">
+        <Img fluid={props.modalImage} />
         <div className="modal-content">{props.story}</div>
       </Modal>
     </div>

@@ -10,4 +10,5 @@ homePageImage: ../images/javier.jpg
 videoSourceURL: ""
 videoImage: ../images/javier-video-image.png
 backgroundImage: ../images/javier-story-bg.jpg
+modalImage: ../images/andy-read-more.jpg
 ---

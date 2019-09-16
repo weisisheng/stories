@@ -10,4 +10,5 @@ homePageImage: ../images/andy.jpg
 videoSourceURL: ""
 videoImage: ../images/andy-video-image.jpg
 backgroundImage: ../images/andy-story-bg.jpg
+modalImage: ../images/andy-read-more.jpg
 ---

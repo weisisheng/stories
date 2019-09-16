@@ -7,4 +7,5 @@ homePageImage: ../images/jojo.jpg
 videoSourceURL: "https://player.vimeo.com/external/237156424.hd.mp4?s=661d741cef4f797372ac45cd44274862ce7b0da2&profile_id=175"
 videoImage: ../images/jojo-video-image.jpg
 backgroundImage: ../images/jojo-story-bg.jpg
+modalImage: ../images/andy-read-more.jpg
 ---

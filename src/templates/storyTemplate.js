@@ -17,6 +17,7 @@ export default ({ data, pageContext }) => {
   const { next, prev } = pageContext
   const bgImage = story.frontmatter.backgroundImage.childImageSharp.fluid
   const videoImage = story.frontmatter.videoImage.childImageSharp.fluid
+  const modalImage = story.frontmatter.modalImage.childImageSharp.fluid
 
   return (
     <div className="story-container">
@@ -45,6 +46,7 @@ export default ({ data, pageContext }) => {
             <ReadMore
               name={story.frontmatter.name}
               story={story.frontmatter.story}
+              modalImage={modalImage}
             />
           ) : null}
         </div>
@@ -91,6 +93,13 @@ export const query = graphql`
         videoImage {
           childImageSharp {
             fluid(maxWidth: 700) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        modalImage {
+          childImageSharp {
+            fluid(maxWidth: 1200) {
               ...GatsbyImageSharpFluid
             }
           }

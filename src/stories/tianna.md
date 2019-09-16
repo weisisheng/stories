@@ -7,4 +7,5 @@ homePageImage: ../images/tianna.jpg
 videoSourceURL: "https://player.vimeo.com/external/237157979.hd.mp4?s=c1cf1541f1b041187d0fa5ddcb7097481e67dbf5&profile_id=175"
 videoImage: ../images/tianna-video-image.jpg
 backgroundImage: ../images/tianna-story-bg.jpg
+modalImage: ../images/andy-read-more.jpg
 ---

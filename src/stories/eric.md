@@ -7,4 +7,5 @@ homePageImage: ../images/eric.jpg
 videoSourceURL: "https://player.vimeo.com/external/237155241.hd.mp4?s=bc2f46d0bca416c917f636684eac522080c2c689&profile_id=175"
 videoImage: ../images/eric-video-image.jpg
 backgroundImage: ../images/eric-story-bg.jpg
+modalImage: ../images/andy-read-more.jpg
 ---
