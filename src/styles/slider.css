@@ -13,12 +13,15 @@
 }
 
 .slider-card-image > h4 {
+  font-family: 'Roboto', sans-serif;
   text-align: left;
   position: absolute;
   bottom: 4vw;
   left: 3vw;
   color: #ffffff;
   text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .BrainhubCarousel {
