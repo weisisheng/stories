@@ -5,8 +5,6 @@ import goldenLeaf from '../images/award-icons/golden-leaf.png'
 import specialSelection from '../images/award-icons/special-selection.png'
 import logo from '../images/logo.png'
 
-import '../styles/main.css'
-
 const Main = () => {
   return (
     <div className="main">

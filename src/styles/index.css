@@ -22,6 +22,70 @@ body {
   padding-bottom: 4.5rem;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap');
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-left: 2rem;
+  /* padding-right: 1rem; */
+}
+
+.main > .logo-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.main > .logo-container > .logo {
+  margin: 0;
+}
+
+.main > .logo-container > h4 {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  margin-top: -3rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  color: #979797;
+}
+
+.main > .logo-container:after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  padding-top: 20px;
+  border-bottom: 2px solid #979797;
+  margin-top: -1.5rem;
+}
+
+.main > .title {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3rem;
+  /* transform: scale(1, 1.2); */
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.main > p {
+  font-family: 'Roboto', sans-serif;
+  color: #fec420;
+  margin-bottom: 2rem;
+}
+
+.main > ul {
+  display: flex;
+  list-style: none;
+}
+.main > ul > li {
+  padding: 6px;
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .site {
     grid-template-columns: 1fr;
