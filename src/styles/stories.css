@@ -63,8 +63,8 @@
   margin-top: 1rem;
   font-size: 0.8rem;
   line-height: 1.4;
-  height: 25vh;
-  overflow-y: auto;
+  height: 20vh;
+  overflow: hidden;
 }
 
 .story-content > .story-text > p::-webkit-scrollbar {

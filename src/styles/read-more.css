@@ -18,10 +18,9 @@
 .modal-content {
   position: relative;
   overflow: hidden;
+  border: none;
   padding-left: 1rem;
   padding-top: 1rem;
-  border: none;
-  height: 90vh;
 }
 
 .modal-content .modal-text {
@@ -94,6 +93,10 @@
 }
 
 /****ANDY MODAL MODS****/
+
+.modal-content.andy-modal-content {
+  height: 90vh;
+}
 
 .andy-modal-content .andy-modal-img {
   position: absolute;
