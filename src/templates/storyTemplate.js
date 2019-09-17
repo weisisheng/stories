@@ -47,6 +47,7 @@ export default ({ data, pageContext }) => {
               name={story.frontmatter.name}
               story={story.frontmatter.story}
               modalImage={modalImage}
+              title={story.frontmatter.title}
             />
           ) : null}
         </div>

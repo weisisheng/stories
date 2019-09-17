@@ -38,10 +38,10 @@ const PlayShare = props => {
         <Modal.Header closeButton>
           <Modal.Title>Share This Story</Modal.Title>
         </Modal.Header>
-        <Twitter link={props.share} />
-        <Facebook link={props.share} />
-        <Pinterest link={props.share} />
-        <Mail link={props.share} />
+        <Twitter link={`https://rmhpstories.com${props.share}`} />
+        <Facebook link={`https://rmhpstories.com${props.share}`} />
+        <Pinterest link={`https://rmhpstories.com${props.share}`} />
+        <Mail link={`https://rmhpstories.com${props.share}`} />
       </Modal>
     </div>
   )
