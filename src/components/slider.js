@@ -48,6 +48,13 @@ const Slider = () => {
         <FontAwesomeIcon className="arrow-right" icon={faChevronRight} />
       }
       addArrowClickHandler
+      breakpoints={{
+        768: {
+          centered: true,
+          arrows: false,
+          infinite: true,
+        },
+      }}
     >
       {people.allMarkdownRemark.edges.map(person => (
         <SliderItem
