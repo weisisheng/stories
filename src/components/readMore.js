@@ -19,18 +19,24 @@ const ReadMore = props => {
     <div className="read-more">
       <button onClick={handleShow}>Read More&nbsp; [+]</button>
       <Modal show={show} onHide={handleClose} centered size="lg">
-        <Modal.Body className={`${name}-modal-content} modal-content`} closeButton>
+        <Modal.Body
+          className={`${name}-modal-content modal-content`}
+          closeButton
+        >
           <Img
-            className={`${name}-modal-img modal-img`}
+            className={`${name}-modal-img`}
             fluid={props.modalImage}
             alt={props.name}
           />
-          <div className={`${name}-modal-text} modal-text`}>
+          <div className={`${name}-modal-text modal-text`}>
             <h3 className="title we-protect">We Protect</h3>
             <h1 className="title">{props.title}</h1>
             <p>{props.story}</p>
           </div>
-          <button className="modal-button" onClick={handleClose}>
+          <button
+            className={`${name}-modal-button modal-button`}
+            onClick={handleClose}
+          >
             <FontAwesomeIcon icon={faTimes} />
           </button>
         </Modal.Body>
