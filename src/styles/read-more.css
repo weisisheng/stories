@@ -13,7 +13,7 @@
   outline: none;
 }
 
-.modal-content {
+.andy-modal-content {
   position: relative;
   overflow: hidden;
   padding-left: 1rem;
@@ -22,7 +22,14 @@
   height: 90vh;
 }
 
-.modal-content .modal-img {
+.javier-modal-content {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  height: 90vh;
+}
+
+.andy-modal-content .andy-modal-img {
   position: absolute;
   margin-left: -10rem;
   padding-left: 10rem;
@@ -30,30 +37,54 @@
   padding-top: 12rem;
 }
 
-.modal-content .modal-text {
+.javier-modal-content .javier-modal-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* left: -1rem;
+  top: -1rem;
+  bottom: -1rem;
+  right: -1rem; */
+}
+
+.javier-modal-content .javier-modal-text {
   -webkit-columns: 2;
   -moz-columns: 2;
   columns: 2;
   color: #ffffff;
   position: absolute;
-  z-index: 1000;
   bottom: 1rem;
   right: 1rem;
+  left: 1rem;
   top: 50%;
   padding: 1rem;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
-.modal-content > button {
+.andy-modal-content .andy-modal-text {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+  color: #ffffff;
   position: absolute;
-  right: 1.5rem;
-  top: 0.5rem;
+  bottom: 1rem;
+  right: 1rem;
+  left: 1rem;
+  top: 50%;
+  padding: 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.modal-button {
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
   color: white;
   background-color: transparent;
   border: none;
 }
 
-.modal-content > button:focus {
+.modal-button:focus {
   outline: none;
 }
 
@@ -62,10 +93,7 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 3rem;
-  margin-bottom: 0;
-}
-
-.modal-text h1.title {
+  margin: 0;
 }
 
 .modal-text .we-protect {
