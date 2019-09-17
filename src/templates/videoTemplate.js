@@ -19,9 +19,10 @@ export default ({ data }) => {
         <FontAwesomeIcon icon={faChevronLeft} />
       </Link>
       <iframe
+        autoplay
         allow="autoplay"
         title={`${story.frontmatter.name} Video`}
-        allowfullscreen
+        allowFullScreen
         className="video-iframe"
         src={story.frontmatter.videoSourceURL}
       ></iframe>
