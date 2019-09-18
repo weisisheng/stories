@@ -98,7 +98,7 @@ body {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .site {
     grid-template-columns: 1fr 60vw;
-    align-items: left;
+    padding-bottom: 0;
   }
   .main > .logo-container > img {
     transform: translateX(-2rem);
