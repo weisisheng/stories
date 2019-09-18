@@ -85,27 +85,23 @@
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: portrait) {
   .play-share {
     justify-content: flex-start;
   }
   .play-share > div > .play {
-    color: #ffffff;
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 50%;
-    width: 5rem;
-    height: 5rem;
-    margin-right: 1rem;
-    text-align: center;
+    width: 150px;
+    height: 3rem;
+  }
+  .play-share > div > .share {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.25rem;
   }
   .button-text-play {
-    display: none;
+    display: inline;
   }
   .button-text-watch {
-    display: inline;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    margin-right: 2rem;
+    display: none;
   }
 }

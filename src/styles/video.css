@@ -5,7 +5,6 @@
 }
 
 .video-container > iframe {
-  /* display: inline; */
   background: #000;
   border: none;
   height: 100%;
@@ -29,6 +28,14 @@
   text-decoration: none;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .video-container {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    height: 100vw;
+    width: 100vh;
+    position: absolute;
+    top: 100vh;
+    left: 0;
+  }
 }

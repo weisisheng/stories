@@ -152,3 +152,9 @@
     height: 80vh;
   }
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: portrait) {
+  .read-more {
+    display: none;
+  }
+}
