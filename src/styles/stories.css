@@ -139,7 +139,7 @@
 
 @media only screen and (min-device-height: 1024px) {
   .story-video > h4 {
-    bottom: 12rem;
+    bottom: 10rem;
     left: 8rem;
     font-size: 2rem;
   }
