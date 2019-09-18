@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <ul>
-        <li>&copy; 2020 Rocky Mountain Health Plans</li>
+        <li>&copy; {new Date().getFullYear()} Rocky Mountain Health Plans</li>
         <li>|</li>
         <li>
           <a
