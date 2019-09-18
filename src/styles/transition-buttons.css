@@ -71,3 +71,31 @@
     bottom: 14.4rem;
   }
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: portrait) {
+  .tanith-transition-button-left,
+  .tanith-transition-button-right {
+    bottom: 14.4rem;
+  }
+  .transition-button-left,
+  .transition-button-right {
+    bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  .transition-button-left {
+    left: 2rem;
+  }
+  .transition-button-right {
+    right: 2rem;
+  }
+  .transition-button-left span,
+  .transition-button-right span {
+    font-size: 1rem;
+  }
+  .transition-button-right span {
+    padding-right: 0.5rem;
+  }
+  .transition-button-left span {
+    padding-left: 0.5rem;
+  }
+}

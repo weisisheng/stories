@@ -182,4 +182,23 @@
   .story-content {
     padding: 1.5rem;
   }
+  .story-content > .story-text > .title {
+    font-size: 2.5rem;
+  }
+
+  .story-content > .story-text > .we-protect {
+    font-size: 2rem;
+  }
+
+  .story-content > .story-text > p {
+    height: 30vh;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    overflow: scroll;
+  }
+  .story-content > .mobile-logo > img {
+    position: absolute;
+    top: -8rem;
+    width: 250px;
+  }
 }
