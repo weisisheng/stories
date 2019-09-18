@@ -4,7 +4,7 @@ import Modal from 'react-bootstrap/Modal'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { navigate } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus, faPlay, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faPlus, faPlay } from '@fortawesome/free-solid-svg-icons'
 
 import '../styles/play-share.css'
 
