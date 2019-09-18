@@ -73,10 +73,6 @@
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: portrait) {
-  .tanith-transition-button-left,
-  .tanith-transition-button-right {
-    bottom: 14.4rem;
-  }
   .transition-button-left,
   .transition-button-right {
     bottom: 1.5rem;
@@ -97,5 +93,9 @@
   }
   .transition-button-left span {
     padding-left: 0.5rem;
+  }
+  .tanith-transition-button-left,
+  .tanith-transition-button-right {
+    bottom: 9.85rem;
   }
 }
