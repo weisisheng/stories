@@ -70,9 +70,6 @@
     padding-left: 0;
 
   }
-  .slider-card-image {
-    /* width: 200px; */
-  }
   .BrainhubCarousel__custom-arrowLeft,
   .BrainhubCarousel__custom-arrowRight {
     display: none;

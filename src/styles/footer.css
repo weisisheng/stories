@@ -22,3 +22,12 @@
   color: #979797;
   text-decoration: none;
 }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .footer {
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    justify-content: flex-start;
+    margin: 0;
+  }
+}
