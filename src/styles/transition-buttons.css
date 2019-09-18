@@ -38,6 +38,13 @@
   bottom: 10.6rem;
 }
 
+@media only screen and (min-device-height: 1024px) {
+  .tanith-transition-button-left,
+  .tanith-transition-button-right {
+    bottom: 14.4rem;
+  }
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .tanith-transition-button-left,
   .tanith-transition-button-right {
