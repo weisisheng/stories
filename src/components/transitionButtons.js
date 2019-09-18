@@ -60,29 +60,13 @@ const TransitionButtons = props => {
         className={`${props.name}-transition-button-left transition-button-left`}
       >
         <FontAwesomeIcon icon={faChevronLeft} />
-        <span
-          style={{
-            fontSize: '1rem',
-            paddingLeft: '1rem',
-            fontWeight: 'bold',
-          }}
-        >
-          Previous Story
-        </span>
+        <span>Previous Story</span>
       </Link>
       <Link
         to={props.next}
         className={`${props.name}-transition-button-right transition-button-right`}
       >
-        <span
-          style={{
-            fontSize: '1rem',
-            paddingRight: '1rem',
-            fontWeight: 'bold',
-          }}
-        >
-          Next Story
-        </span>
+        <span>Next Story</span>
         <FontAwesomeIcon icon={faChevronRight} />
       </Link>
     </div>

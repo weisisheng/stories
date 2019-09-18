@@ -31,6 +31,18 @@
   text-decoration: none;
 }
 
+.transition-button-left span,
+.transition-button-right span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.transition-button-right span {
+  padding-right: 1rem;
+}
+.transition-button-left span {
+  padding-left: 1rem;
+}
+
 /*****Tanith's special buttons********/
 
 .tanith-transition-button-left,
@@ -42,6 +54,14 @@
   .tanith-transition-button-left,
   .tanith-transition-button-right {
     bottom: 14.4rem;
+  }
+  .transition-button-left,
+  .transition-button-right {
+    font-size: 2.5rem;
+  }
+  .transition-button-left span,
+  .transition-button-right span {
+    font-size: 1.5rem;
   }
 }
 
