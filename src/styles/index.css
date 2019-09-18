@@ -35,6 +35,8 @@ body {
 }
 
 .main > .logo-container {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -95,13 +97,25 @@ body {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .site {
+    grid-template-columns: 1fr 60vw;
     align-items: left;
+  }
+  .main > .logo-container > img {
+    transform: translateX(-2rem);
+  }
+  .main > .logo-container > h4 {
+    transform: translateX(-2rem);
+    margin-top: -2rem;
+  }
+  .main > .logo-container:after {
+    margin: -1.5rem 0 0 5rem;
   }
   .main > .title {
     text-align: left;
     font-size: 2rem;
   }
   .main > p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    margin: 0 1rem 2rem 1rem;
   }
 }
