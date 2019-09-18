@@ -112,6 +112,12 @@
   top: 0.5rem;
 }
 
+@media only screen and (min-device-height: 1024px) {
+  .modal-content .modal-content {
+    height: 70vh;
+  }
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .modal-content .modal-text {
     bottom: 1rem;

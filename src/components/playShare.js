@@ -24,8 +24,9 @@ const PlayShare = props => {
       <div className="play-wrapper">
         <button onClick={handlePlay} className="play">
           <FontAwesomeIcon icon={faPlay} />
-          &nbsp;Play
+          <span className="button-text-play">&nbsp;Play</span>
         </button>
+        <span className="button-text-watch">Start Watching</span>
       </div>
       <div className="share-wrapper" onClick={handleShow}>
         <button className="share">

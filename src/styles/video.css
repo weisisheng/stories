@@ -1,17 +1,24 @@
+.video-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
 .video-container > iframe {
-  display: block;
+  /* display: inline; */
   background: #000;
   border: none;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  padding-top: 4rem;
 }
 
 .video-container > .video-back-button {
-  left: 2rem;
-  top: 1rem;
   display: flex;
   position: absolute;
-  z-index: 1000;
+  left: 2rem;
+  top: 1rem;
+  z-index: 10000;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
@@ -20,4 +27,8 @@
   border: none;
   cursor: pointer;
   text-decoration: none;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  
 }
