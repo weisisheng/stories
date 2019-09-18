@@ -30,3 +30,10 @@
   border: none;
   text-decoration: none;
 }
+
+/*****Taniths special buttons********/
+
+.tanith-transition-button-left,
+.tanith-transition-button-right {
+  bottom: 10.6rem;
+}

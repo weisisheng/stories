@@ -11,6 +11,17 @@
   position: absolute;
 }
 
+/*******BG Image style modifiers*********/
+.story-container > .tanith-story-bg-image {
+  height: 120vh;
+  position: absolute;
+}
+
+.story-container > .tianna-story-bg-image {
+  width: 160vw;
+  right: 60vw;
+}
+
 .story-container > .image-overlay {
   position: absolute;
   top: 0;

@@ -18,14 +18,15 @@ export default ({ data, pageContext }) => {
   const bgImage = story.frontmatter.backgroundImage.childImageSharp.fluid
   const videoImage = story.frontmatter.videoImage.childImageSharp.fluid
   const modalImage = story.frontmatter.modalImage.childImageSharp.fluid
+  const name = story.frontmatter.name.toLowerCase()
 
   return (
     <div className="story-container">
       <SEO title={story.frontmatter.name} />
       <Img
         fluid={bgImage}
-        className="story-bg-image"
-        alt={story.frontmatter.name}
+        className={`${name}-story-bg-image story-bg-image`}
+        alt={name}
       />
       <div className="image-overlay"></div>
       <div className="story-content">
@@ -41,10 +42,9 @@ export default ({ data, pageContext }) => {
           />
           <p>{story.frontmatter.story}</p>
 
-          {story.frontmatter.name === 'Javier' ||
-          story.frontmatter.name === 'Andy' ? (
+          {name === 'javier' || name === 'andy' ? (
             <ReadMore
-              name={story.frontmatter.name}
+              name={name}
               story={story.frontmatter.story}
               modalImage={modalImage}
               title={story.frontmatter.title}
@@ -52,11 +52,7 @@ export default ({ data, pageContext }) => {
           ) : null}
         </div>
         <div className="story-video">
-          <Img
-            fluid={videoImage}
-            className="story-video-image"
-            alt={story.frontmatter.name}
-          />
+          <Img fluid={videoImage} className="story-video-image" alt={name} />
           <h4>{story.frontmatter.name}</h4>
           <Link
             to={`${story.frontmatter.path}/video`}
@@ -69,7 +65,11 @@ export default ({ data, pageContext }) => {
       <Link to="/" className="close-story">
         <FontAwesomeIcon icon={faTimes} />
       </Link>
-      <TransitionButtons next={next.fields.slug} prev={prev.fields.slug} />
+      <TransitionButtons
+        next={next.fields.slug}
+        prev={prev.fields.slug}
+        name={name}
+      />
       <Footer />
     </div>
   )
