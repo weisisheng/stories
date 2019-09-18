@@ -15,12 +15,12 @@ export default ({ data }) => {
   return (
     <div className="video-container">
       <SEO title={`${story.frontmatter.name} Video`} />
-      <Link to={prevPath} className="video-back-button">
+      <Link to={`/${prevPath}/`} className="video-back-button">
         <FontAwesomeIcon icon={faChevronLeft} />
       </Link>
       <iframe
-        autoPlay
         allow="autoplay"
+        autoPlay
         title={`${story.frontmatter.name} Video`}
         allowFullScreen
         className="video-iframe"
