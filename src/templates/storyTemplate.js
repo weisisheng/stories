@@ -10,6 +10,7 @@ import PlayShare from '../components/playShare'
 import TransitionButtons from '../components/transitionButtons'
 import ReadMore from '../components/readMore'
 import logoSmall from '../images/logo-small.png'
+import logo from '../images/logo.png'
 import '../styles/stories.css'
 
 export default ({ data, pageContext }) => {
@@ -30,9 +31,12 @@ export default ({ data, pageContext }) => {
       />
       <div className="image-overlay"></div>
       <div className="story-content">
+        <Link to="/" className="mobile-logo">
+          <img src={logo} alt="RMHP Logo" />
+        </Link>
         <div className="story-text">
-          <Link to="/">
-            <img className="story-logo" src={logoSmall} alt="RMHP Logo" />
+          <Link to="/" className="story-logo">
+            <img src={logoSmall} alt="RMHP Logo" />
           </Link>
           <h3 className="title we-protect">We Protect</h3>
           <h1 className="title">{story.frontmatter.title}</h1>

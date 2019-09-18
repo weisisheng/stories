@@ -31,9 +31,16 @@
   text-decoration: none;
 }
 
-/*****Taniths special buttons********/
+/*****Tanith's special buttons********/
 
 .tanith-transition-button-left,
 .tanith-transition-button-right {
   bottom: 10.6rem;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .tanith-transition-button-left,
+  .tanith-transition-button-right {
+    bottom: 14.4rem;
+  }
 }
