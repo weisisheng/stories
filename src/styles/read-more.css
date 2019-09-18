@@ -64,6 +64,7 @@
 
 .modal-content .modal-text p {
   font-size: 0.7rem;
+  margin: 0;
 }
 
 /****JAVIER MODAL MODS****/
@@ -112,15 +113,24 @@
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .modal-content.andy-modal-content {
-    height: 70vh;
-    width: 70vw;
+  .modal-content .modal-text {
+    bottom: 1rem;
+    right: 1rem;
+    left: 0;
+    top: 40%;
+    height: auto;
   }
-  .andy-modal-text .title {
+  .modal-content .modal-content {
+    height: 70vh;
+  }
+  .modal-text .title {
     font-size: 2rem;
   }
-  .andy-modal-text .we-protect {
-    font-size: 1.8rem;
+  .javier-modal-text .title {
+    font-size: 1.7rem;
+  }
+  .modal-text .we-protect {
+    font-size: 1.7rem;
   }
   .andy-modal-content .andy-modal-img {
     position: absolute;
@@ -128,5 +138,11 @@
     padding-left: 10rem;
     margin-top: -10rem;
     padding-top: 12rem;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .modal-content .modal-content {
+    height: 80vh;
   }
 }
