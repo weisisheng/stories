@@ -67,7 +67,6 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-size: 3rem;
-  /* transform: scale(1, 1.2); */
   color: #ffffff;
   margin-bottom: 0.5rem;
 }
@@ -91,5 +90,18 @@ body {
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .site {
+    align-items: left;
+  }
+  .main > .title {
+    text-align: left;
+    font-size: 2rem;
+  }
+  .main > p {
+    font-size: 0.8rem;
   }
 }
