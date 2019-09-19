@@ -78,7 +78,7 @@ export default ({ data, pageContext }) => {
         name={name}
       />
       <Footer display="none" />
-      <IpadFooter height="11vh" />
+      <IpadFooter height="14vh" />
       <MobileFooter height="11vh" />
     </div>
   )

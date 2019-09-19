@@ -25,18 +25,16 @@
 
 @media only screen and (min-device-width: 1024px) {
   .footer > ul {
-    display: flex;
+    display: flex !important;
   }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .footer {
-    height: 14vh;
     width: 100vw;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background-image: none;
     justify-content: flex-start;
     margin: 0;
-    z-index: 0;
   }
   .footer > ul {
     display: flex;
@@ -45,6 +43,7 @@
     bottom: 0;
     margin: 0;
     margin-left: 1rem;
+    z-index: 100000;
   }
 }
 
