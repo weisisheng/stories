@@ -1,10 +1,10 @@
 import React from 'react'
 
-import '../styles/footer.css'
+import '../styles/ipad-footer.css'
 
-const Footer = (props) => {
+const IpadFooter = props => {
   return (
-    <footer className="footer" style={{height: props.height}}>
+    <footer className="ipad-footer" style={{ height: props.height }}>
       <ul>
         <li>&copy; {new Date().getFullYear()} Rocky Mountain Health Plans</li>
         <li>|</li>
@@ -42,4 +42,4 @@ const Footer = (props) => {
   )
 }
 
-export default Footer
+export default IpadFooter

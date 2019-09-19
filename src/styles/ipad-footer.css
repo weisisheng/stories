@@ -1,4 +1,4 @@
-.mobile-footer {
+.ipad-footer {
   display: none;
   position: fixed;
   bottom: 0;
@@ -9,12 +9,12 @@
   z-index: 0;
 }
 
-.mobile-footer ul {
+.ipad-footer ul {
   display: none;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: portrait) {
-  .mobile-footer {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .ipad-footer {
     display: block;
     height: 45vh;
   }

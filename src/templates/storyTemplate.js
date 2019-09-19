@@ -5,6 +5,7 @@ import { faPlay, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 import Footer from '../components/footer'
 import MobileFooter from '../components/mobileFooter'
+import IpadFooter from '../components/ipadFooter'
 
 import Img from 'gatsby-image'
 import SEO from '../components/seo'
@@ -77,7 +78,8 @@ export default ({ data, pageContext }) => {
         name={name}
       />
       <Footer />
-      <MobileFooter height="4.5rem" />
+      <IpadFooter height="11vh" />
+      <MobileFooter height="11vh" />
     </div>
   )
 }

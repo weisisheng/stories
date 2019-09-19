@@ -4,6 +4,7 @@ html,
 body {
   margin: 0;
   overflow: hidden;
+  background-color: black;
 }
 
 body {
@@ -95,6 +96,10 @@ body {
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
+  }
+  .main {
+    transform: translateY(-4rem);
+    padding-left: 0;
   }
 }
 
