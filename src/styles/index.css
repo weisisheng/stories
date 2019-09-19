@@ -40,6 +40,11 @@ body {
 }
 
 .main > .logo-container > .logo {
+  display: block;
+  margin: 0;
+}
+.main > .logo-container > .logo-small {
+  display: none;
   margin: 0;
 }
 
@@ -110,6 +115,34 @@ body {
   }
   .main > .title {
     text-align: left;
+    font-size: 2rem;
+  }
+  .main > p {
+    font-size: 0.7rem;
+    margin: 0 1rem 2rem 1rem;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: portrait) {
+  .site {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .main > .logo-container > .logo {
+    display: none;
+    margin: 0;
+  }
+  .main > .logo-container > .logo-small {
+    display: block;
+    margin: 0;
+  }
+  .main > .logo-container > h4 {
+    transform: translateX(-2rem);
+    margin-top: -2rem;
+  }
+  .main > .title {
+    text-align: center;
     font-size: 2rem;
   }
   .main > p {

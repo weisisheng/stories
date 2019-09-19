@@ -4,12 +4,14 @@ import filmFestival from '../images/award-icons/film-festival.png'
 import goldenLeaf from '../images/award-icons/golden-leaf.png'
 import specialSelection from '../images/award-icons/special-selection.png'
 import logo from '../images/logo.png'
+import logoSmall from '../images/logo-small.png'
 
 const Main = () => {
   return (
     <div className="main">
       <div className="logo-container">
         <img className="logo" src={logo} alt="RMHP Logo" />
+        <img className="logo-small" src={logoSmall} alt="RMHP Logo" />
         <h4>presents</h4>
       </div>
       <h1 className="title">
