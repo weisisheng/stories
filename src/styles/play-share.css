@@ -110,20 +110,20 @@
   .play-share {
     justify-content: flex-start;
     height: 100px;
+    transform: translateY(-2rem);
   }
   .play-share > div > .play {
     width: 100px;
     height: 2rem;
+    font-size: 1rem;
   }
   .play-share > div > .share {
     width: 2rem;
     height: 2rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   .button-text-play {
     display: inline;
-  }
-  .button-text-watch {
-    display: none;
+    font-size: 1rem;
   }
 }

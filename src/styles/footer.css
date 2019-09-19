@@ -59,5 +59,13 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
   .footer {
     font-size: 12px;
+    margin: 0;
+    padding-bottom: 0;
+  }
+  .footer > ul {
+    display: flex !important;
+  }
+  .footer > ul li {
+    margin: 0;
   }
 }

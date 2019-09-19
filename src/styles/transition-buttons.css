@@ -100,3 +100,30 @@
   }
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+  .transition-button-left,
+  .transition-button-right {
+    bottom: 2rem;
+    font-size: 1rem;
+  }
+  .transition-button-left {
+    left: 2rem;
+  }
+  .transition-button-right {
+    right: 2rem;
+  }
+  .transition-button-left span,
+  .transition-button-right span {
+    font-size: 0.8rem;
+  }
+  .transition-button-right span {
+    padding-right: 0.5rem;
+  }
+  .transition-button-left span {
+    padding-left: 0.5rem;
+  }
+  .tanith-transition-button-left,
+  .tanith-transition-button-right {
+    bottom: 6.19rem;
+  }
+}
