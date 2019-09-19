@@ -16,3 +16,9 @@
   padding: 0 1rem;
   color: #979797;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: portrait) {
+  .social {
+    display: none;
+  }
+}

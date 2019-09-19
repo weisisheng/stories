@@ -34,7 +34,7 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: portrait) {
   .footer {
-    height: 4.5rem;
+    height: 16.5rem;
     width: 100vw;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     margin: 0;

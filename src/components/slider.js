@@ -49,10 +49,13 @@ const Slider = () => {
       }
       addArrowClickHandler
       breakpoints={{
-        768: {
+        1024: {
           centered: true,
           arrows: false,
           infinite: true,
+        },
+        320: {
+          itemWidth: 150,
         },
       }}
     >
