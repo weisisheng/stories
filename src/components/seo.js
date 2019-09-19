@@ -36,10 +36,6 @@ function SEO({ description, lang, meta, title }) {
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
-          name: `viewport`,
-          content: `minimal-ui`,
-        },
-        {
           name: `description`,
           content: metaDescription,
         },
