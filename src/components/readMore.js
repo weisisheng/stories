@@ -19,10 +19,7 @@ const ReadMore = props => {
     <div className="read-more">
       <button onClick={handleShow}>Read More&nbsp; [+]</button>
       <Modal show={show} onHide={handleClose} centered size="lg">
-        <Modal.Body
-          className={`${name}-modal-content modal-content`}
-          closeButton
-        >
+        <Modal.Body className={`${name}-modal-content modal-content`}>
           <Img
             className={`${name}-modal-img`}
             fluid={props.modalImage}

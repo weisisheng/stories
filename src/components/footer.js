@@ -2,9 +2,9 @@ import React from 'react'
 
 import '../styles/footer.css'
 
-const Footer = ({ height }) => {
+const Footer = () => {
   return (
-    <footer className="footer" height={height}>
+    <footer className="footer">
       <ul>
         <li>&copy; {new Date().getFullYear()} Rocky Mountain Health Plans</li>
         <li>|</li>

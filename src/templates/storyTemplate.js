@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 import Footer from '../components/footer'
+import MobileFooter from '../components/mobileFooter'
+
 import Img from 'gatsby-image'
 import SEO from '../components/seo'
 import PlayShare from '../components/playShare'
@@ -75,6 +77,7 @@ export default ({ data, pageContext }) => {
         name={name}
       />
       <Footer />
+      <MobileFooter height="4.5rem" />
     </div>
   )
 }

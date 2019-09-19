@@ -3,24 +3,16 @@ import PropTypes from 'prop-types'
 // import { useStaticQuery, graphql } from 'gatsby'
 
 import Footer from './footer'
+import MobileFooter from './mobileFooter'
 
 import '../styles/layout.css'
 
 const Layout = ({ children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
-
   return (
     <div className="layout">
       <main>{children}</main>
       <Footer />
+      <MobileFooter height='40vh'  />
     </div>
   )
 }
