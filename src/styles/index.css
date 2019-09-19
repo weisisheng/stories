@@ -162,3 +162,36 @@ body {
     margin: 0 1rem 2rem 1rem;
   }
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+  .site {
+    transform: translateY(-2rem);
+    grid-template-columns: 1fr 60vw;
+    padding-bottom: 0;
+  }
+  .main {
+    transform: translateY(-0.5rem);
+    padding-left: 1rem;
+  }
+  .main > .logo-container > h4 {
+    margin-top: -1.5rem;
+  }
+  .main > .logo-container:after {
+    margin: 0 auto;
+    padding-top: 0;
+    margin-top: -1rem;
+  }
+  .main > .title {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .main > p {
+    font-size: 0.5rem;
+  }
+  .main > ul {
+    transform: translateY(-1rem);
+  }
+  .main > ul > li {
+    padding: 6px;
+  }
+}

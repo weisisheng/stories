@@ -105,3 +105,25 @@
     display: none;
   }
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+  .play-share {
+    justify-content: flex-start;
+    height: 100px;
+  }
+  .play-share > div > .play {
+    width: 100px;
+    height: 2rem;
+  }
+  .play-share > div > .share {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.25rem;
+  }
+  .button-text-play {
+    display: inline;
+  }
+  .button-text-watch {
+    display: none;
+  }
+}

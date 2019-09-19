@@ -9,13 +9,11 @@
   z-index: 0;
 }
 
-.mobile-footer ul {
-  display: none;
-}
-
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: portrait) {
   .mobile-footer {
     display: block;
-    height: 45vh;
   }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
 }

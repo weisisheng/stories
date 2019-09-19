@@ -106,3 +106,30 @@
     left: 10vw;
   }
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+  .BrainhubCarousel {
+    z-index: 10000;
+    overflow: hidden;
+  }
+  .BrainhubCarousel li.BrainhubCarouselItem {
+    width: 150px !important;
+    min-width: 150px !important;
+    max-width: 150px !important;
+  }
+  .BrainhubCarousel__custom-arrowLeft,
+  .BrainhubCarousel__custom-arrowRight {
+    display: none;
+  }
+
+  .slider-card-image {
+    margin-left: 1rem;
+  }
+
+  .slider-card-image > h4 {
+    z-index: 10000;
+    font-size: 0.5rem;
+    bottom: 6vw;
+    left: 6vw;
+  }
+}
