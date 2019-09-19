@@ -3,6 +3,24 @@
   right: -4.5vw;
 }
 
+.BrainhubCarousel .BrainhubCarousel__trackContainer {
+  animation: moveInLeft 2s ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
 .slider-card-image {
   text-decoration: none;
   margin-left: 1.5rem;
@@ -31,14 +49,33 @@
 .BrainhubCarousel__custom-arrowLeft {
   position: absolute;
   align-self: flex-end;
-  left: 1vw;
+  left: 2vw;
   bottom: 5vh;
+  animation: moveInBottom 4s ease-out;
 }
 
 .BrainhubCarousel__custom-arrowRight {
   position: absolute;
-  left: 5vw;
+  left: 6vw;
   bottom: 5vh;
+  animation: moveInBottom 4s ease-out;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  50% {
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 .arrow-left,
