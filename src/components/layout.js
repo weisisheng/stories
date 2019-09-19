@@ -11,9 +11,9 @@ const Layout = ({ children }) => {
   return (
     <div className="layout">
       <main>{children}</main>
-      <Footer />
+      <Footer display="flex"/>
       <MobileFooter height="40vh" />
-      <IpadFooter height="47vh" />
+      <IpadFooter height="45vh" />
     </div>
   )
 }

@@ -77,7 +77,7 @@ export default ({ data, pageContext }) => {
         prev={prev.fields.slug}
         name={name}
       />
-      <Footer />
+      <Footer display="none" />
       <IpadFooter height="11vh" />
       <MobileFooter height="11vh" />
     </div>

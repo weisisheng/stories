@@ -2,10 +2,10 @@ import React from 'react'
 
 import '../styles/footer.css'
 
-const Footer = (props) => {
+const Footer = props => {
   return (
-    <footer className="footer" style={{height: props.height}}>
-      <ul>
+    <footer className="footer" style={{ height: props.height }}>
+      <ul style={{ display: props.display }}>
         <li>&copy; {new Date().getFullYear()} Rocky Mountain Health Plans</li>
         <li>|</li>
         <li>
