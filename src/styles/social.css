@@ -17,13 +17,13 @@
   color: #979797;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: portrait) {
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   .social {
     display: none;
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
   .social {
     display: none;
   }
