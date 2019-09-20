@@ -128,20 +128,15 @@
   }
 }
 
-
 @media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) {
   .play-share {
     justify-content: flex-start;
     height: 100px;
   }
   .play-share > div > .play {
-    width: 100px;
-    height: 2rem;
     font-size: 1rem;
   }
   .play-share > div > .share {
-    width: 2rem;
-    height: 2rem;
     font-size: 1rem;
   }
   .button-text-play {

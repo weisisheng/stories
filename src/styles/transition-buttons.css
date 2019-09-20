@@ -43,18 +43,11 @@
   padding-left: 1rem;
 }
 
-/*****Tanith's special buttons********/
-
-.tanith-transition-button-left,
-.tanith-transition-button-right {
-  bottom: 10.6rem;
-}
-
 @media only screen and (min-device-height: 1024px) {
-  .tanith-transition-button-left,
+  /* .tanith-transition-button-left,
   .tanith-transition-button-right {
     bottom: 14.4rem;
-  }
+  } */
   .transition-button-left,
   .transition-button-right {
     font-size: 2.5rem;
@@ -62,19 +55,6 @@
   .transition-button-left span,
   .transition-button-right span {
     font-size: 1.5rem;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .tanith-transition-button-left,
-  .tanith-transition-button-right {
-    bottom: 14.4rem;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .tanith-transition-button-left,
-  .tanith-transition-button-right {
-    bottom: 11.49rem;
   }
 }
 
@@ -100,10 +80,6 @@
   .transition-button-left span {
     padding-left: 0.5rem;
   }
-  .tanith-transition-button-left,
-  .tanith-transition-button-right {
-    bottom: 9.85rem;
-  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
@@ -128,10 +104,6 @@
   .transition-button-left span {
     padding-left: 0.5rem;
   }
-  .tanith-transition-button-left,
-  .tanith-transition-button-right {
-    bottom: 6.19rem;
-  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
@@ -155,16 +127,5 @@
   }
   .transition-button-left span {
     padding-left: 0.5rem;
-  }
-  .tanith-transition-button-left,
-  .tanith-transition-button-right {
-    bottom: 8.59rem;
-  }
-}
-
-@media only screen and (max-width: 667px) and (orientation: landscape) {
-  .tanith-transition-button-left,
-  .tanith-transition-button-right {
-    bottom: 2rem;
   }
 }
