@@ -1,6 +1,9 @@
 # RMHP Stories 
 
-## Develop:
+## Development:
 
-### Run `NPM Install`
-### Then Run `Gatsby Develop` to start your local dev server
+### Run `npm install`
+### Then run `gatsby develop` to start your local dev server
+
+### If restarting your local server stalls out, run `gatsby clean` then `gatsby develop` 
+
