@@ -6,6 +6,7 @@ import {
   faPinterest,
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
 import '../styles/social.css'
 
@@ -30,7 +31,7 @@ const Social = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faTwitter} width={0} />
+            <FontAwesomeIcon icon={faTwitter} />
           </a>
         </li>
         <li>
@@ -40,7 +41,7 @@ const Social = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faInstagram} width={0} />
+            <FontAwesomeIcon icon={faInstagram} />
           </a>
         </li>
         <li>
@@ -50,7 +51,7 @@ const Social = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faPinterest} width={0} />
+            <FontAwesomeIcon icon={faPinterest} />
           </a>
         </li>
       </ul>
