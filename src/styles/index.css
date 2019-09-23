@@ -208,7 +208,7 @@ video.home-video {
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-width: 319px) and (max-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .site {
     position: absolute;
     top: 0;
