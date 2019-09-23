@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
     <div className="layout">
       <main>{children}</main>
       <Footer display="flex" />
-      <MobileFooter height="40vh" />
+      <MobileFooter height="45vh" />
       <IpadFooter height="45vh" />
     </div>
   )

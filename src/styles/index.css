@@ -2,8 +2,7 @@ html,
 body {
   margin: 0;
   overflow: hidden;
-  max-height: 100vh;
-  background-color: black;
+  height: 100vh;
 }
 
 body {
@@ -21,8 +20,9 @@ video.home-video {
 }
 
 .site {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   position: relative;
+  top: 0;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 40vw auto;
@@ -211,7 +211,6 @@ video.home-video {
 @media only screen and (min-width: 319px) and (max-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .site {
     position: absolute;
-    top: 0;
     bottom: 0;
     grid-template-columns: 1fr;
     grid-gap: 0;
