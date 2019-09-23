@@ -49,10 +49,17 @@
 
 @media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   .footer {
-    display: none;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
   }
   .footer > ul {
-    display: none;
+    justify-content: center;
+    margin: 0 5px;
+  }
+  .footer > ul li {
+    margin: 0;
+    padding: 0 2px;
   }
 }
 

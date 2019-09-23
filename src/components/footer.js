@@ -4,7 +4,7 @@ import '../styles/footer.css'
 
 const Footer = props => {
   return (
-    <footer className="footer" style={{ height: props.height }}>
+    <footer className="footer" style={{ height: props.height, display: props.display }}>
       <ul style={{ display: props.display }}>
         <li>&copy; {new Date().getFullYear()} Rocky Mountain Health Plans</li>
         <li>|</li>

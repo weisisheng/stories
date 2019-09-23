@@ -205,6 +205,9 @@ video.home-video {
   .main > ul > li {
     padding: 6px;
   }
+  .footer {
+    display: flex;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
