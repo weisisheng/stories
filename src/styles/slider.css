@@ -118,9 +118,6 @@
 }
 
 @media only screen and (min-width: 375px) and (max-width: 767px) and (orientation: portrait) {
-  .slider {
-    right: 0;
-  }
   .BrainhubCarousel {
     z-index: 10000;
     overflow: hidden;

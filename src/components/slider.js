@@ -56,6 +56,9 @@ const Slider = () => {
           arrows: false,
           infinite: true,
         },
+        767: {
+          offset: 12.5,
+        },
       }}
     >
       {people.allMarkdownRemark.edges.map(person => (
