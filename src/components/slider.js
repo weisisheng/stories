@@ -14,7 +14,9 @@ import '../styles/slider.css'
 const Slider = () => {
   const people = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___name] }) {
+      allMarkdownRemark(
+        sort: { order: ASC, fields: [frontmatter___position] }
+      ) {
         edges {
           node {
             frontmatter {
