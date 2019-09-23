@@ -31,7 +31,7 @@
 }
 
 .slider-card-image > h4 {
-  font-family: 'Roboto', sans-serif;
+  font-family: din-condensed, sans-serif;
   text-align: left;
   position: absolute;
   bottom: 4vw;
