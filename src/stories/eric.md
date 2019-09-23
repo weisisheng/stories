@@ -1,4 +1,5 @@
 ---
+position: 8
 path: "/eric/"
 name: "Eric"
 title: "Family"

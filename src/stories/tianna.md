@@ -1,4 +1,5 @@
 ---
+position: 7
 path: "/tianna/"
 name: "Tianna"
 title: "Trailblazers"

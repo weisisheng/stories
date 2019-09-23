@@ -1,4 +1,5 @@
 ---
+position: 3
 path: "/aaron/"
 name: "Aaron"
 title: "the pack"

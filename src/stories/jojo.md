@@ -1,4 +1,5 @@
 ---
+position: 6
 path: "/jojo/"
 name: "Jojo"
 title: "The Future"

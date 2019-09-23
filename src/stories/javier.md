@@ -1,4 +1,5 @@
 ---
+position: 2
 path: "/javier/"
 name: "Javier"
 title: "The Journey"
