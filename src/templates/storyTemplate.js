@@ -60,7 +60,12 @@ export default ({ data, pageContext }) => {
           ) : null}
         </div>
         <div className="story-video">
-          <Img fluid={videoImage} className="story-video-image" alt={name} />
+          <Link
+            to={`${story.frontmatter.path}/video`}
+            className="story-video-image"
+          >
+            <Img fluid={videoImage} alt={name} />
+          </Link>
           <h4>{story.frontmatter.name}</h4>
           <Link
             to={`${story.frontmatter.path}/video`}

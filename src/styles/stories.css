@@ -94,10 +94,13 @@ body {
   align-items: center;
 }
 
-.story-video > .story-video-image {
+.story-video .story-video-image {
   max-height: auto;
   width: 80%;
   bottom: 2rem;
+}
+
+.story-video .story-video-image img {
   border-radius: 5%;
 }
 
@@ -124,7 +127,7 @@ body {
   width: 3.5rem;
   height: 3.5rem;
   left: 45%;
-  bottom: 50%;
+  bottom: 45%;
 }
 
 .close-story {
@@ -264,7 +267,7 @@ body {
     left: 40%;
     bottom: 40%;
   }
-  .story-video > .story-video-image {
+  .story-video .story-video-image {
     bottom: 0;
   }
 }
@@ -318,7 +321,7 @@ body {
     left: 40%;
     bottom: 40%;
   }
-  .story-video > .story-video-image {
+  .story-video .story-video-image {
     bottom: 0;
   }
 }
