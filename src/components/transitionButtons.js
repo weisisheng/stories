@@ -5,6 +5,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
 import '../styles/transition-buttons.css'
 
