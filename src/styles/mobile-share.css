@@ -12,6 +12,10 @@
   border: none;
 }
 
+.social-modal {
+  z-index: 100000;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   .mobile-share {
     display: block;
