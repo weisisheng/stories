@@ -8,12 +8,20 @@ import Slider from '../components/slider'
 import Social from '../components/social'
 
 import '../styles/index.css'
+import bgImage from '../images/home-bg-image.jpg'
 
 const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
       <Social />
+      <video className="home-video" loop autoPlay muted>
+        <source
+          src="https://player.vimeo.com/external/289969730.hd.mp4?s=5bd5cf34d0cd69788e9ca41d83ebe110d933e9e3&profile_id=174"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
       <div className="site">
         <Main />
         <Slider />
