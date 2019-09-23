@@ -20,7 +20,7 @@ const Social = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faFacebookF} />
+            <FontAwesomeIcon icon={faFacebookF} width={0} />
           </a>
         </li>
         <li>
@@ -30,7 +30,7 @@ const Social = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faTwitter} />
+            <FontAwesomeIcon icon={faTwitter} width={0} />
           </a>
         </li>
         <li>
@@ -40,7 +40,7 @@ const Social = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faInstagram} />
+            <FontAwesomeIcon icon={faInstagram} width={0} />
           </a>
         </li>
         <li>
@@ -50,7 +50,7 @@ const Social = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faPinterest} />
+            <FontAwesomeIcon icon={faPinterest} width={0} />
           </a>
         </li>
       </ul>
