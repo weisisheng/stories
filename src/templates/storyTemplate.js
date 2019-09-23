@@ -34,13 +34,13 @@ export default ({ data, pageContext }) => {
       />
       <div className="image-overlay"></div>
       <div className="story-content">
-        <Link to="/" className="mobile-logo">
+        <a href="http://rmhp.org/" target="_blank" className="mobile-logo">
           <img src={logo} alt="RMHP Logo" />
-        </Link>
+        </a>
         <div className="story-text">
-          <Link to="/" className="story-logo">
+          <a href="http://rmhp.org/" target="_blank" className="story-logo">
             <img src={logoSmall} alt="RMHP Logo" />
-          </Link>
+          </a>
           <h3 className="title we-protect">We Protect</h3>
           <h1 className="title">{story.frontmatter.title}</h1>
           <PlayShare

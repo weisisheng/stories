@@ -10,8 +10,12 @@ const Main = () => {
   return (
     <div className="main">
       <div className="logo-container">
-        <img className="logo" src={logo} alt="RMHP Logo" />
-        <img className="logo-small" src={logoSmall} alt="RMHP Logo" />
+        <a href="https://www.rmhp.org" target="_blank" className="logo">
+          <img src={logo} alt="RMHP Logo" />
+        </a>
+        <a href="https://www.rmhp.org" target="_blank" className="logo-small">
+          <img src={logoSmall} alt="RMHP Logo" />
+        </a>
         <h4>presents</h4>
       </div>
       <h1 className="title">
