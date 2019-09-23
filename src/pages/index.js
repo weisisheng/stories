@@ -7,6 +7,7 @@ import SEO from '../components/seo'
 import Main from '../components/main'
 import Slider from '../components/slider'
 import Social from '../components/social'
+import MobileShare from '../components/mobileShare'
 
 import '../styles/index.css'
 import bgImage from '../images/home-bg-image.jpg'
@@ -16,6 +17,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <Social />
+      <MobileShare />
       <video className="home-video" loop autoPlay muted>
         <source
           src="https://player.vimeo.com/external/289969730.hd.mp4?s=5bd5cf34d0cd69788e9ca41d83ebe110d933e9e3&profile_id=174"

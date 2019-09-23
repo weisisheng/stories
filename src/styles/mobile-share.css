@@ -1,0 +1,23 @@
+.mobile-share {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  z-index: 1000;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  .mobile-share {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  .social {
+    display: block;
+  }
+}
