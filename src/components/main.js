@@ -1,8 +1,7 @@
 import React from 'react'
-import webby from '../images/award-icons/webby.png'
-import filmFestival from '../images/award-icons/film-festival.png'
-import goldenLeaf from '../images/award-icons/golden-leaf.png'
-import specialSelection from '../images/award-icons/special-selection.png'
+import webby from '../images/award-icons/WebbyAwards.svg'
+import filmFestival from '../images/award-icons/BffAwards.svg'
+import goldLeaf from '../images/award-icons/GoldLeafAwards.svg'
 import logo from '../images/logo.png'
 import logoSmall from '../images/logo-small.png'
 
@@ -26,16 +25,13 @@ const Main = () => {
       <p>Eight inspiring, real-life stories of the people we protect</p>
       <ul>
         <li>
-          <img src={webby} alt="Webby" />
+          <img src={webby} alt="Webby Award" />
         </li>
         <li>
-          <img src={filmFestival} alt="Film Festival" />
+          <img src={goldLeaf} alt="Golden Leaf Award" />
         </li>
         <li>
-          <img src={goldenLeaf} alt="Golden Leaf" />
-        </li>
-        <li>
-          <img src={specialSelection} alt="Special Selection" />
+          <img src={filmFestival} alt="Film Festival Special Selection" />
         </li>
       </ul>
     </div>
