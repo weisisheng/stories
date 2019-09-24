@@ -122,7 +122,7 @@
   .BrainhubCarousel {
     z-index: 10000;
     overflow: hidden;
-    bottom: 8vh;
+    bottom: 6vh;
   }
   .BrainhubCarousel li.BrainhubCarouselItem {
     width: 150px !important;
