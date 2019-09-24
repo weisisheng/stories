@@ -10,6 +10,7 @@ import Social from '../components/social'
 import MobileShare from '../components/mobileShare'
 
 import '../styles/index.css'
+import bgImage from '../images/home-bg-image.jpg'
 
 const IndexPage = () => {
   return (
@@ -17,7 +18,7 @@ const IndexPage = () => {
       <SEO title="Home" />
       <Social />
       <MobileShare />
-      <video className="home-video" preload="yes" autoPlay muted loop width="100%" height="auto">
+      <video className="home-video" poster={bgImage} preload="yes" autoPlay muted loop width="100%" height="auto">
         <source
           src="https://player.vimeo.com/external/361907240.hd.mp4?s=f6953334671e6c18dfc846e68a963dc116dc16d0&profile_id=174"
           type="video/mp4"

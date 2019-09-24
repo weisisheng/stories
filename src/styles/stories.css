@@ -303,12 +303,12 @@ body {
   }
 
   .story-content > .story-text > .we-protect {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .story-content > .story-text > p {
     margin-top: 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     height: unset;
     padding: 0.5rem;

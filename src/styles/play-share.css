@@ -92,7 +92,7 @@
   }
   .play-share > div > .play {
     width: 150px;
-    height: 3rem;
+    height: 2.5rem;
   }
   .play-share > div > .share {
     width: 2rem;
@@ -145,7 +145,7 @@
     font-size: 1rem;
   }
   .play-share > div > .share {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
   .play-share > .share-wrapper h3 {
     font-size: 1rem;
