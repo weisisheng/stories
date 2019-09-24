@@ -171,7 +171,7 @@ body {
   .story-content > .mobile-logo {
     display: flex;
     justify-content: center;
-    position: relative;
+    position: absolute;
   }
   .story-content > .mobile-logo > img {
     position: absolute;
@@ -262,12 +262,7 @@ body {
 @media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   .story-content {
     padding: 1.5rem;
-    overflow: scroll;
-  }
-  .story-content > .mobile-logo > img {
-    position: absolute;
-    top: -6rem;
-    width: 250px;
+    overflow: auto;
   }
 
   .story-content {
@@ -280,6 +275,20 @@ body {
     padding: 1rem;
     padding-bottom: 4rem;
     margin: 0;
+    overflow: visible;
+    transform: translateY(25rem);
+  }
+
+  .story-content > .mobile-logo {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+  }
+  .story-content > .mobile-logo > img {
+    position: unset;
+    width: 250px;
+    width: 100%;
   }
 
   .story-content > .story-text > .title {
@@ -299,11 +308,9 @@ body {
     margin-top: 0;
     font-size: 1rem;
     line-height: 1.5;
-    height: 30vh;
+    height: unset;
     padding: 0.5rem;
-    overflow: visible;
     z-index: -10;
-    scroll-padding-bottom: 10rem;
   }
 
   .story-video > h4 {
