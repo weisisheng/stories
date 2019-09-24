@@ -66,6 +66,7 @@
 
 @media only screen and (min-width: 569px) and (max-width: 767px) and (orientation: landscape) {
   .footer {
+    display: flex !important;
     font-size: 12px;
     margin: 0;
     padding-bottom: 0;

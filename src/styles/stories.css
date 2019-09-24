@@ -237,11 +237,10 @@ body {
 
   .story-content > .story-text > p {
     transform: translateY(-2.5rem);
-    height: 30vh;
     margin-top: 0;
     font-size: 0.7rem;
     line-height: 1;
-    height: 25vh;
+    height: 20vh;
     overflow: scroll;
   }
 
