@@ -26,7 +26,6 @@ video.home-video {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 40vw auto;
-  min-height: 100vh;
   max-width: 100vw;
   padding-top: 2.5rem;
   padding-bottom: 4.5rem;
