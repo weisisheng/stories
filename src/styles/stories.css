@@ -272,11 +272,12 @@ body {
   }
 
   .story-content > .story-text {
+    position: absolute;
+    top: 15rem;
     padding: 1rem;
     padding-bottom: 4rem;
     margin: 0;
     overflow: visible;
-    transform: translateY(25rem);
   }
 
   .story-content > .mobile-logo {
