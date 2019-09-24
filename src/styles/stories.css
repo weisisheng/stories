@@ -4,7 +4,6 @@
 }
 
 body {
-  max-height: 100vh;
   overflow: hidden;
   font-family: din-condensed, sans-serif;
 }
@@ -264,6 +263,8 @@ body {
   .story-content {
     padding: 1.5rem;
     overflow: scroll;
+    scroll-padding-bottom: 10rem
+
   }
   .story-content > .mobile-logo > img {
     position: absolute;
@@ -304,6 +305,7 @@ body {
     padding: 0.5rem;
     overflow: visible;
     z-index: -10;
+    scroll-padding-bottom: 10rem
   }
 
   .story-video > h4 {

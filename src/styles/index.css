@@ -249,6 +249,7 @@ video.home-video {
     min-width: unset;
     overflow-x: hidden;
     overflow-y: hidden;
+    height: 100vh;
   }
   .main {
     transform: translateY(-2rem);
