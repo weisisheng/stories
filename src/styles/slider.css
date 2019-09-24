@@ -50,14 +50,14 @@
   position: absolute;
   align-self: flex-end;
   left: 2vw;
-  bottom: 5vh;
+  bottom: 15vh;
   animation: moveInBottom 2s ease-out;
 }
 
 .BrainhubCarousel__custom-arrowRight {
   position: absolute;
-  left: 6vw;
-  bottom: 5vh;
+  left: 8vw;
+  bottom: 15vh;
   animation: moveInBottom 2s ease-out;
 }
 
@@ -89,6 +89,7 @@
   .BrainhubCarousel {
     overflow: hidden;
     z-index: 1000;
+    bottom: 8vh;
   }
   .BrainhubCarousel__custom-arrowLeft,
   .BrainhubCarousel__custom-arrowRight {

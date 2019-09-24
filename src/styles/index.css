@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'din-condensed';
+  src: url('../fonts/FONTS_DINWeb-CondMedium.ttf');
+}
+
 html,
 body {
   margin: 0;
@@ -28,8 +33,6 @@ video.home-video {
   grid-template-columns: 40vw auto;
   max-width: 100vw;
   height: calc(100vh + 2.5rem);
-  padding-top: 2.5rem;
-  padding-bottom: 4.5rem;
 }
 
 .main {
@@ -39,6 +42,7 @@ video.home-video {
   align-items: center;
   height: 100%;
   padding-left: 2rem;
+  transform: translateY(-3rem);
 }
 
 .main > .logo-container {
@@ -60,10 +64,11 @@ video.home-video {
 .main > .logo-container > h4 {
   font-family: din-condensed, sans-serif;
   margin: 0 auto;
-  margin-top: -3rem;
+  margin-top: -4rem;
   text-align: center;
   padding-bottom: 2rem;
   color: #979797;
+  font-size: 1.3rem;
 }
 
 .main > .logo-container:after {
@@ -80,7 +85,8 @@ video.home-video {
   font-family: din-condensed, sans-serif;
   text-transform: uppercase;
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
+  width: 100%;
   color: #ffffff;
   margin-bottom: 0.5rem;
 }
@@ -99,7 +105,7 @@ video.home-video {
 }
 .main > ul > li {
   padding: 0 6px;
-  width: 8rem;
+  width: 5rem;
 }
 
 .main > ul > li > img {
@@ -118,28 +124,40 @@ video.home-video {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 1024px) and (max-width: 1025px) and (orientation: landscape) {
   .site {
     grid-template-columns: 1fr 60vw;
     padding-bottom: 0;
   }
-  .main > .logo-container > img {
+  .main > .logo-container {
     transform: translateX(-2rem);
   }
   .main > .logo-container > h4 {
-    transform: translateX(-2rem);
-    margin-top: -2rem;
+    transform: translateY(-2rem);
+    margin: 0 2rem;
+    text-align: center;
+    align-self: baseline;
+    padding: 0;
   }
   .main > .logo-container:after {
-    margin: -1.5rem 0 0 5rem;
+    transform: translateY(-2rem);
+    margin: 0;
+    margin-left: 2rem;
+    align-self: baseline;
   }
   .main > .title {
     text-align: left;
     font-size: 2rem;
   }
   .main > p {
-    font-size: 0.7rem;
-    margin: 0 1rem 2rem 1rem;
+    font-size: 0.8rem;
+    margin-left: 0;
+    padding-left: 0;
+    align-self: baseline;
+  }
+  .main > ul {
+    align-self: baseline;
+    margin-left: 0;
   }
 }
 
@@ -184,7 +202,6 @@ video.home-video {
 
 @media only screen and (min-width: 375px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .site {
-    transform: translateY(-2rem);
     grid-template-columns: 1fr 60vw;
     padding-bottom: 0;
   }
@@ -253,7 +270,7 @@ video.home-video {
   .main > .title {
     transform: translateY(-3rem);
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .main > p {
     transform: translateY(-3rem);
@@ -264,6 +281,9 @@ video.home-video {
     transform: translateY(-2rem);
     font-size: 0.7rem;
     margin: 0 1rem 1rem 1rem;
+  }
+  .main > ul > li {
+    width: 4rem;
   }
 }
 
@@ -305,18 +325,16 @@ video.home-video {
 
 @media only screen and (min-width: 768px) and (max-width: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
   .site {
-    transform: translateY(-2rem);
     grid-template-columns: 1fr 60vw;
     grid-gap: 0;
     padding-bottom: 0;
   }
   .main {
-    transform: translateY(-2.5rem);
+    transform: translateY(-2rem);
     padding-left: 1rem;
   }
   .main > .logo-container > h4 {
     margin-top: -2.5rem;
-    margin-left: 8.5rem;
   }
   .main > .logo-container:after {
     margin: 0 auto;
@@ -346,7 +364,6 @@ video.home-video {
 
 @media only screen and (max-width: 667px) and (orientation: landscape) {
   .site {
-    transform: translateY(-2rem);
     grid-template-columns: 1fr 60vw;
     grid-gap: 0;
     padding-bottom: 0;
@@ -367,11 +384,9 @@ video.home-video {
   .main > .title {
     transform: translateY(-3rem);
     text-align: center;
-    font-size: 1rem;
   }
   .main > p {
     transform: translateY(-3rem);
-    font-size: 0.5rem;
     margin: 0;
   }
   .main > ul {
