@@ -327,3 +327,42 @@ video.home-video {
     padding: 6px;
   }
 }
+
+@media only screen and (max-width: 667px) and (orientation: landscape) {
+  .site {
+    transform: translateY(-2rem);
+    grid-template-columns: 1fr 60vw;
+    grid-gap: 0;
+    padding-bottom: 0;
+  }
+  .main {
+    transform: translateY(-1rem);
+    padding-left: 1rem;
+  }
+  .main > .logo-container > h4 {
+    transform: translateY(-3rem);
+    margin: 0 auto;
+  }
+  .main > .logo-container:after {
+    margin: 0 auto;
+    padding-top: 0;
+    transform: translateY(-3.5rem);
+  }
+  .main > .title {
+    transform: translateY(-3rem);
+    text-align: center;
+    font-size: 1rem;
+  }
+  .main > p {
+    transform: translateY(-3rem);
+    font-size: 0.5rem;
+    margin: 0;
+  }
+  .main > ul {
+    transform: translateY(-3rem);
+    margin: 1rem;
+  }
+  .main > ul > li {
+    padding: 6px;
+  }
+}
