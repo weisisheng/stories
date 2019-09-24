@@ -185,7 +185,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 896) and (orientation: landscape) {
   .story-content {
     padding: 1.5rem;
   }
@@ -203,7 +203,7 @@ body {
     letter-spacing: 1px;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 896px) and (orientation: landscape) {
   .story-container {
     color: white;
     position: relative;
