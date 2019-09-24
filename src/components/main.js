@@ -9,10 +9,20 @@ const Main = () => {
   return (
     <div className="main">
       <div className="logo-container">
-        <a href="https://www.rmhp.org" target="_blank" className="logo">
+        <a
+          href="https://www.rmhp.org"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="logo"
+        >
           <img src={logo} alt="RMHP Logo" />
         </a>
-        <a href="https://www.rmhp.org" target="_blank" className="logo-small">
+        <a
+          href="https://www.rmhp.org"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="logo-small"
+        >
           <img src={logoSmall} alt="RMHP Logo" />
         </a>
         <h4>presents</h4>
