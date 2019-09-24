@@ -9,7 +9,7 @@
   border: none;
   height: 100%;
   width: 100%;
-  padding-top: 4rem;
+  z-index: -100000;
 }
 
 .video-container > .video-back-button {

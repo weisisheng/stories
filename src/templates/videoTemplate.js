@@ -19,17 +19,13 @@ export default ({ data }) => {
       <Link to={`/${prevPath}/`} className="video-back-button">
         <FontAwesomeIcon icon={faChevronLeft} />
       </Link>
-      <iframe
-        title={`${story.frontmatter.name} Video`}
-        src={story.frontmatter.videoSourceURL}
-        allow="autoPlay"
-        autoPlay
-        webkitAllowFullScreen
-        mozAllowFullScreen
-        allowFullScreen
-        className="video-iframe"
-        muted
-      ></iframe>
+      <video className="video-iframe" preload="yes" autoPlay muted loop width="100%" height="auto">
+        <source
+          src={story.frontmatter.videoSourceURL}
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
       <Social />
     </div>
   )
