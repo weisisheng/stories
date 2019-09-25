@@ -42,6 +42,14 @@
   margin-right: 0;
 }
 
+.play-share > div > .play {
+  transition: background-color 0.3s ease;
+}
+
+.play-share > div > .play:hover {
+  background-color: #fec420;
+}
+
 .button-text-play {
   display: inline;
 }
