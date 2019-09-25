@@ -8,6 +8,11 @@
   src: url('../fonts/FONTS_DINWeb-CondBlack.otf');
 }
 
+@font-face {
+  font-family: 'din-condensed-light';
+  src: url('../fonts/FONTS_DINWeb-CondLight.ttf');
+}
+
 body {
   overflow: hidden;
   font-family: din-condensed-medium, sans-serif;
@@ -68,22 +73,23 @@ body {
 }
 
 .story-content > .story-text > .title {
-  font-family: din-condensed-medium, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
   margin-top: -2rem;
   margin-bottom: 0;
 }
 
 .story-content > .story-text > h1.title {
+  font-family: din-condensed-bold, sans-serif;
   letter-spacing: 2px;
-  font-size: 4rem;
+  font-size: 80px;
+  line-height: 60px;
 }
 
 .story-content > .story-text > .we-protect {
-  font-size: 2.5rem;
+  font-family: din-condensed-light, sans-serif;
+  font-size: 60px;
   font-weight: 100;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .story-content > .story-text > p {

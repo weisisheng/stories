@@ -22,7 +22,7 @@ video.home-video {
   left: 0;
   min-width: 100%;
   min-height: 100%;
-  width: auto;
+  width: 100%;
   height: auto;
 }
 
@@ -389,7 +389,7 @@ video.home-video {
 }
 @media only screen and (max-width: 568px) and (orientation: landscape) {
   .site {
-    transform: unset
+    transform: unset;
   }
 }
 
