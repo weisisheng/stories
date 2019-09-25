@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'din-condensed-cond-medium';
+  font-family: 'din-condensed-medium';
   src: url('../fonts/FONTS_DINWeb-CondMedium.ttf');
 }
 
 @font-face {
-  font-family: 'din-condensed-cond-black';
+  font-family: 'din-condensed-black';
   src: url('../fonts/FONTS_DINWeb-CondBlack.otf');
 }
 
 body {
   overflow: hidden;
-  font-family: din-condensed, sans-serif;
+  font-family: din-condensed-medium, sans-serif;
 }
 
 .story-container {
@@ -68,7 +68,7 @@ body {
 }
 
 .story-content > .story-text > .title {
-  font-family: din-condensed, sans-serif;
+  font-family: din-condensed-medium, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   margin-top: -2rem;
@@ -87,7 +87,7 @@ body {
 }
 
 .story-content > .story-text > p {
-  font-family: din-condensed, sans-serif;
+  font-family: din-condensed-medium, sans-serif;
   margin-top: 1rem;
   font-size: 0.8rem;
   line-height: 1.75;
@@ -114,7 +114,7 @@ body {
 }
 
 .story-video > h4 {
-  font-family: din-condensed-cond-black, sans-serif;
+  font-family: din-condensed-black, sans-serif;
   position: absolute;
   bottom: 6rem;
   left: 5rem;

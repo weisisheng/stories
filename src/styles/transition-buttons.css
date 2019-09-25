@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'din-condensed-cond-black';
+  src: url('../fonts/FONTS_DINWeb-CondBlack.otf');
+}
+
+@font-face {
+  font-family: 'din-condensed-bold';
+  src: url('../fonts/FONTS_DINWeb-CondBold.ttf');
+}
+
 .transition-button-left {
   left: 5rem;
   bottom: 3rem;
@@ -33,7 +43,8 @@
 
 .transition-button-left span,
 .transition-button-right span {
-  font-size: 1rem;
+  font-family: din-condesed-bold, sans-serif;
+  font-size: 17px;
   font-weight: bold;
 }
 .transition-button-right span {
