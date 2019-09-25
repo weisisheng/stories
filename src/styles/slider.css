@@ -28,10 +28,12 @@
 
 .slider-card-image > img {
   border-radius: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 .slider-card-image > h4 {
   font-family: din-condensed, sans-serif;
+  z-index: 100000;
   text-align: left;
   position: absolute;
   bottom: 4vw;
@@ -40,6 +42,17 @@
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.slider-card-image > img:hover ~ h4 {
+  transform-origin: bottom left;
+  transform: translateY(2rem);
+  color: #fec420;
+}
+
+.slider-card-image > img:hover {
+  transform: translateY(1rem) scale(1.1);
 }
 
 .BrainhubCarousel {
@@ -90,7 +103,7 @@
     overflow: hidden;
     z-index: 1000;
     bottom: 4rem;
-    left: -1rem
+    left: -1rem;
   }
   .BrainhubCarousel__custom-arrowLeft,
   .BrainhubCarousel__custom-arrowRight {
