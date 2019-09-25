@@ -21,7 +21,7 @@ export default ({ data }) => {
       </Link>
       <video
         className="video-iframe"
-        controls="true"
+        controls={true}
         preload="yes"
         autoPlay
         loop
