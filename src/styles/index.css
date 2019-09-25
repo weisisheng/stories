@@ -387,8 +387,13 @@ video.home-video {
     padding: 6px;
   }
 }
+@media only screen and (max-width: 568px) and (orientation: landscape) {
+  .site {
+    transform: unset
+  }
+}
 
-@media only screen and (max-height: 568px) {
+@media only screen and (max-height: 568px) and (orientation: portrait) {
   .main {
     transform: translateY(-2.5rem);
     padding-left: 0;
