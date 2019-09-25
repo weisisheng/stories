@@ -1,4 +1,10 @@
+@font-face {
+  font-family: 'din-condensed-medium';
+  src: url('../fonts/FONTS_DINWeb-CondMedium.ttf');
+}
+
 .read-more {
+  font-family: din-condensed-medium, sans-serif;
   display: flex;
   justify-content: flex-end;
 }

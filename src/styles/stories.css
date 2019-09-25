@@ -64,7 +64,7 @@ body {
   z-index: 100;
   position: absolute;
   left: 0;
-  top: 0;
+  top: -2rem;
 }
 
 .story-text > .story-logo > img {
@@ -98,12 +98,13 @@ body {
 }
 
 .story-content > .story-text > p {
-  font-family: din-condensed-medium, sans-serif;
+  font-family: din-condensed-regular, sans-serif;
   margin-top: 1rem;
-  font-size: 0.8rem;
-  line-height: 1.75;
-  height: 25vh;
+  font-size: 16px;
+  line-height: 1.4;
+  height: 30vh;
   overflow: hidden;
+  margin-bottom: 0;
 }
 
 .story-video {
@@ -169,9 +170,6 @@ body {
     left: 9rem;
     font-size: 2rem;
   }
-  .story-content > .story-text > p {
-    font-size: 1.5rem;
-  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1024px) and (orientation: portrait) {
@@ -194,10 +192,6 @@ body {
   .story-content > .mobile-logo > img {
     position: absolute;
     top: -10rem;
-  }
-  .story-content > .story-text > p {
-    font-size: 1rem;
-    letter-spacing: 1.5px;
   }
 }
 
@@ -256,8 +250,6 @@ body {
   .story-content > .story-text > p {
     transform: translateY(-2.5rem);
     margin-top: 0;
-    font-size: 0.7rem;
-    line-height: 1;
     height: 20vh;
     overflow: scroll;
   }
@@ -326,8 +318,6 @@ body {
 
   .story-content > .story-text > p {
     margin-top: 0;
-    font-size: 1.5rem;
-    line-height: 1.5;
     height: unset;
     padding: 0.5rem;
     z-index: -10;
