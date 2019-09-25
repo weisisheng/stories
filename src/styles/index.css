@@ -3,16 +3,22 @@
   src: url('../fonts/FONTS_DINWeb-CondMedium.ttf');
 }
 
+@font-face {
+  font-family: 'din-condensed-regular';
+  src: url('../fonts/FONTS_DIN.ttf');
+}
+
+@font-face {
+  font-family: 'din-condensed-black';
+  src: url('../fonts/FONTS_DINWeb-CondBlack.otf');
+}
+
 html,
 body {
   margin: 0;
   overflow: hidden;
   min-height: 100%;
   min-height: -webkit-fill-available;
-}
-
-body {
-  font-family: din-condensed, sans-serif;
 }
 
 video.home-video {
@@ -84,17 +90,17 @@ video.home-video {
 }
 
 .main > .title {
-  font-family: din-condensed, sans-serif;
+  font-family: din-condensed-black, sans-serif;
   text-transform: uppercase;
   text-align: center;
-  font-size: 4rem;
+  font-size: 64px;
   width: 100%;
   color: #ffffff;
   margin-bottom: 0.5rem;
 }
 
 .main > p {
-  font-family: din-condensed, sans-serif;
+  font-family: din-condensed-regular, sans-serif;
   color: #fec420;
   margin-bottom: 2rem;
 }
@@ -271,7 +277,7 @@ video.home-video {
   }
   .main > p {
     transform: translateY(-3rem);
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 0 1rem 0 1rem;
   }
   .main > ul {
