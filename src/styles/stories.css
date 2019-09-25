@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: 'din-condensed-bold';
+  src: url('../fonts/FONTS_DINWeb-CondBold.ttf');
+}
+
+@font-face {
   font-family: 'din-condensed-light';
   src: url('../fonts/FONTS_DINWeb-CondLight.ttf');
 }

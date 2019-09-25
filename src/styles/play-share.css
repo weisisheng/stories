@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'din-condensed-bold';
+  src: url('../fonts/FONTS_DINWeb-CondBold.ttf');
+}
+
 .play-share {
   color: white;
   font-size: 3rem;
@@ -38,12 +43,17 @@
   border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
-  font-size: 1rem;
   margin-right: 0;
 }
 
 .play-share > div > .play {
+  font-size: 25px;
+  font-family: din-condensed-bold, sans-serif;
   transition: background-color 0.3s ease;
+}
+
+.play > span {
+  padding-left: 10px;
 }
 
 .play-share > div > .play:hover {
