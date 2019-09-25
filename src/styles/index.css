@@ -27,7 +27,7 @@ video.home-video {
 }
 
 .site {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   position: relative;
   top: 0;
   display: grid;
