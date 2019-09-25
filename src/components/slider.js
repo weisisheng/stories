@@ -57,7 +57,7 @@ const Slider = () => {
           infinite: true,
         },
         767: {
-          offset: 12.5,
+          offset: 12,
         },
       }}
     >
