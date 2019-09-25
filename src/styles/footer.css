@@ -1,4 +1,10 @@
+@font-face {
+  font-family: 'din-condensed-regular';
+  src: url('../fonts/FONTS_DIN.ttf');
+}
+
 .footer {
+  font-family: din-condensed-regular, sans-serif;
   z-index: 10000;
   display: flex;
   justify-content: flex-end;
