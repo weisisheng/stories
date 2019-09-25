@@ -7,7 +7,7 @@ html,
 body {
   margin: 0;
   overflow: hidden;
-  min-height: 100vh;
+  min-height: 100%;
   min-height: -webkit-fill-available;
 }
 
@@ -239,7 +239,7 @@ video.home-video {
   }
 }
 
-@media only screen and (min-width: 319px) and (max-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-width: 319px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .site {
     position: absolute;
     bottom: 0;

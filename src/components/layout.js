@@ -12,8 +12,8 @@ const Layout = ({ children }) => {
     <div className="layout">
       <main>{children}</main>
       <Footer display="flex" />
-      <MobileFooter height="45vh" />
-      <IpadFooter height="45vh" />
+      <MobileFooter height="45%" />
+      <IpadFooter height="45%" />
     </div>
   )
 }
