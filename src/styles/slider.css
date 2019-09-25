@@ -89,7 +89,6 @@
   .BrainhubCarousel {
     overflow: hidden;
     z-index: 1000;
-    bottom: 8vh;
   }
   .BrainhubCarousel__custom-arrowLeft,
   .BrainhubCarousel__custom-arrowRight {
