@@ -1,6 +1,11 @@
 @font-face {
-  font-family: 'din-condensed';
+  font-family: 'din-condensed-cond-medium';
   src: url('../fonts/FONTS_DINWeb-CondMedium.ttf');
+}
+
+@font-face {
+  font-family: 'din-condensed-cond-black';
+  src: url('../fonts/FONTS_DINWeb-CondBlack.otf');
 }
 
 body {
@@ -109,13 +114,12 @@ body {
 }
 
 .story-video > h4 {
-  font-family: din-condensed, sans-serif;
+  font-family: din-condensed-cond-black, sans-serif;
   position: absolute;
-  bottom: 7rem;
+  bottom: 6rem;
   left: 5rem;
   text-transform: uppercase;
-  font-size: 1.4rem;
-  font-weight: bold;
+  font-size: 36px;
 }
 
 .story-video > .story-video-button {
