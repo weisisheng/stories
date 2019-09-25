@@ -228,8 +228,8 @@
   }
 }
 
-@media only screen and (max-height: 553px) {
-.BrainhubCarousel {
+@media only screen and (max-height: 560px) {
+  .BrainhubCarousel {
     z-index: 10000;
     overflow: hidden;
     bottom: 2.8rem;
