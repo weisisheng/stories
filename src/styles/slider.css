@@ -173,34 +173,6 @@
   }
 }
 
-@media screen and (max-width: 374px) {
-  .BrainhubCarousel {
-    transform: translateY(-4rem);
-    z-index: 10000;
-    overflow: hidden;
-  }
-  .BrainhubCarousel li.BrainhubCarouselItem {
-    width: 135px !important;
-    min-width: 135px !important;
-    max-width: 135px !important;
-  }
-  .BrainhubCarousel__custom-arrowLeft,
-  .BrainhubCarousel__custom-arrowRight {
-    display: none;
-  }
-
-  .slider-card-image {
-    margin-left: 1rem;
-  }
-
-  .slider-card-image > h4 {
-    z-index: 10000;
-    font-size: 0.5rem;
-    bottom: 10vw;
-    left: 10vw;
-  }
-}
-
 @media only screen and (min-width: 768px) and (max-width: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
   .BrainhubCarousel {
     z-index: 10000;
@@ -225,5 +197,33 @@
     font-size: 0.5rem;
     bottom: 6vw;
     left: 6vw;
+  }
+}
+
+@media only screen and (max-height: 568px) {
+  .BrainhubCarousel {
+    z-index: 10000;
+    overflow: hidden;
+    bottom: 2rem;
+  }
+  .BrainhubCarousel li.BrainhubCarouselItem {
+    width: 135px !important;
+    min-width: 135px !important;
+    max-width: 135px !important;
+  }
+  .BrainhubCarousel__custom-arrowLeft,
+  .BrainhubCarousel__custom-arrowRight {
+    display: none;
+  }
+
+  .slider-card-image {
+    margin-left: 1rem;
+  }
+
+  .slider-card-image > h4 {
+    z-index: 10000;
+    font-size: 0.5rem;
+    bottom: 10vw;
+    left: 10vw;
   }
 }

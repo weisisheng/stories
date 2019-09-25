@@ -107,11 +107,6 @@ video.home-video {
 }
 .main > ul > li {
   padding: 0 6px;
-  width: 5rem;
-}
-
-.main > ul > li > img {
-  width: 100%;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
@@ -199,7 +194,6 @@ video.home-video {
   }
   .main > ul > li {
     padding: 0 6px;
-    width: 5rem;
   }
 }
 
@@ -232,7 +226,6 @@ video.home-video {
   }
   .main > ul > li {
     padding: 0 6px;
-    width: 4rem;
   }
   .footer {
     display: flex;
@@ -285,9 +278,6 @@ video.home-video {
     transform: translateY(-2rem);
     font-size: 0.7rem;
     margin: 0 1rem 1rem 1rem;
-  }
-  .main > ul > li {
-    width: 4rem;
   }
 }
 
@@ -358,10 +348,6 @@ video.home-video {
     margin: 1rem;
   }
   .main > ul > li {
-    padding: 0 6px;
-    width: 5rem;
-  }
-  .main > ul > li {
     padding: 6px;
   }
 }
@@ -399,5 +385,21 @@ video.home-video {
   }
   .main > ul > li {
     padding: 6px;
+  }
+}
+
+@media only screen and (max-height: 568px) {
+  .main {
+    transform: translateY(-2.5rem);
+    padding-left: 0;
+  }
+  .main > .logo-container > h4 {
+    transform: translateY(-1rem);
+  }
+  .main > .title {
+    font-size: 2rem;
+  }
+  ul > li > img {
+    height: 25px;
   }
 }
