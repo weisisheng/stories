@@ -148,11 +148,14 @@ body {
   color: #ffffff;
 }
 
-@media only screen and (min-height: 1024px) {
+@media only screen and (min-width: 1281px) {
   .story-video > h4 {
-    bottom: 10rem;
-    left: 8rem;
+    bottom: 9rem;
+    left: 9rem;
     font-size: 2rem;
+  }
+  .story-content > .story-text > p {
+    font-size: 1.5rem;
   }
 }
 
