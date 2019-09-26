@@ -102,7 +102,7 @@ body {
   margin-bottom: 3rem;
 }
 
-.story-content > .story-text > p {
+.story-content > .story-text > .story-html {
   font-family: din-condensed-regular, sans-serif;
   margin-top: 1rem;
   font-size: 16px;
@@ -252,7 +252,7 @@ body {
     font-size: 1.5rem;
   }
 
-  .story-content > .story-text > p {
+  .story-content > .story-text > .story-html {
     transform: translateY(-2.5rem);
     margin-top: 0;
     height: 20vh;
@@ -313,7 +313,7 @@ body {
     transform: translateY(1rem);
   }
 
-  .story-content > .story-text > p {
+  .story-content > .story-text > .story-html {
     margin-top: 0;
     height: unset;
     padding: 0.5rem;

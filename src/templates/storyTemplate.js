@@ -48,7 +48,7 @@ export default ({ data, pageContext }) => {
             to={`${story.frontmatter.path}/video`}
             share={story.frontmatter.path}
           />
-          <p dangerouslySetInnerHTML={{ __html: story.html }} />
+          <div className="story-html" dangerouslySetInnerHTML={{ __html: story.html }} /> 
 
           {name === 'javier' || name === 'andy' ? (
             <ReadMore

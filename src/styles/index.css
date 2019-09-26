@@ -22,7 +22,7 @@ body {
 }
 
 video.home-video {
-  object-fit: inherit;
+  object-fit: cover;
   position: fixed;
   top: 0;
   left: 0;
