@@ -91,6 +91,10 @@
   .play-share {
     justify-content: flex-start;
   }
+  .play-wrapper {
+    display: flex;
+    align-items: center
+  }
   .play-share > div > .play {
     color: #ffffff;
     background-color: transparent;
