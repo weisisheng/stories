@@ -157,7 +157,7 @@ body {
 
 .close-story {
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   z-index: 1000;
   color: #ffffff;
   font-size: 1.5rem;
@@ -343,9 +343,6 @@ body {
 @media only screen and (max-height: 560px) and (orientation: portrait) {
   .story-content > .mobile-logo {
     top: 1rem;
-  }
-  .close-story {
-    top: 2rem;
   }
 }
 @media only screen and (max-width: 413px) and (orientation: portrait) {
