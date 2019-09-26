@@ -20,6 +20,7 @@
 }
 
 .play-share > .share-wrapper h3 {
+  font-family: din-condensed-bold, sans-serif;
   font-size: 20px;
   padding-left: 5px;
 }
