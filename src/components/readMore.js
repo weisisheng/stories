@@ -28,7 +28,7 @@ const ReadMore = props => {
           <div className={`${name}-modal-text modal-text`}>
             <h3 className="title we-protect">We Protect</h3>
             <h1 className="title">{props.title}</h1>
-            <p>{props.story}</p>
+            <p dangerouslySetInnerHTML={{ __html: props.story }} />
           </div>
           <button
             className={`${name}-modal-button modal-button`}

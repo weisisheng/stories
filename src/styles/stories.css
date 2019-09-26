@@ -18,6 +18,11 @@
   src: url('../fonts/FONTS_DINWeb-CondLight.ttf');
 }
 
+@font-face {
+  font-family: 'din-condensed-regular';
+  src: url('../fonts/FONTS_DIN.ttf');
+}
+
 body {
   overflow: hidden;
   font-family: din-condensed-medium, sans-serif;

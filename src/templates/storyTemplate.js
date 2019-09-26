@@ -48,12 +48,12 @@ export default ({ data, pageContext }) => {
             to={`${story.frontmatter.path}/video`}
             share={story.frontmatter.path}
           />
-          <p>{story.frontmatter.story}</p>
+          <p dangerouslySetInnerHTML={{ __html: story.html }} />
 
           {name === 'javier' || name === 'andy' ? (
             <ReadMore
               name={name}
-              story={story.frontmatter.story}
+              story={story.html}
               modalImage={modalImage}
               title={story.frontmatter.title}
             />
@@ -97,7 +97,6 @@ export const query = graphql`
         path
         name
         title
-        story
         videoSourceURL
         backgroundImage {
           childImageSharp {

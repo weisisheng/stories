@@ -1,10 +1,15 @@
 @font-face {
-  font-family: 'din-condensed-medium';
-  src: url('../fonts/FONTS_DINWeb-CondMedium.ttf');
+  font-family: 'din-condensed-regular';
+  src: url('../fonts/FONTS_DIN.ttf');
+}
+
+@font-face {
+  font-family: 'din-condensed-light';
+  src: url('../fonts/FONTS_DINWeb-CondLight.ttf');
 }
 
 .read-more {
-  font-family: din-condensed-medium, sans-serif;
+  font-family: din-condensed-regular, sans-serif;
   display: flex;
   justify-content: flex-end;
 }
@@ -56,21 +61,25 @@
 }
 
 .modal-text .title {
-  font-family: din-condensed, sans-serif;
+  font-family: din-condensed-bold, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 3rem;
+  font-size: 80px;
+  line-height: 60px;
   margin: 0;
 }
 
 .modal-text .we-protect {
-  font-size: 2rem;
+  font-family: din-condensed-light, sans-serif;
+  font-size: 60px;
   font-weight: 100;
+  /* margin-bottom: 10px; */
 }
 
 .modal-content .modal-text p {
-  font-size: 0.7rem;
-  margin: 0;
+  font-size: 14px;
+  font-family: din-condensed-regular, sans-serif;
+  line-height: 1.4;
+  overflow: hidden;
 }
 
 /****JAVIER MODAL MODS****/
@@ -116,6 +125,10 @@
 .andy-modal-button {
   right: 1.5rem;
   top: 0.5rem;
+}
+
+.andy-modal-content .modal-text .we-protect {
+  margin-bottom: 10px;
 }
 
 @media only screen and (min-device-height: 1024px) {
