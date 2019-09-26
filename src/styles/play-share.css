@@ -15,7 +15,7 @@
 
 .play-share > .share-wrapper {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -23,6 +23,7 @@
   font-family: din-condensed-bold, sans-serif;
   font-size: 20px;
   padding-left: 5px;
+  margin: 0;
 }
 
 .play-share > div > .play,
@@ -93,7 +94,7 @@
   }
   .play-wrapper {
     display: flex;
-    align-items: center
+    align-items: center;
   }
   .play-share > div > .play {
     color: #ffffff;
