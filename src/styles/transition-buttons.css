@@ -147,3 +147,10 @@
     bottom: 1rem;
   }
 }
+
+@media only screen and (max-height: 560px) and (orientation: portrait) {
+  .transition-button-left,
+  .transition-button-right {
+    bottom: -0.5rem;
+  }
+}

@@ -48,7 +48,6 @@ const TransitionButtons = props => {
 
   return (
     <div
-      style={{ position: 'relative' }}
       onKeyDown={
         leftArrow
           ? navigate(props.prev)

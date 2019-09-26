@@ -345,4 +345,7 @@ body {
 }
 
 @media only screen and (max-height: 560px) and (orientation: portrait) {
+  .story-content > .mobile-logo {
+    top: 1rem;
+  }
 }
