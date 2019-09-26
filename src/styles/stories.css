@@ -353,4 +353,7 @@ body {
   .story-content > .mobile-logo {
     top: 1rem;
   }
+  .close-story {
+    top: 2rem;
+  }
 }
