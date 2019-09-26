@@ -301,6 +301,7 @@ body {
     position: unset;
     width: 100%;
     align-self: center;
+    margin: 0;
   }
 
   .story-content > .story-text > .title {
@@ -308,12 +309,12 @@ body {
   }
 
   .story-content > .story-text > h1.title {
-    font-size: 3rem;
-    transform: translateY(1rem);
+    /* font-size: 3rem;
+    transform: translateY(1rem); */
   }
 
   .story-content > .story-text > .we-protect {
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
 
   .story-content > .story-text > p {
@@ -341,4 +342,7 @@ body {
   .story-content > .story-text > h1.title {
     font-size: 2rem;
   }
+}
+
+@media only screen and (max-height: 560px) and (orientation: portrait) {
 }
