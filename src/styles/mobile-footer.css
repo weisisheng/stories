@@ -14,3 +14,14 @@
     display: block;
   }
 }
+@media only screen and (min-height: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .mobile-footer {
+    display: block;
+    transform: rotate(-90deg);
+    transform-origin: right bottom;
+    width: 100vh;
+    bottom: 100%;
+    right: 0;
+    z-index: -100;
+  }
+}

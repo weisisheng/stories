@@ -70,7 +70,29 @@
   }
 }
 
-@media only screen and (min-width: 569px) and (max-width: 767px) and (orientation: landscape) {
+@media only screen and (min-height: 319px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .footer {
+    font-size: 10px;
+    margin: 0;
+    padding-bottom: 0;
+    display: block;
+    transform: rotate(-90deg);
+    transform-origin: right bottom;
+    width: 100vh;
+    bottom: 100%;
+    right: 0;
+  }
+  .footer > ul {
+    justify-content: center;
+    margin: 0 5px;
+  }
+  .footer > ul li {
+    margin: 0;
+    padding: 0 2px;
+  }
+}
+
+/* @media only screen and (min-width: 569px) and (max-width: 767px) and (orientation: landscape) {
   .footer {
     display: flex !important;
     font-size: 12px;
@@ -97,4 +119,4 @@
   .footer > ul li {
     margin: 0;
   }
-}
+} */
