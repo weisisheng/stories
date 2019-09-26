@@ -10,9 +10,9 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 
 import '../styles/social.css'
 
-const Social = () => {
+const Social = props => {
   return (
-    <div className="social">
+    <div className="social" style={{ display: props.display }}>
       <ul>
         <li>
           <a

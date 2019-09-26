@@ -26,7 +26,7 @@ export default ({ data }) => {
         />
         Your browser does not support the video tag.
       </video>
-      <Social />
+      <Social display="block" />
     </div>
   )
 }
