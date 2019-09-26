@@ -21,7 +21,7 @@
 .transition-button-left,
 .transition-button-right {
   display: flex;
-  position: absolute;
+  position: fixed;
   z-index: 200;
   justify-content: center;
   align-items: center;
