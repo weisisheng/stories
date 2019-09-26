@@ -19,12 +19,7 @@ export default ({ data }) => {
       <Link to={`/${prevPath}/`} className="video-back-button">
         <FontAwesomeIcon icon={faChevronLeft} />
       </Link>
-      <video
-        controls={true}
-        preload="yes"
-        autoPlay
-        loop
-      >
+      <video controls={true} preload="yes" autoPlay loop>
         <source src={story.frontmatter.videoSourceURL} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
@@ -40,7 +35,6 @@ export const query = graphql`
         path
         name
         title
-        story
         videoSourceURL
       }
     }
