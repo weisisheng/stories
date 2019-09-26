@@ -4,8 +4,8 @@
 }
 
 .play-share {
+  font-family: din-condensed-bold, sans-serif;
   color: white;
-  font-size: 3rem;
   text-align: left;
   display: flex;
   justify-content: baseline;
@@ -19,9 +19,13 @@
   cursor: pointer;
 }
 
+.play-share > .share-wrapper h3 {
+  font-size: 20px;
+  padding-left: 5px;
+}
+
 .play-share > div > .play,
 .share {
-  font-size: 1.5rem;
   width: 200px;
   height: 3.5rem;
   border-radius: 5px;
@@ -53,7 +57,7 @@
 }
 
 .play > span {
-  padding-left: 10px;
+  padding-left: 5px;
 }
 
 .play-share > div > .play:hover {
@@ -110,14 +114,13 @@
   }
   .play-share > div > .play {
     width: 150px;
-    height: 2.5rem;
+    height: 3rem;
   }
   .play-share > div > .share {
+    display: flex;
+    justify-content: center;
     width: 2rem;
     height: 2rem;
-  }
-  .share-wrapper h3 {
-    font-size: 1.2rem;
   }
   .button-text-play {
     display: inline;
@@ -136,7 +139,6 @@
   .play-share > div > .play {
     width: 100px;
     height: 2rem;
-    font-size: 1rem;
   }
 
   .share-wrapper h3 {
@@ -146,11 +148,9 @@
   .play-share > div > .share {
     width: 1.75rem;
     height: 1.75rem;
-    font-size: 0.6rem;
   }
   .button-text-play {
     display: inline;
-    font-size: 1rem;
   }
 }
 
@@ -160,16 +160,18 @@
     height: 100px;
   }
   .play-share > div > .play {
-    font-size: 1rem;
+    font-size: 20px;
   }
   .play-share > div > .share {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
+    margin: auto;
   }
   .play-share > .share-wrapper h3 {
-    font-size: 1rem;
+    font-size: 20px;
+    margin: auto;
   }
   .button-text-play {
     display: inline;
-    font-size: 1rem;
+    font-size: 25px;
   }
 }
