@@ -20,13 +20,10 @@ export default ({ data }) => {
         <FontAwesomeIcon icon={faChevronLeft} />
       </Link>
       <video
-        className="video-iframe"
         controls={true}
         preload="yes"
         autoPlay
         loop
-        width="100%"
-        height="auto"
       >
         <source src={story.frontmatter.videoSourceURL} type="video/mp4" />
         Your browser does not support the video tag.
