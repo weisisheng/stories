@@ -313,15 +313,6 @@ body {
     transform: translateY(1rem);
   }
 
-  .story-content > .story-text > h1.title {
-    /* font-size: 3rem;
-    transform: translateY(1rem); */
-  }
-
-  .story-content > .story-text > .we-protect {
-    /* font-size: 2rem; */
-  }
-
   .story-content > .story-text > p {
     margin-top: 0;
     height: unset;
@@ -355,5 +346,21 @@ body {
   }
   .close-story {
     top: 2rem;
+  }
+}
+@media only screen and (max-width: 413px) and (orientation: portrait) {
+  .story-content > .story-text > h1.title {
+    font-size: 70px;
+  }
+  .story-content > .story-text > .we-protect {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 374px) and (orientation: portrait) {
+  .story-content > .story-text > h1.title {
+    font-size: 60px;
+  }
+  .story-content > .story-text > .we-protect {
+    font-size: 50px;
   }
 }
