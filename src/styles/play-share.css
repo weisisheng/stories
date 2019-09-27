@@ -142,12 +142,6 @@
   .play-wrapper {
     width: 120px;
   }
-  .button-text-play {
-    display: inline;
-  }
-  .button-text-watch {
-    display: none;
-  }
   .play-share {
     justify-content: flex-start;
     height: 100px;
@@ -168,27 +162,10 @@
     height: 1.75rem;
     font-size: 10px;
   }
-  .button-text-play {
-    display: inline;
-  }
-  .play-share {
-    justify-content: flex-start;
-    height: 100px;
-    transform: translateY(-2rem);
-  }
-  .play-share > div > .play {
-    width: 100px;
-    height: 2rem;
+  .button-text-watch {
+    display: none;
   }
 
-  .share-wrapper h3 {
-    font-size: 1rem;
-  }
-
-  .play-share > div > .share {
-    width: 1.75rem;
-    height: 1.75rem;
-  }
   .button-text-play {
     display: inline;
   }
