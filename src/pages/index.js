@@ -29,7 +29,7 @@ const IndexPage = () => {
         height="auto"
       >
         <source
-          src="https://player.vimeo.com/external/361907240.hd.mp4?s=f6953334671e6c18dfc846e68a963dc116dc16d0&profile_id=174"
+          // src="https://player.vimeo.com/external/361907240.hd.mp4?s=f6953334671e6c18dfc846e68a963dc116dc16d0&profile_id=174"
           type="video/mp4"
         />
         Your browser does not support the video tag.
