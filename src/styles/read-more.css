@@ -134,7 +134,7 @@
   top: 0.5rem;
 }
 
-@media only screen and (min-height: 1024px) {
+@media only screen and (min-height: 1000px) {
   .modal-content .modal-content {
     height: 70vh;
   }
