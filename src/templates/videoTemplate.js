@@ -10,15 +10,8 @@ import '../styles/video.css'
 
 export default ({ data }) => {
   const story = data.markdownRemark
-  const screenSize = useWindowSize() //custom hook -- see below
+  // const screenSize = useWindowSize() //custom hook -- see below
   const prevPath = story.frontmatter.name.toLowerCase()
-
-  useEffect(() => {
-    const video = document.querySelector('video')
-    video.oncanplaythrough = function() {
-      video.play()
-    }
-  }, [])
 
   return (
     <div className="video-container">
@@ -26,29 +19,13 @@ export default ({ data }) => {
       <Link to={`/${prevPath}/`} className="video-back-button">
         <FontAwesomeIcon icon={faChevronLeft} />
       </Link>
-      {screenSize.width < 1024 ? (
-        <video
+      <video controls={true} preload="auto" autoPlay loop muted playsInline>
+        <source
           src={`${story.frontmatter.videoSourceURL}&autoplay=1`}
           type="video/mp4"
-          controls={true}
-          preload="auto"
-          autoPlay
-          loop
-          muted
-          playsInline
-        >
-          Your browser does not support the video tag.
-        </video>
-      ) : (
-        <video controls={true} preload="auto" autoPlay loop>
-          <source
-            src={`${story.frontmatter.videoSourceURL}&autoplay=1`}
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-      )}
-
+        />
+        Your browser does not support the video tag.
+      </video>
       <Social display="block" />
     </div>
   )
@@ -68,30 +45,30 @@ export const query = graphql`
   }
 `
 
-function useWindowSize() {
-  const isClient = typeof window === 'object'
+// function useWindowSize() {
+//   const isClient = typeof window === 'object'
 
-  function getSize() {
-    return {
-      width: isClient ? window.innerWidth : undefined,
-      height: isClient ? window.innerHeight : undefined,
-    }
-  }
+//   function getSize() {
+//     return {
+//       width: isClient ? window.innerWidth : undefined,
+//       height: isClient ? window.innerHeight : undefined,
+//     }
+//   }
 
-  const [windowSize, setWindowSize] = useState(getSize)
+//   const [windowSize, setWindowSize] = useState(getSize)
 
-  useEffect(() => {
-    if (!isClient) {
-      return false
-    }
+//   useEffect(() => {
+//     if (!isClient) {
+//       return false
+//     }
 
-    function handleResize() {
-      setWindowSize(getSize())
-    }
+//     function handleResize() {
+//       setWindowSize(getSize())
+//     }
 
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  }, []) // Empty array ensures that effect is only run on mount and unmount
+//     window.addEventListener('resize', handleResize)
+//     return () => window.removeEventListener('resize', handleResize)
+//   }, []) // Empty array ensures that effect is only run on mount and unmount
 
-  return windowSize
-}
+//   return windowSize
+// }
