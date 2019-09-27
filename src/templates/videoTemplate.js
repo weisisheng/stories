@@ -19,7 +19,7 @@ export default ({ data }) => {
       <Link to={`/${prevPath}/`} className="video-back-button">
         <FontAwesomeIcon icon={faChevronLeft} />
       </Link>
-      <video controls={true} preload="auto" autoPlay loop>
+      <video controls={true} preload="auto" autoPlay loop muted>
         <source
           src={`${story.frontmatter.videoSourceURL}&controls=0&autoplay=1`}
           type="video/mp4"
