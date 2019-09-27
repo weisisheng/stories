@@ -361,3 +361,70 @@ body {
     font-size: 50px;
   }
 }
+
+
+
+/* force orientation portrait -- not good yet
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    height: 100vw;
+  }
+  .story-container {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  .story-container > .story-bg-image {
+    height: 100vw;
+  }
+  .story-video {
+    display: none;
+  }
+  .story-content > .story-text > .story-logo {
+    display: none;
+  }
+  .story-content > .mobile-logo {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+    top: 0;
+    width: 350px;
+  }
+  .story-content > .mobile-logo > img {
+    position: unset;
+    width: 100%;
+    align-self: center;
+    margin: 0;
+  }
+  .story-content {
+    padding: 1.5rem;
+    overflow: auto;
+    padding: 1rem;
+    padding-left: 0;
+    margin: 0;
+  }
+  .story-content > .story-text {
+    position: absolute;
+    top: 15rem;
+    padding: 1rem;
+    padding-bottom: 6rem;
+    margin: 0;
+    overflow: visible;
+  }
+
+  .story-content > .story-text > .title {
+    transform: translateY(1rem);
+  }
+  .story-content > .story-text > .story-html {
+    margin-top: 0;
+    height: unset;
+    padding: 0.5rem;
+    z-index: -10;
+  }
+} */
