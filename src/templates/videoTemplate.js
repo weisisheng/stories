@@ -14,6 +14,13 @@ export default ({ data }) => {
 
   const prevPath = story.frontmatter.name.toLowerCase()
 
+  useEffect(() => {
+    const video = document.getElementsByTagName('video')
+    video.oncanplaythrough = function() {
+      video.play()
+    }
+  }, [])
+
   return (
     <div className="video-container">
       <SEO title={`${story.frontmatter.name} Video`} />
