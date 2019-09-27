@@ -20,23 +20,24 @@ export default ({ data }) => {
       <Link to={`/${prevPath}/`} className="video-back-button">
         <FontAwesomeIcon icon={faChevronLeft} />
       </Link>
-      {screenSize.width < 1024 ? 
-      <video controls={true} preload="auto" autoPlay loop muted playsinline>
-        <source
-          src={`${story.frontmatter.videoSourceURL}&autoplay=1`}
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
-      :
-      <video controls={true} preload="auto" autoPlay loop>
-        <source
-          src={`${story.frontmatter.videoSourceURL}&autoplay=1`}
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>}
-      
+      {screenSize.width < 1024 ? (
+        <video controls={true} preload="auto" autoPlay loop muted playsInline>
+          <source
+            src={`${story.frontmatter.videoSourceURL}&autoplay=1`}
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      ) : (
+        <video controls={true} preload="auto" autoPlay loop>
+          <source
+            src={`${story.frontmatter.videoSourceURL}&autoplay=1`}
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      )}
+
       <Social display="block" />
     </div>
   )
@@ -57,29 +58,29 @@ export const query = graphql`
 `
 
 function useWindowSize() {
-  const isClient = typeof window === 'object';
+  const isClient = typeof window === 'object'
 
   function getSize() {
     return {
       width: isClient ? window.innerWidth : undefined,
-      height: isClient ? window.innerHeight : undefined
-    };
+      height: isClient ? window.innerHeight : undefined,
+    }
   }
 
-  const [windowSize, setWindowSize] = useState(getSize);
+  const [windowSize, setWindowSize] = useState(getSize)
 
   useEffect(() => {
     if (!isClient) {
-      return false;
+      return false
     }
-    
+
     function handleResize() {
-      setWindowSize(getSize());
+      setWindowSize(getSize())
     }
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []); // Empty array ensures that effect is only run on mount and unmount
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, []) // Empty array ensures that effect is only run on mount and unmount
 
-  return windowSize;
+  return windowSize
 }
