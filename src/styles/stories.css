@@ -265,13 +265,13 @@ body {
   .story-content > .story-text > .story-html {
     transform: translateY(-3rem);
     margin-top: 0;
-    height: 20vh;
+    height: 25vh;
     overflow: scroll;
   }
 
   .story-video > h4 {
-    bottom: 3.5rem;
-    left: 2.5rem;
+    bottom: 4rem;
+    left: 3rem;
     font-size: 1rem;
   }
   .story-video > .story-video-button {
@@ -427,12 +427,12 @@ body {
   .story-content > .story-text > .story-html {
     transform: translateY(-3rem);
     margin-top: 0;
-    height: 20vh;
+    height: 25vh;
     overflow: scroll;
   }
 
   .story-video > h4 {
-    bottom: 5rem;
+    bottom: 5.5rem;
     left: 2.5rem;
     font-size: 1rem;
   }
@@ -447,8 +447,13 @@ body {
   }
 }
 
-/* @media only screen and (max-width: 568px) and (orientation: landscape) {
-  .story-content > .story-text > h1.title {
-    font-size: 2rem;
+@media only screen and (max-width: 568px) and (orientation: landscape) {
+  .story-content > .story-text > .story-html {
+    height: 20vh;
   }
-} */
+  .story-video > h4 {
+    bottom: 5rem;
+    left: 2rem;
+    font-size: 1rem;
+  }
+}
