@@ -200,7 +200,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 896px) and (max-width: 1024px) and (orientation: landscape) {
   .story-video > h4 {
     bottom: 10rem;
     left: 4rem;
@@ -346,12 +346,6 @@ body {
   }
 }
 
-@media only screen and (max-width: 568px) and (orientation: landscape) {
-  .story-content > .story-text > h1.title {
-    font-size: 2rem;
-  }
-}
-
 @media only screen and (max-height: 560px) and (orientation: portrait) {
   .story-content > .mobile-logo {
     top: 1rem;
@@ -374,69 +368,87 @@ body {
   }
 }
 
-/* force orientation portrait -- not good yet */
+/* TODO -- force orientation portrait */
 @media screen and (min-height: 320px) and (max-width: 768px) and (orientation: landscape) {
-  html {
-    height: 100vw;
-    width: 100vh;
-  }
   .story-container {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100vh;
-    height: 100vw;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
+    color: white;
+    position: relative;
+    z-index: 0;
+    max-width: 100vw;
+    max-height: 100vh;
   }
+  .story-text > .story-logo > img {
+    width: 250px;
+    transform: translateY(2rem);
+    padding-bottom: 2rem;
+  }
+
   .story-container > .story-bg-image {
-    height: 100vw;
+    height: 100vh;
+    position: absolute;
   }
-  .story-video {
-    display: none;
+
+  .story-container > .tanith-story-bg-image {
+    height: 160vh;
+    position: absolute;
   }
-  .story-content > .story-text > .story-logo {
-    display: none;
+
+  .story-container > .tianna-story-bg-image {
+    width: 160vw;
+    right: 60vw;
   }
-  .story-content > .mobile-logo {
-    display: flex;
-    justify-content: center;
-    align-self: center;
+
+  .story-container > .image-overlay {
     position: absolute;
     top: 0;
-    width: 350px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   }
-  .story-content > .mobile-logo > img {
-    position: unset;
-    width: 100%;
-    align-self: center;
-    margin: 0;
-  }
+
   .story-content {
-    padding: 1.5rem;
-    overflow: auto;
-    padding: 1rem;
-    padding-left: 0;
-    margin: 0;
-  }
-  .story-content > .story-text {
-    position: absolute;
-    top: 15rem;
-    padding: 1rem;
-    padding-bottom: 6rem;
-    margin: 0;
-    overflow: visible;
+    transform: translateY(-2rem);
+    padding: 2.5rem;
   }
 
   .story-content > .story-text > .title {
-    transform: translateY(1rem);
+    line-height: 1;
   }
+
+  .story-content > .story-text > h1.title {
+    font-size: 2.5rem;
+  }
+
+  .story-content > .story-text > .we-protect {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
   .story-content > .story-text > .story-html {
+    transform: translateY(-3rem);
     margin-top: 0;
-    height: unset;
-    padding: 0.5rem;
-    z-index: -10;
+    height: 20vh;
+    overflow: scroll;
+  }
+
+  .story-video > h4 {
+    bottom: 5rem;
+    left: 2.5rem;
+    font-size: 1rem;
+  }
+  .story-video > .story-video-button {
+    left: 40%;
+    bottom: 45%;
+    width: 3rem;
+    height: 3rem;
+  }
+  .story-video .story-video-image {
+    bottom: 0;
   }
 }
+
+/* @media only screen and (max-width: 568px) and (orientation: landscape) {
+  .story-content > .story-text > h1.title {
+    font-size: 2rem;
+  }
+} */

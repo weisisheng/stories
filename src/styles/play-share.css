@@ -118,7 +118,27 @@
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 896px) and (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  .play-share {
+    justify-content: flex-start;
+  }
+  .play-share > div > .play {
+    width: 150px;
+    height: 3rem;
+  }
+  .play-share > div > .share {
+    width: 2rem;
+    height: 2rem;
+  }
+  .button-text-play {
+    display: inline;
+  }
+  .button-text-watch {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 896px) and (orientation: landscape) {
   .play-wrapper {
     width: 120px;
   }
@@ -151,29 +171,6 @@
   .button-text-play {
     display: inline;
   }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
-  .play-share {
-    justify-content: flex-start;
-  }
-  .play-share > div > .play {
-    width: 150px;
-    height: 3rem;
-  }
-  .play-share > div > .share {
-    width: 2rem;
-    height: 2rem;
-  }
-  .button-text-play {
-    display: inline;
-  }
-  .button-text-watch {
-    display: none;
-  }
-}
-
-/* @media only screen and (min-width: 320px) and (max-width: 896px) and (orientation: landscape) {
   .play-share {
     justify-content: flex-start;
     height: 100px;
@@ -195,7 +192,7 @@
   .button-text-play {
     display: inline;
   }
-} */
+}
 
 @media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) {
   .play-share {
@@ -218,3 +215,38 @@
     font-size: 25px;
   }
 }
+
+/* @media only screen and (min-width: 769px) and (max-width: 896px) and (orientation: landscape) {
+  .play-wrapper {
+    width: 120px;
+  }
+  .button-text-play {
+    display: inline;
+  }
+  .button-text-watch {
+    display: none;
+  }
+  .play-share {
+    justify-content: flex-start;
+    height: 100px;
+    transform: translateY(-2rem);
+  }
+  .play-share > div > .play {
+    width: 100px;
+    height: 2rem;
+    font-size: 16px;
+  }
+
+  .share-wrapper h3 {
+    font-size: 14px !important;
+  }
+
+  .play-share > div > .share {
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 10px;
+  }
+  .button-text-play {
+    display: inline;
+  }
+} */
