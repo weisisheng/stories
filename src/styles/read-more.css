@@ -43,8 +43,7 @@
   bottom: 1rem;
   right: 1rem;
   left: 0;
-  top: 50%;
-  padding: 1rem;
+  top: 40%;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
@@ -72,7 +71,7 @@
   font-family: din-condensed-light, sans-serif;
   font-size: 60px;
   font-weight: 100;
-  /* margin-bottom: 10px; */
+  margin-bottom: 10px;
 }
 
 .modal-content .modal-text .modal-story-html {
@@ -93,6 +92,10 @@
   height: 90vh;
 }
 
+.javier-modal-content .javier-modal-text {
+  padding: 10px;
+}
+
 .javier-modal-content .javier-modal-img {
   position: absolute;
   height: 100%;
@@ -104,10 +107,6 @@
   top: 0.5rem;
 }
 
-.javier-modal-text .title {
-  font-size: 2.7rem;
-}
-
 /****ANDY MODAL MODS****/
 
 .modal-content.andy-modal-content {
@@ -115,7 +114,6 @@
 }
 
 .andy-modal-content .andy-modal-text {
-  top: 40%;
   padding: 10px;
 }
 
@@ -134,10 +132,6 @@
 .andy-modal-button {
   right: 1.5rem;
   top: 0.5rem;
-}
-
-.andy-modal-content .modal-text .we-protect {
-  margin-bottom: 10px;
 }
 
 @media only screen and (min-device-height: 1024px) {
