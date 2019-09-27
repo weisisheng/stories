@@ -12,8 +12,8 @@
 .video-container > .video-back-button {
   display: flex;
   position: absolute;
-  left: 2rem;
-  top: 1rem;
+  left: 1rem;
+  top: 2.5rem;
   z-index: 10000;
   justify-content: center;
   align-items: center;
