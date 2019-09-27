@@ -10,12 +10,11 @@ import '../styles/video.css'
 
 export default ({ data }) => {
   const story = data.markdownRemark
-  const screenSize = useWindowSize()
-
+  const screenSize = useWindowSize() //custom hook -- see below
   const prevPath = story.frontmatter.name.toLowerCase()
 
   useEffect(() => {
-    const video = document.getElementsByTagName('video')
+    const video = document.querySelector('video')
     video.oncanplaythrough = function() {
       video.play()
     }
@@ -28,11 +27,16 @@ export default ({ data }) => {
         <FontAwesomeIcon icon={faChevronLeft} />
       </Link>
       {screenSize.width < 1024 ? (
-        <video controls={true} preload="auto" autoPlay loop muted playsInline>
-          <source
-            src={`${story.frontmatter.videoSourceURL}&autoplay=1`}
-            type="video/mp4"
-          />
+        <video
+          src={`${story.frontmatter.videoSourceURL}&autoplay=1`}
+          type="video/mp4"
+          controls={true}
+          preload="auto"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
           Your browser does not support the video tag.
         </video>
       ) : (
