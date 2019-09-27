@@ -174,7 +174,11 @@
     height: 80vh;
   }
 }
-
+@media only screen and (min-width: 769px) and (max-width: 896px) and (orientation: landscape) {
+  .read-more {
+    display: none;
+  }
+}
 @media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   .read-more {
     display: none;
