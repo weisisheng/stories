@@ -21,9 +21,9 @@ export default ({ data }) => {
         <FontAwesomeIcon icon={faChevronLeft} />
       </Link>
       {screenSize.width < 1024 ? 
-      <video controls={true} preload="auto" autoPlay loop muted>
+      <video controls={true} preload="auto" autoPlay loop muted playsinline>
         <source
-          src={story.frontmatter.videoSourceURL}
+          src={`${story.frontmatter.videoSourceURL}&autoplay=1`}
           type="video/mp4"
         />
         Your browser does not support the video tag.
@@ -31,7 +31,7 @@ export default ({ data }) => {
       :
       <video controls={true} preload="auto" autoPlay loop>
         <source
-          src={story.frontmatter.videoSourceURL}
+          src={`${story.frontmatter.videoSourceURL}&autoplay=1`}
           type="video/mp4"
         />
         Your browser does not support the video tag.
@@ -41,6 +41,7 @@ export default ({ data }) => {
     </div>
   )
 }
+
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
