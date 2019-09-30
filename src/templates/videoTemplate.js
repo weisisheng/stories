@@ -30,6 +30,7 @@ export default ({ data }) => {
         <iframe
           title={story.frontmatter.name}
           preload="yes"
+          autoPlay
           src={
             screenSize.width < 1024
               ? `${story.frontmatter.videoSourceURL}?autoplay=1&loop=0&byline=0&title=0&muted=1&controls=1`
