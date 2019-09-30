@@ -13,6 +13,13 @@ export default ({ data }) => {
   const screenSize = useWindowSize() //custom hook -- see below
   const prevPath = story.frontmatter.name.toLowerCase()
 
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      window.scrollTo(0, 1)
+    }, 1000)
+    return () => clearTimeout(timeout)
+  }, [])
+
   return (
     <div className="video-container">
       <SEO title={`${story.frontmatter.name} Video`} />
