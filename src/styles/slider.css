@@ -12,7 +12,7 @@
   animation: moveInLeft 2s ease-out;
 } */
 
-@keyframes moveInLeft {
+/* @keyframes moveInLeft {
   0% {
     opacity: 0;
     transform: translateX(-10rem);
@@ -24,11 +24,14 @@
     opacity: 1;
     transform: translate(0);
   }
-}
+} */
 
 @keyframes slideRight {
   0% {
     transform: translateX(100rem);
+  }
+  80% {
+    transform: translateX(-3rem);
   }
   100% {
     transform: translate(0);
@@ -47,7 +50,7 @@
 .slider-card-image {
   text-decoration: none;
   margin-left: 1.5rem;
-  animation: slideRight 2s ease-in-out;
+  animation: slideRight 2.5s ease-out;
 }
 
 .slider-card-image > img {
@@ -66,7 +69,7 @@
   text-transform: uppercase;
   font-size: 1.2rem;
   transition: all 0.3s ease-in-out;
-  animation: h4 2s;
+  animation: h4 2.5s linear;
 }
 
 .BrainhubCarousel {
