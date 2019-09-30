@@ -78,7 +78,7 @@
   font-size: 14px;
   font-family: din-condensed-regular, sans-serif;
   line-height: 1.4;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /****JAVIER MODAL MODS****/
