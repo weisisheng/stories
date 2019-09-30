@@ -38,7 +38,7 @@ export default ({ data, pageContext }) => {
         <Link to="/" className="mobile-logo">
           <img src={logo} alt="RMHP Logo" />
         </Link>
-        <div className="story-text">
+        <div className={`story-text ${name}-story-text`}>
           <Link to="/" className="story-logo">
             <img src={logoSmall} alt="RMHP Logo" />
           </Link>

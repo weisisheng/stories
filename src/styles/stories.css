@@ -265,11 +265,21 @@ body {
   .story-content {
     transform: translateY(3rem);
     padding: 2.5rem;
-    overflow: scroll;
+    overflow-y: scroll;
   }
-  .story-content > .story-text {
-    transform: translateY(14rem);
-    padding-bottom: 22rem;
+  .story-content .story-text {
+    transform: translateY(5.5rem);
+    padding-bottom: 5rem;
+  }
+
+  .andy-story-text {
+    transform: translateY(14rem) !important;
+    padding-bottom: 22rem !important;
+  }
+
+  .javier-story-text {
+    transform: translateY(12rem) !important;
+    padding-bottom: 18rem !important;
   }
 
   .story-content > .story-text > h1.title {
@@ -422,7 +432,7 @@ body {
   .story-content {
     transform: translateY(3rem);
     padding: 2.5rem;
-    overflow: scroll;
+    overflow-y: scroll;
   }
   .story-content > .story-text {
     transform: translateY(17rem);
