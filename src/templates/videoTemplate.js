@@ -27,7 +27,7 @@ export default ({ data }) => {
         <FontAwesomeIcon icon={faChevronLeft} />
       </Link>
       {screenSize.width < 1024 ? (
-        <video controls={true} preload="auto" autoPlay loop muted playsInline>
+        <video controls={true} preload="auto" autoPlay muted playsInline>
           <source
             src={`${story.frontmatter.videoSourceURL}&autoplay=1`}
             type="video/mp4"
@@ -35,7 +35,7 @@ export default ({ data }) => {
           Your browser does not support the video tag.
         </video>
       ) : (
-        <video controls={true} preload="auto" autoPlay loop playsInline>
+        <video controls={true} preload="auto" autoPlay playsInline>
           <source
             src={`${story.frontmatter.videoSourceURL}&autoplay=1`}
             type="video/mp4"
