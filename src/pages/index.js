@@ -13,13 +13,6 @@ import '../styles/index.css'
 import bgImage from '../images/home-bg-image.jpg'
 
 const IndexPage = () => {
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      window.scrollTo(0, 1)
-    }, 1000)
-    return () => clearTimeout(timeout)
-  }, [])
-
   return (
     <Layout>
       <SEO title="Home" />
