@@ -8,9 +8,9 @@
   right: -4.5vw;
 }
 
-.BrainhubCarousel .BrainhubCarousel__trackContainer {
+/* .BrainhubCarousel .BrainhubCarousel__trackContainer {
   animation: moveInLeft 2s ease-out;
-}
+} */
 
 @keyframes moveInLeft {
   0% {
@@ -47,7 +47,7 @@
 .slider-card-image {
   text-decoration: none;
   margin-left: 1.5rem;
-  animation: slideRight 2s ease-in-out 2.3s;
+  animation: slideRight 2s ease-in-out;
 }
 
 .slider-card-image > img {
@@ -66,7 +66,7 @@
   text-transform: uppercase;
   font-size: 1.2rem;
   transition: all 0.3s ease-in-out;
-  animation: h4 4.3s;
+  animation: h4 2s;
 }
 
 .BrainhubCarousel {
@@ -78,16 +78,16 @@
   align-self: flex-end;
   left: 2vw;
   bottom: 15vh;
-  animation: moveInBottom 2s ease-out;
+  /* animation: moveInBottom 2s ease-out; */
 }
 
 .BrainhubCarousel__custom-arrowRight {
   position: absolute;
   left: 8vw;
   bottom: 15vh;
-  animation: moveInBottom 2s ease-out;
+  /* animation: moveInBottom 2s ease-out; */
 }
-
+/* 
 @keyframes moveInBottom {
   0% {
     opacity: 0;
@@ -103,7 +103,7 @@
     opacity: 1;
     transform: translate(0);
   }
-}
+} */
 
 .arrow-left,
 .arrow-right {
