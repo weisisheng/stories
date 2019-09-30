@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { graphql, Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faTimes } from '@fortawesome/free-solid-svg-icons'
@@ -24,6 +24,10 @@ export default ({ data, pageContext }) => {
   const videoImage = story.frontmatter.videoImage.childImageSharp.fluid
   const modalImage = story.frontmatter.modalImage.childImageSharp.fluid
   const name = story.frontmatter.name.toLowerCase()
+
+  // useEffect(() => {
+  //   document.screen.orientation.lock('portrait')
+  // }, [])
 
   return (
     <div className="story-container">
@@ -88,9 +92,7 @@ export default ({ data, pageContext }) => {
       />
       <Footer display="none" />
       <IpadFooter height="14vh" />
-      <MobileFooter
-        height="11vh"
-      />
+      <MobileFooter height="11vh" />
     </div>
   )
 }

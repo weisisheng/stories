@@ -115,6 +115,15 @@
   cursor: pointer;
 }
 
+@media only screen and (max-width: 768px) {
+  .slider-card-image > h4 {
+    animation: none;
+  }
+  .slider-card-image {
+    animation: none;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .slider-card-image > img:hover ~ h4 {
     transform-origin: bottom left;
