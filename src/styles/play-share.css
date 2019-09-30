@@ -11,6 +11,7 @@
   justify-content: baseline;
   align-items: center;
   background-color: transparent;
+  margin-top: 1rem;
 }
 
 .play-share > .share-wrapper {
