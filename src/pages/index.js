@@ -18,23 +18,16 @@ const IndexPage = () => {
       <SEO title="Home" />
       <Social />
       <MobileShare />
-      <video
-        className="home-video"
-        poster={bgImage}
-        preload="yes"
-        autoPlay
-        muted
-        loop
-        width="100%"
-        height="auto"
-        controls={false}
-      >
-        <source
-          src="https://player.vimeo.com/external/361907240.hd.mp4?s=f6953334671e6c18dfc846e68a963dc116dc16d0&profile_id=174?background=1&autoplay=1&loop=1&byline=0&title=0"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
+      <div className="video-wrapper">
+        <iframe
+          preload="yes"
+          src="https://player.vimeo.com/video/361907240?background=1&autoplay=1&loop=1&byline=0&title=0"
+          frameborder="0"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowfullscreen
+        ></iframe>
+      </div>
       <div className="site">
         <Main />
         <Slider />
