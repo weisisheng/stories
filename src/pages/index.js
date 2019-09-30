@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 
 import Layout from '../components/layout'
@@ -13,6 +13,13 @@ import '../styles/index.css'
 import bgImage from '../images/home-bg-image.jpg'
 
 const IndexPage = () => {
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      window.scrollTo(0, 1)
+    }, 1000)
+    return () => clearTimeout(timeout)
+  }, [])
+
   return (
     <Layout>
       <SEO title="Home" />
