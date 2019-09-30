@@ -58,7 +58,7 @@ const Slider = () => {
         },
         768: {
           centered: false,
-          offset: 0,
+          offset: -0.5,
           infinite: true,
         },
         415: {

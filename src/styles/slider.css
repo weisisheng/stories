@@ -8,24 +8,6 @@
   right: -4.5vw;
 }
 
-/* .BrainhubCarousel .BrainhubCarousel__trackContainer {
-  animation: moveInLeft 2s ease-out;
-} */
-
-/* @keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
-  80% {
-    transform: translateX(1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-} */
-
 @keyframes slideRight {
   0% {
     transform: translateX(100rem);
@@ -90,23 +72,6 @@
   bottom: 15vh;
   /* animation: moveInBottom 2s ease-out; */
 }
-/* 
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(10rem);
-  }
-  50% {
-    opacity: 0;
-  }
-  80% {
-    transform: translateY(-1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-} */
 
 .arrow-left,
 .arrow-right {
@@ -308,6 +273,42 @@
     bottom: 2.8rem;
   }
 }
+
+/* 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  50% {
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+} */
+
+/* .BrainhubCarousel .BrainhubCarousel__trackContainer {
+  animation: moveInLeft 2s ease-out;
+} */
+
+/* @keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+} */
 /* @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .slider {
     right: 0;
