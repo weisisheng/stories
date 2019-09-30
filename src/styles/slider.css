@@ -26,9 +26,19 @@
   }
 }
 
+@keyframes slideRight {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
 .slider-card-image {
   text-decoration: none;
   margin-left: 1.5rem;
+  animation: slideRight 2s ease-in-out 2.3s;
 }
 
 .slider-card-image > img {
