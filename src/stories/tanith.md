@@ -4,7 +4,7 @@ path: "/tanith/"
 name: "Tanith"
 title: "The Dream"
 homePageImage: ../images/tanith.jpg
-videoSourceURL: "https://player.vimeo.com/external/290418685.hd.mp4?s=99f0b6cf825c9b541b261c7c3a0c8aa297a5677c&profile_id=175"
+videoSourceURL: "https://player.vimeo.com/video/290418685"
 videoImage: ../images/tanith-video-image.jpg
 backgroundImage: ../images/tanith-story-bg.jpg
 modalImage: ../images/andy-read-more.jpg

@@ -4,7 +4,7 @@ path: "/aaron/"
 name: "Aaron"
 title: "the pack"
 homePageImage: ../images/aaron.jpg
-videoSourceURL: "https://player.vimeo.com/external/290418432.hd.mp4?s=764226478743c6574141d802db814a4033b3302d&profile_id=175"
+videoSourceURL: "https://player.vimeo.com/video/290418432"
 videoImage: ../images/aaron-video-image.jpg
 backgroundImage: ../images/aaron-story-bg.jpg
 modalImage: ../images/andy-read-more.jpg

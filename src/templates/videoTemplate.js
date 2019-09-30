@@ -14,10 +14,12 @@ export default ({ data }) => {
   const prevPath = story.frontmatter.name.toLowerCase()
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      window.scrollTo(0, 1)
-    }, 1000)
-    return () => clearTimeout(timeout)
+    const touch =
+      (() => {
+        document.addEventListener('touchstart', {})
+      },
+      1000)
+    return () => document.removeEventListener(touch)
   }, [])
 
   return (
@@ -26,23 +28,32 @@ export default ({ data }) => {
       <Link to={`/${prevPath}/`} className="video-back-button">
         <FontAwesomeIcon icon={faChevronLeft} />
       </Link>
-      {screenSize.width < 1024 ? (
-        <video controls={true} preload="auto" autoPlay muted playsInline>
-          <source
-            src={`${story.frontmatter.videoSourceURL}&autoplay=1`}
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-      ) : (
-        <video controls={true} preload="auto" autoPlay playsInline>
-          <source
-            src={`${story.frontmatter.videoSourceURL}&autoplay=1`}
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-      )}
+      {/* <div className="video-wrapper">
+        <iframe
+          preload="yes"
+          src="https://player.vimeo.com/video/361907240?background=1&autoplay=1&loop=1&byline=0&title=0"
+          frameborder="0"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowFullScreen
+        ></iframe>
+      </div> */}
+      <div className="video-wrapper">
+        <iframe
+          title={story.frontmatter.name}
+          controls={true}
+          preload="yes"
+          src={
+            screenSize.width < 1024
+              ? `${story.frontmatter.videoSourceURL}?autoplay=1&loop=0&byline=0&title=0&muted=1`
+              : `${story.frontmatter.videoSourceURL}?autoplay=1&loop=0&byline=0&title=0`
+          }
+          frameBorder="0"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowFullScreen
+        ></iframe>
+      </div>
       <Social display="block" />
     </div>
   )

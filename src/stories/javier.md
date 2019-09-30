@@ -4,7 +4,7 @@ path: "/javier/"
 name: "Javier"
 title: "The Journey"
 homePageImage: ../images/javier.jpg
-videoSourceURL: "https://player.vimeo.com/external/361862119.hd.mp4?s=d38fdd00f17bfb3a475e3c81eff5c47b57a8b1d6&profile_id=175"
+videoSourceURL: "https://player.vimeo.com/video/361862119"
 videoImage: ../images/javier-video-image.png
 backgroundImage: ../images/javier-story-bg.jpg
 modalImage: ../images/javier-read-more.jpg

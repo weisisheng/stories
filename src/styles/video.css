@@ -1,4 +1,4 @@
-.video-container > video {
+/* .video-container > video {
   border: none;
   min-width: 100%;
   min-height: 100%;
@@ -7,6 +7,27 @@
   width: auto;
   height: auto;
   z-index: -100000;
+} */
+
+.video-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* pointer-events: none; */
+  overflow: hidden;
+}
+.video-wrapper iframe {
+  width: 100vw;
+  height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  min-height: 100vh;
+  min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .video-container > .video-back-button {

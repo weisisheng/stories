@@ -18,14 +18,14 @@ const IndexPage = () => {
       <SEO title="Home" />
       <Social />
       <MobileShare />
-      <div className="video-wrapper">
+      <div className="home-video-wrapper">
         <iframe
           preload="yes"
           src="https://player.vimeo.com/video/361907240?background=1&autoplay=1&loop=1&byline=0&title=0"
           frameborder="0"
           webkitallowfullscreen
           mozallowfullscreen
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
       <div className="site">

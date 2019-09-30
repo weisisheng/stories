@@ -22,7 +22,7 @@ body {
   background-color: black;
 }
 
-.video-wrapper {
+.home-video-wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -31,7 +31,7 @@ body {
   pointer-events: none;
   overflow: hidden;
 }
-.video-wrapper iframe {
+.home-video-wrapper iframe {
   width: 100vw;
   height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
   min-height: 100vh;

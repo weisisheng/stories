@@ -4,7 +4,7 @@ path: "/andy/"
 name: "Andy"
 title: "The Drive"
 homePageImage: ../images/andy.jpg
-videoSourceURL: "https://player.vimeo.com/external/361861392.hd.mp4?s=475e1fae6dc68a2b0170dba28fd7ec664ee4e28b&profile_id=175"
+videoSourceURL: "https://player.vimeo.com/video/361861392"
 videoImage: ../images/andy-video-image.jpg
 backgroundImage: ../images/andy-story-bg.jpg
 modalImage: ../images/andy-read-more.jpg
