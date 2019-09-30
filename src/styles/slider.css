@@ -203,7 +203,7 @@
   }
 }
 
-@media only screen and (max-height: 568px) and (orientation: portrait) {
+@media only screen and (max-width: 374px) and (orientation: portrait) {
   .BrainhubCarousel {
     z-index: 10000;
     overflow: hidden;
