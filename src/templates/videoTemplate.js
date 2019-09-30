@@ -14,12 +14,10 @@ export default ({ data }) => {
   const prevPath = story.frontmatter.name.toLowerCase()
 
   useEffect(() => {
-    const touch =
-      (() => {
-        document.addEventListener('touchstart', {})
-      },
-      1000)
-    return () => document.removeEventListener(touch)
+    const timeout = setTimeout(() => {
+      window.scrollTo(0, 1)
+    }, 1000)
+    return () => clearTimeout(timeout)
   }, [])
 
   return (
@@ -28,16 +26,6 @@ export default ({ data }) => {
       <Link to={`/${prevPath}/`} className="video-back-button">
         <FontAwesomeIcon icon={faChevronLeft} />
       </Link>
-      {/* <div className="video-wrapper">
-        <iframe
-          preload="yes"
-          src="https://player.vimeo.com/video/361907240?background=1&autoplay=1&loop=1&byline=0&title=0"
-          frameborder="0"
-          webkitallowfullscreen
-          mozallowfullscreen
-          allowFullScreen
-        ></iframe>
-      </div> */}
       <div className="video-wrapper">
         <iframe
           title={story.frontmatter.name}
