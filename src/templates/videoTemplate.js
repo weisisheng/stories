@@ -29,17 +29,14 @@ export default ({ data }) => {
       <div className="video-wrapper">
         <iframe
           title={story.frontmatter.name}
-          controls={true}
           preload="yes"
           src={
             screenSize.width < 1024
-              ? `${story.frontmatter.videoSourceURL}?autoplay=1&loop=0&byline=0&title=0&muted=1`
-              : `${story.frontmatter.videoSourceURL}?autoplay=1&loop=0&byline=0&title=0`
+              ? `${story.frontmatter.videoSourceURL}?autoplay=1&loop=0&byline=0&title=0&muted=1&controls=1`
+              : `${story.frontmatter.videoSourceURL}?autoplay=1&loop=0&byline=0&title=0&controls=1`
           }
           frameBorder="0"
-          webkitallowfullscreen
-          mozallowfullscreen
-          allowFullScreen
+          allowFullScreen={true}
         ></iframe>
       </div>
       <Social display="block" />
