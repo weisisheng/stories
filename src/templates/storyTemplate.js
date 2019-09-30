@@ -25,10 +25,6 @@ export default ({ data, pageContext }) => {
   const modalImage = story.frontmatter.modalImage.childImageSharp.fluid
   const name = story.frontmatter.name.toLowerCase()
 
-  // useEffect(() => {
-  //   document.screen.orientation.lock('portrait')
-  // }, [])
-
   return (
     <div className="story-container">
       <SEO title={story.frontmatter.name} />
