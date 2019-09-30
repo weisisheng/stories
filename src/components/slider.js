@@ -56,14 +56,19 @@ const Slider = () => {
           arrows: false,
           infinite: true,
         },
-        767: {
+        768: {
           centered: false,
-          offset: 12,
+          offset: 0,
           infinite: true,
         },
-        568: {
+        415: {
           centered: false,
-          offset: -19.5,
+          offset: 5.5,
+          infinite: true,
+        },
+        374: {
+          centered: false,
+          offset: -19.4,
           infinite: true,
         },
       }}
