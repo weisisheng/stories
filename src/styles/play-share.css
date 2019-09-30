@@ -139,29 +139,29 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 896px) and (orientation: landscape) {
-  .play-wrapper {
-    width: 120px;
-  }
   .play-share {
     justify-content: flex-start;
     height: 100px;
-    transform: translateY(-2rem);
+    transform: translateY(-1.5rem);
+    margin: 1rem 0;
   }
   .play-share > div > .play {
-    width: 100px;
-    height: 2rem;
-    font-size: 16px;
-  }
-
-  .share-wrapper h3 {
-    font-size: 14px !important;
+    width: 150px;
+    height: 2.5rem;
+    font-size: 20px;
   }
 
   .play-share > div > .share {
-    width: 1.75rem;
-    height: 1.75rem;
-    font-size: 10px;
+    width: 2rem;
+    height: 2rem;
+    font-size: 12px;
   }
+
+  .share-wrapper h3 {
+    padding-top: 5px;
+    font-size: 16px !important;
+  }
+
   .button-text-watch {
     display: none;
   }

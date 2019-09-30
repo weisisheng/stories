@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { graphql, Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faTimes } from '@fortawesome/free-solid-svg-icons'
@@ -48,7 +48,10 @@ export default ({ data, pageContext }) => {
             to={`${story.frontmatter.path}/video`}
             share={story.frontmatter.path}
           />
-          <div className="story-html" dangerouslySetInnerHTML={{ __html: story.html }} /> 
+          <div
+            className="story-html"
+            dangerouslySetInnerHTML={{ __html: story.html }}
+          />
 
           {name === 'javier' || name === 'andy' ? (
             <ReadMore
@@ -85,7 +88,9 @@ export default ({ data, pageContext }) => {
       />
       <Footer display="none" />
       <IpadFooter height="14vh" />
-      <MobileFooter height="11vh" />
+      <MobileFooter
+        height="11vh"
+      />
     </div>
   )
 }

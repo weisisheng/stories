@@ -15,7 +15,14 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .ipad-footer {
-    display: block;
+    display: block !important;
     height: 45vh;
+  }
+}
+
+@media only screen and (min-height: 320px) and (max-width: 812px) and (orientation: landscape) {
+  .ipad-footer {
+    display: block;
+    z-index: 100;
   }
 }
