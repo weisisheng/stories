@@ -230,7 +230,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 569px) and (max-width: 812px) and (orientation: landscape) {
+@media only screen and (min-width: 569px) and (max-width: 823px) and (orientation: landscape) {
   .story-container {
     color: white;
     position: relative;
