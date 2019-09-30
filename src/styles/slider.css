@@ -28,7 +28,7 @@
 
 @keyframes slideRight {
   0% {
-    transform: translateX(100vw);
+    transform: translateX(100rem);
   }
   100% {
     transform: translate(0);
