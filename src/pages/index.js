@@ -28,8 +28,10 @@ const IndexPage = () => {
         <iframe
           preload="yes"
           src="https://player.vimeo.com/video/361907240?background=1&autoplay=1&loop=1&byline=0&title=0"
-          frameborder="0"
+          frameBorder="0"
           allowFullScreen={true}
+          webkitallowfullscreen="true"
+          mozallowfullscreen="true"
         ></iframe>
       </div>
       <div className="site">

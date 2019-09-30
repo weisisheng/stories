@@ -37,6 +37,8 @@ export default ({ data }) => {
           }
           frameBorder="0"
           allowFullScreen={true}
+          webkitallowfullscreen="true"
+          mozallowfullscreen="true"
         ></iframe>
       </div>
       <Social display="block" />
