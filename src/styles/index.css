@@ -380,7 +380,7 @@ body {
     overflow-y: hidden;
     height: 100vw;
   }
-  video.home-video {
+  .home-video-wrapper {
     transform: rotate(-90deg);
     transform-origin: left top;
     top: 140%;
