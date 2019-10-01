@@ -4,7 +4,7 @@ import Modal from 'react-bootstrap/Modal'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { navigate } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus, faPlay, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faPlus, faPlay } from '@fortawesome/free-solid-svg-icons'
 
 import '../styles/play-share.css'
 
@@ -24,8 +24,9 @@ const PlayShare = props => {
       <div className="play-wrapper">
         <button onClick={handlePlay} className="play">
           <FontAwesomeIcon icon={faPlay} />
-          &nbsp;Play
+          <span className="button-text-play">&nbsp;Play</span>
         </button>
+        <span className="button-text-watch">Start Watching</span>
       </div>
       <div className="share-wrapper" onClick={handleShow}>
         <button className="share">
@@ -34,14 +35,22 @@ const PlayShare = props => {
         &nbsp;
         <h3>Share</h3>
       </div>
-      <Modal show={show} onHide={handleClose} centered>
+      <Modal
+        show={show}
+        onHide={handleClose}
+        centered
+        size="sm"
+        className="social-modal"
+      >
         <Modal.Header closeButton>
           <Modal.Title>Share This Story</Modal.Title>
         </Modal.Header>
-        <Twitter link={props.share} />
-        <Facebook link={props.share} />
-        <Pinterest link={props.share} />
-        <Mail link={props.share} />
+        <Modal.Body>
+          <Twitter link={`https://rmhpstories.com${props.share}`} />
+          <Facebook link={`https://rmhpstories.com${props.share}`} />
+          <Pinterest link={`https://rmhpstories.com${props.share}`} />
+          <Mail link={`https://rmhpstories.com${props.share}`} />
+        </Modal.Body>
       </Modal>
     </div>
   )

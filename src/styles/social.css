@@ -7,6 +7,7 @@
   padding: 0.5rem;
   margin: 0.5rem;
   font-size: 1.3rem;
+  z-index: 1000;
 }
 .social > ul {
   display: flex;
@@ -15,4 +16,16 @@
 .social > ul > li {
   padding: 0 1rem;
   color: #979797;
+}
+
+@media only screen and (min-width: 319px) and (max-width: 767px) and (orientation: portrait) {
+  .social {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 319px) and (max-width: 767px) and (orientation: landscape) {
+  .social {
+    display: none;
+  }
 }

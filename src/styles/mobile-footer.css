@@ -1,0 +1,27 @@
+.mobile-footer {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  margin: 0;
+  z-index: 100;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .mobile-footer {
+    display: block;
+  }
+}
+@media only screen and (min-height: 320px) and (max-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .mobile-footer {
+    display: block;
+    transform: rotate(-90deg);
+    transform-origin: right bottom;
+    width: 100vh;
+    bottom: 100%;
+    right: 0;
+    z-index: -100;
+  }
+}
