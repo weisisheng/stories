@@ -1,4 +1,10 @@
+@font-face {
+  font-family: 'din-condensed-regular';
+  src: url('../fonts/FONTS_DIN.ttf');
+}
+
 .footer {
+  font-family: din-condensed-regular, sans-serif;
   z-index: 10000;
   display: flex;
   justify-content: flex-end;
@@ -12,6 +18,7 @@
 }
 .footer > ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 .footer > ul > li {
@@ -22,3 +29,94 @@
   color: #979797;
   text-decoration: none;
 }
+
+@media only screen and (min-width: 1024px) {
+  .footer > ul {
+    display: flex !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .footer {
+    width: 100vw;
+    background-image: none;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  .footer > ul {
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    margin-left: 1rem;
+    z-index: 100000;
+  }
+}
+
+@media only screen and (min-width: 319px) and (max-width: 767px) and (orientation: portrait) {
+  .footer {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  .footer > ul {
+    justify-content: center;
+    margin: 0 5px;
+  }
+  .footer > ul li {
+    margin: 0;
+    padding: 0 2px;
+  }
+}
+
+@media only screen and (min-height: 319px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .footer {
+    font-size: 10px;
+    margin: 0;
+    padding-bottom: 0;
+    display: block;
+    transform: rotate(-90deg);
+    transform-origin: right bottom;
+    width: 100vh;
+    bottom: 100%;
+    right: 0;
+  }
+  .footer > ul {
+    justify-content: center;
+    margin: 0 5px;
+  }
+  .footer > ul li {
+    margin: 0;
+    padding: 0 2px;
+  }
+}
+
+/* @media only screen and (min-width: 569px) and (max-width: 767px) and (orientation: landscape) {
+  .footer {
+    display: flex !important;
+    font-size: 12px;
+    margin: 0;
+    padding-bottom: 0;
+  }
+  .footer > ul {
+    display: flex !important;
+  }
+  .footer > ul li {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) {
+  .footer {
+    font-size: 10px;
+    margin: 0;
+    padding-bottom: 0;
+  }
+  .footer > ul {
+    display: flex !important;
+  }
+  .footer > ul li {
+    margin: 0;
+  }
+} */

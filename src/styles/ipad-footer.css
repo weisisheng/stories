@@ -1,0 +1,28 @@
+.ipad-footer {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  margin: 0;
+  z-index: 0;
+}
+
+.ipad-footer ul {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .ipad-footer {
+    display: block !important;
+    height: 45vh;
+  }
+}
+
+@media only screen and (min-height: 320px) and (max-width: 812px) and (orientation: landscape) {
+  .ipad-footer {
+    display: block;
+    z-index: 100;
+  }
+}

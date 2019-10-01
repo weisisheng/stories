@@ -1,6 +1,5 @@
-import React from 'react'
-// import { useStaticQuery, graphql } from 'gatsby'
-// import Img from 'gatsby-image'
+import React, { useEffect } from 'react'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -8,30 +7,33 @@ import SEO from '../components/seo'
 import Main from '../components/main'
 import Slider from '../components/slider'
 import Social from '../components/social'
+import MobileShare from '../components/mobileShare'
 
 import '../styles/index.css'
+import bgImage from '../images/home-bg-image.jpg'
 
 const IndexPage = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     placeholderImage: file(relativePath: { eq: "home-bg-image.png" }) {
-  //       childImageSharp {
-  //         fluid(maxWidth: 1800) {
-  //           ...GatsbyImageSharpFluid
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
-
-  // const bgImage = data.placeholderImage.childImageSharp.fluid
-
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      window.scrollTo(0, 1)
+    }, 1000)
+    return () => clearTimeout(timeout)
+  }, [])
   return (
     <Layout>
       <SEO title="Home" />
-      {/* <Img fluid={bgImage} className="index-bg-image" />
-      <div className="index-image-overlay"></div> */}
       <Social />
+      <MobileShare />
+      <div className="home-video-wrapper">
+        <iframe
+          preload="yes"
+          src="https://player.vimeo.com/video/361907240?background=1&autoplay=1&loop=1&byline=0&title=0"
+          frameBorder="0"
+          allowFullScreen={true}
+          webkitallowfullscreen="true"
+          mozallowfullscreen="true"
+        ></iframe>
+      </div>
       <div className="site">
         <Main />
         <Slider />

@@ -6,12 +6,13 @@ import {
   faPinterest,
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
 import '../styles/social.css'
 
-const Social = () => {
+const Social = props => {
   return (
-    <div className="social">
+    <div className="social" style={{ display: props.display }}>
       <ul>
         <li>
           <a
@@ -20,7 +21,7 @@ const Social = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faFacebookF} />
+            <FontAwesomeIcon icon={faFacebookF} width={0} />
           </a>
         </li>
         <li>

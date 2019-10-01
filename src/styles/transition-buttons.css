@@ -1,18 +1,28 @@
+@font-face {
+  font-family: 'din-condensed-cond-black';
+  src: url('../fonts/FONTS_DINWeb-CondBlack.otf');
+}
+
+@font-face {
+  font-family: 'din-condensed-bold';
+  src: url('../fonts/FONTS_DINWeb-CondBold.ttf');
+}
+
 .transition-button-left {
   left: 5rem;
-  bottom: 3rem;
+  bottom: 2rem;
 }
 
 .transition-button-right {
   right: 5rem;
-  bottom: 3rem;
+  bottom: 2rem;
 }
 
 .transition-button-left,
 .transition-button-right {
   display: flex;
-  position: absolute;
-  z-index: 1000;
+  position: fixed;
+  z-index: 200;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
@@ -29,4 +39,107 @@
   background-color: transparent;
   border: none;
   text-decoration: none;
+}
+
+.transition-button-left span,
+.transition-button-right span {
+  font-family: din-condesed-bold, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+.transition-button-right span {
+  padding-right: 1rem;
+}
+.transition-button-left span {
+  padding-left: 1rem;
+}
+
+@media only screen and (min-height: 1024px) {
+  .transition-button-left,
+  .transition-button-right {
+    font-size: 2.5rem;
+  }
+  .transition-button-left span,
+  .transition-button-right span {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  .transition-button-left,
+  .transition-button-right {
+    bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  .transition-button-left {
+    left: 2rem;
+  }
+  .transition-button-right {
+    right: 2rem;
+  }
+  .transition-button-left span,
+  .transition-button-right span {
+    font-size: 1rem;
+  }
+  .transition-button-right span {
+    padding-right: 0.5rem;
+  }
+  .transition-button-left span {
+    padding-left: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 896px) and (orientation: landscape) {
+  .transition-button-left,
+  .transition-button-right {
+    bottom: 1rem;
+    font-size: 1rem;
+  }
+  .transition-button-left {
+    left: 2rem;
+  }
+  .transition-button-right {
+    right: 2rem;
+  }
+  .transition-button-left span,
+  .transition-button-right span {
+    font-size: 0.8rem;
+  }
+  .transition-button-right span {
+    padding-right: 0.5rem;
+  }
+  .transition-button-left span {
+    padding-left: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
+  .transition-button-left,
+  .transition-button-right {
+    bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+  .transition-button-left {
+    left: 2rem;
+  }
+  .transition-button-right {
+    right: 2rem;
+  }
+  .transition-button-left span,
+  .transition-button-right span {
+    font-size: 0.8rem;
+  }
+  .transition-button-right span {
+    padding-right: 0.5rem;
+  }
+  .transition-button-left span {
+    padding-left: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 568px) and (orientation: landscape) {
+  .transition-button-left,
+  .transition-button-right {
+    bottom: 1rem;
+  }
 }

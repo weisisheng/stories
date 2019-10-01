@@ -1,27 +1,44 @@
+@font-face {
+  font-family: 'din-condensed-bold';
+  src: url('../fonts/FONTS_DINWeb-CondBold.ttf');
+}
+
 .play-share {
+  font-family: din-condensed-bold, sans-serif;
   color: white;
-  font-size: 3rem;
   text-align: left;
   display: flex;
   justify-content: baseline;
   align-items: center;
   background-color: transparent;
+  margin-top: 1rem;
 }
 
 .play-share > .share-wrapper {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   cursor: pointer;
+}
+
+.play-share > .share-wrapper h3 {
+  font-family: din-condensed-bold, sans-serif;
+  font-size: 20px;
+  padding-left: 5px;
+  margin: 0;
 }
 
 .play-share > div > .play,
 .share {
-  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 3.5rem;
   border-radius: 5px;
   margin-right: 2rem;
   cursor: pointer;
+  border: none;
+  background-color: #ffffff;
 }
 
 .play-share > div > .play,
@@ -34,7 +51,181 @@
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   margin-right: 0;
 }
+
+.play-share > div > .play {
+  font-size: 25px;
+  font-family: din-condensed-bold, sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.play > span {
+  padding-left: 5px;
+  padding-top: 4px;
+}
+
+.play-share > div > .play:hover {
+  background-color: #fec420;
+}
+
+.button-text-play {
+  display: inline;
+}
+
+.button-text-watch {
+  display: none;
+}
+
+.social-modal .modal-content {
+  padding-left: 0;
+  padding-top: 0;
+}
+
+.social-modal .modal-body {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .play-share {
+    justify-content: flex-start;
+  }
+  .play-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .play-share > div > .play {
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+    text-align: center;
+  }
+  .button-text-play {
+    display: none;
+  }
+  .button-text-watch {
+    display: inline;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  .play-share {
+    justify-content: flex-start;
+    margin-top: 0;
+  }
+  .play-share > div > .play {
+    width: 150px;
+    height: 3rem;
+  }
+  .play-share > div > .share {
+    width: 2rem;
+    height: 2rem;
+  }
+  .button-text-play {
+    display: inline;
+  }
+  .button-text-watch {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 896px) and (orientation: landscape) {
+  .play-share {
+    justify-content: flex-start;
+    height: 100px;
+    transform: translateY(-1.5rem);
+    margin: 1rem 0;
+  }
+  .play-share > div > .play {
+    width: 150px;
+    height: 2.5rem;
+    font-size: 20px;
+  }
+
+  .play-share > div > .share {
+    width: 2rem;
+    height: 2rem;
+    font-size: 12px;
+  }
+
+  .share-wrapper h3 {
+    padding-top: 5px;
+    font-size: 16px !important;
+  }
+
+  .button-text-watch {
+    display: none;
+  }
+
+  .button-text-play {
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) {
+  .play-share {
+    justify-content: flex-start;
+    height: 100px;
+  }
+  .play-share > div > .play {
+    font-size: 20px;
+  }
+  .play-share > div > .share {
+    font-size: 0.5rem;
+    margin: auto;
+  }
+  .play-share > .share-wrapper h3 {
+    font-size: 20px;
+    margin: auto;
+  }
+  .button-text-play {
+    display: inline;
+    font-size: 25px;
+  }
+}
+
+/* @media only screen and (min-width: 769px) and (max-width: 896px) and (orientation: landscape) {
+  .play-wrapper {
+    width: 120px;
+  }
+  .button-text-play {
+    display: inline;
+  }
+  .button-text-watch {
+    display: none;
+  }
+  .play-share {
+    justify-content: flex-start;
+    height: 100px;
+    transform: translateY(-2rem);
+  }
+  .play-share > div > .play {
+    width: 100px;
+    height: 2rem;
+    font-size: 16px;
+  }
+
+  .share-wrapper h3 {
+    font-size: 14px !important;
+  }
+
+  .play-share > div > .share {
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 10px;
+  }
+  .button-text-play {
+    display: inline;
+  }
+} */

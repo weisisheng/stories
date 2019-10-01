@@ -5,6 +5,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
 import '../styles/transition-buttons.css'
 
@@ -55,28 +56,18 @@ const TransitionButtons = props => {
           : null
       }
     >
-      <Link to={props.prev} className="transition-button-left">
+      <Link
+        to={props.prev}
+        className={`${props.name}-transition-button-left transition-button-left`}
+      >
         <FontAwesomeIcon icon={faChevronLeft} />
-        <span
-          style={{
-            fontSize: '1rem',
-            paddingLeft: '1rem',
-            fontWeight: 'bold',
-          }}
-        >
-          Previous Story
-        </span>
+        <span>Previous Story</span>
       </Link>
-      <Link to={props.next} className="transition-button-right">
-        <span
-          style={{
-            fontSize: '1rem',
-            paddingRight: '1rem',
-            fontWeight: 'bold',
-          }}
-        >
-          Next Story
-        </span>
+      <Link
+        to={props.next}
+        className={`${props.name}-transition-button-right transition-button-right`}
+      >
+        <span>Next Story</span>
         <FontAwesomeIcon icon={faChevronRight} />
       </Link>
     </div>

@@ -14,7 +14,9 @@ import '../styles/slider.css'
 const Slider = () => {
   const people = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___name] }) {
+      allMarkdownRemark(
+        sort: { order: ASC, fields: [frontmatter___position] }
+      ) {
         edges {
           node {
             frontmatter {
@@ -48,6 +50,28 @@ const Slider = () => {
         <FontAwesomeIcon className="arrow-right" icon={faChevronRight} />
       }
       addArrowClickHandler
+      breakpoints={{
+        1024: {
+          centered: true,
+          arrows: false,
+          infinite: true,
+        },
+        768: {
+          centered: false,
+          offset: -0.5,
+          infinite: true,
+        },
+        415: {
+          centered: false,
+          offset: 5.5,
+          infinite: true,
+        },
+        374: {
+          centered: false,
+          offset: -19.4,
+          infinite: true,
+        },
+      }}
     >
       {people.allMarkdownRemark.edges.map(person => (
         <SliderItem
