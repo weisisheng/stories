@@ -1,6 +1,9 @@
 @font-face {
   font-family: 'din-condensed-regular';
-  src: url('../fonts/FONTS_DIN.ttf');
+  src: url('../fonts/DIN.eot');
+  src: url('../fonts/DIN.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FONTS_DIN.ttf') format('truetype'),
+    url('../fonts/fonts_din-webfont.woff') format('woff');
 }
 
 .footer {

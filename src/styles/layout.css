@@ -1,7 +1,10 @@
 @font-face {
-  font-family: 'din-condensed';
-  src: url('../fonts/FONTS_DINWeb-CondMedium.ttf');
+  font-family: 'din-condensed-medium';
+  src: url('../fonts/DINPro-CondMedium.eot');
+  src: url('../fonts/DINPro-CondMedium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FONTS_DINWeb-CondMedium.ttf') format('truetype');
 }
+
 
 html {
   font-family: din-condensed, sans-serif;

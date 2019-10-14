@@ -5,9 +5,12 @@
 
 @font-face {
   font-family: 'din-condensed-bold';
-  src: url('../fonts/FONTS_DINWeb-CondBold.ttf');
+  src: url('../fonts/DINCondensed-Bold.eot');
+  src: url('../fonts/DINCondensed-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/FONTS_DINWeb-CondBold.ttf') format('truetype'),
+    url('../fonts/fonts_din_bold-webfont.woff') format('woff');
 }
-
 .transition-button-left {
   left: 5rem;
   bottom: 2rem;

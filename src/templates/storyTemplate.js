@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { graphql, Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faTimes } from '@fortawesome/free-solid-svg-icons'
@@ -15,19 +15,30 @@ import TransitionButtons from '../components/transitionButtons'
 import ReadMore from '../components/readMore'
 import logoSmall from '../images/logo-small.png'
 import logo from '../images/logo.png'
+
 import '../styles/stories.css'
+import '../styles/ie11.css'
+import andyOgImage from '../images/andy-meta.jpg'
 
 export default ({ data, pageContext }) => {
   const story = data.markdownRemark
   const { next, prev } = pageContext
   const bgImage = story.frontmatter.backgroundImage.childImageSharp.fluid
+  const ogImage = story.frontmatter.backgroundImage.childImageSharp.fluid.src
   const videoImage = story.frontmatter.videoImage.childImageSharp.fluid
   const modalImage = story.frontmatter.modalImage.childImageSharp.fluid
   const name = story.frontmatter.name.toLowerCase()
+  const title = story.frontmatter.title
+  const description = story.excerpt
+  const path = story.frontmatter.path
 
   return (
     <div className="story-container">
-      <SEO title={story.frontmatter.name} />
+      <SEO
+        title={`Life on the Western Slope | ${story.frontmatter.name}`}
+        image={name === 'andy' ? andyOgImage : ogImage}
+        description={description}
+      />
       <Img
         fluid={bgImage}
         className={`${name}-story-bg-image story-bg-image`}
@@ -43,11 +54,8 @@ export default ({ data, pageContext }) => {
             <img src={logoSmall} alt="RMHP Logo" />
           </Link>
           <h3 className="title we-protect">We Protect</h3>
-          <h1 className="title">{story.frontmatter.title}</h1>
-          <PlayShare
-            to={`${story.frontmatter.path}/video`}
-            share={story.frontmatter.path}
-          />
+          <h1 className="title">{title}</h1>
+          <PlayShare to={`${path}/video`} share={path} />
           <div
             className="story-html"
             dangerouslySetInnerHTML={{ __html: story.html }}
@@ -58,22 +66,16 @@ export default ({ data, pageContext }) => {
               name={name}
               story={story.html}
               modalImage={modalImage}
-              title={story.frontmatter.title}
+              title={title}
             />
           ) : null}
         </div>
         <div className="story-video">
-          <Link
-            to={`${story.frontmatter.path}/video`}
-            className="story-video-image"
-          >
+          <Link to={`${path}/video`} className="story-video-image">
             <Img fluid={videoImage} alt={name} />
           </Link>
           <h4>{story.frontmatter.name}</h4>
-          <Link
-            to={`${story.frontmatter.path}/video`}
-            className="story-video-button"
-          >
+          <Link to={`${path}/video`} className="story-video-button">
             <FontAwesomeIcon icon={faPlay} />
           </Link>
         </div>
@@ -96,15 +98,18 @@ export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      excerpt
       frontmatter {
         path
         name
         title
         videoSourceURL
         backgroundImage {
+          relativePath
           childImageSharp {
             fluid(maxWidth: 1800) {
               ...GatsbyImageSharpFluid
+              src
             }
           }
         }

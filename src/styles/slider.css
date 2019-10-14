@@ -1,6 +1,9 @@
 @font-face {
   font-family: 'din-condensed-black';
-  src: url('../fonts/FONTS_DINWeb-CondBlack.otf');
+  src: url('../fonts/DINCond-Black.eot');
+  src: url('../fonts/DINCond-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FONTS_DINWeb-CondBlack.otf') format('truetype'),
+    url('../fonts/fonts_dinweb-condblack-webfont.woff') format('woff');
 }
 
 .slider {
@@ -63,6 +66,8 @@
   align-self: flex-end;
   left: 2vw;
   bottom: 15vh;
+
+  /*******keyframes at bottom of file******/
   /* animation: moveInBottom 2s ease-out; */
 }
 
@@ -70,6 +75,8 @@
   position: absolute;
   left: 8vw;
   bottom: 15vh;
+
+  /*******keyframes at bottom of file******/
   /* animation: moveInBottom 2s ease-out; */
 }
 
@@ -273,6 +280,8 @@
     bottom: 2.8rem;
   }
 }
+
+/**** original slider animations - arrows fade in from bottom - slider fades in from left ****/
 
 /* 
 @keyframes moveInBottom {

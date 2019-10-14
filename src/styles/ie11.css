@@ -1,0 +1,66 @@
+/******* Fixes for IE 11  *******/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .site {
+    -ms-grid-rows: 1fr;
+  }
+  .main {
+    -ms-grid-column: 1;
+  }
+  .slider {
+    -ms-grid-column: 2;
+  }
+  .story-container > .story-bg-image {
+    height: auto !important;
+    top: -100px !important;
+  }
+  .story-container > .tanith-story-bg-image {
+    height: auto !important;
+    top: 0 !important;
+  }
+  .story-container > .tianna-story-bg-image {
+    height: 100vh !important;
+    width: 160vw !important;
+    right: 60vw !important;
+    top: 0 !important;
+  }
+  .story-container > .eric-story-bg-image {
+    height: 100vh !important;
+    width: 140vw !important;
+    right: 30vw !important;
+    top: 0 !important;
+  }
+  .story-content > .story-text > .title {
+    margin-top: -3rem !important;
+  }
+  .story-text {
+    -ms-grid-column: 1;
+  }
+  .story-video {
+    -ms-grid-column: 2;
+  }
+  .story-video .story-video-button {
+    left: 43% !important;
+    bottom: 43% !important;
+  }
+  .story-video > h4 {
+    bottom: 5rem !important;
+    left: 6rem !important;
+  }
+  .slider ul.BrainhubCarousel__track {
+    width: 100% !important;
+  }
+  .BrainhubCarousel li.BrainhubCarouselItem {
+    width: 245px !important;
+    min-width: 245px !important;
+    max-width: 245px !important;
+  }
+  .BrainhubCarousel li.BrainhubCarouselItem img {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+  .BrainhubCarousel__custom-arrowLeft,
+  .BrainhubCarousel__custom-arrowRight {
+    z-index: 200000000000;
+  }
+}

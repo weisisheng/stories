@@ -5,6 +5,7 @@ import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import Social from '../components/social'
 import SEO from '../components/seo'
+import andyOgImage from '../images/andy-meta.jpg'
 
 import '../styles/video.css'
 
@@ -12,6 +13,9 @@ export default ({ data }) => {
   const story = data.markdownRemark
   const screenSize = useWindowSize() //custom hook -- see below
   const prevPath = story.frontmatter.name.toLowerCase()
+  const ogImage = story.frontmatter.backgroundImage.childImageSharp.fluid.src
+  const description = story.excerpt
+  const name = story.frontmatter.name.toLowerCase()
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -22,7 +26,11 @@ export default ({ data }) => {
 
   return (
     <div className="video-container">
-      <SEO title={`${story.frontmatter.name} Video`} />
+      <SEO
+        title={`Life on the Western Slope | ${story.frontmatter.name}`}
+        image={name === 'andy' ? andyOgImage : ogImage}
+        description={description}
+      />
       <Link to={`/${prevPath}/`} className="video-back-button">
         <FontAwesomeIcon icon={faChevronLeft} />
       </Link>
@@ -51,11 +59,21 @@ export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      excerpt
       frontmatter {
         path
         name
         title
         videoSourceURL
+        backgroundImage {
+          relativePath
+          childImageSharp {
+            fluid(maxWidth: 1800) {
+              ...GatsbyImageSharpFluid
+              src
+            }
+          }
+        }
       }
     }
   }

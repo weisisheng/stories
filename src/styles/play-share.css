@@ -1,8 +1,11 @@
 @font-face {
   font-family: 'din-condensed-bold';
-  src: url('../fonts/FONTS_DINWeb-CondBold.ttf');
+  src: url('../fonts/DINCondensed-Bold.eot');
+  src: url('../fonts/DINCondensed-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/FONTS_DINWeb-CondBold.ttf') format('truetype'),
+    url('../fonts/fonts_din_bold-webfont.woff') format('woff');
 }
-
 .play-share {
   font-family: din-condensed-bold, sans-serif;
   color: white;

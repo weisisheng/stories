@@ -1,7 +1,6 @@
 {
   "version": "0.1.0",
   "dependencies": {
-    "gatsby-cli": "^2.7.47",
     "@brainhubeu/react-carousel": "^1.10.17",
     "@fortawesome/fontawesome-svg-core": "^1.2.22",
     "@fortawesome/free-brands-svg-icons": "^5.10.2",
@@ -9,7 +8,9 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "bootstrap": "^4.3.1",
     "gatsby": "^2.15.14",
+    "gatsby-cli": "^2.7.47",
     "gatsby-image": "^2.2.18",
+    "gatsby-plugin-google-tagmanager": "^2.1.12",
     "gatsby-plugin-manifest": "^2.2.16",
     "gatsby-plugin-offline": "^2.2.10",
     "gatsby-plugin-react-helmet": "^3.1.7",
@@ -38,5 +39,11 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
-  }
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "not dead",
+    "IE 10"
+  ]
 }

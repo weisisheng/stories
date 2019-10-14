@@ -34,13 +34,13 @@ const Main = () => {
 
       <p>Eight inspiring, real-life stories of the people we protect</p>
       <ul>
-        <li>
+        <li className="award-icon">
           <img src={webby} alt="Webby Award" />
         </li>
-        <li>
+        <li className="award-icon">
           <img src={goldLeaf} alt="Golden Leaf Award" />
         </li>
-        <li>
+        <li className="award-icon">
           <img src={filmFestival} alt="Film Festival Special Selection" />
         </li>
       </ul>

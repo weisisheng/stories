@@ -1,11 +1,24 @@
 @font-face {
   font-family: 'din-condensed-regular';
-  src: url('../fonts/FONTS_DIN.ttf');
+  src: url('../fonts/DIN.eot');
+  src: url('../fonts/DIN.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FONTS_DIN.ttf') format('truetype'),
+    url('../fonts/fonts_din-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'din-condensed-bold';
+  src: url('../fonts/DINCondensed-Bold.eot');
+  src: url('../fonts/DINCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FONTS_DINWeb-CondBold.ttf') format('truetype'),
+    url('../fonts/fonts_din_bold-webfont.woff') format('woff');
 }
 
 @font-face {
   font-family: 'din-condensed-light';
-  src: url('../fonts/FONTS_DINWeb-CondLight.ttf');
+  src: url('../fonts/DINPro-CondLight.eot');
+  src: url('../fonts/DINPro-CondLight.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FONTS_DINWeb-CondLight.ttf') format('truetype');
 }
 
 .read-more {
@@ -79,6 +92,10 @@
   font-family: din-condensed-regular, sans-serif;
   line-height: 1.4;
   /* overflow: hidden; */
+}
+
+.modal-content .modal-text .modal-story-html a {
+  color: #fec420;
 }
 
 /****JAVIER MODAL MODS****/

@@ -11,7 +11,7 @@ modalImage: ../images/andy-read-more.jpg
 ---
 When **Andy Blood** gets behind the wheel to race, there’s only one thing on his mind: Go!
 
-It’s grit, determination, and drive that have carried Andy forward since a 2004 work accident, where he fell 30 feet and sustained a T-12 spinal cord injury, causing him to become paraplegic.  After two dark years, Andy began bringing a new dream to life — the freedom to drive again. 
+It’s grit, determination, and drive that have carried Andy forward since a 2004 work accident, where he fell 30 feet and sustained a T-12 spinal cord injury, causing him to become paraplegic.  After two dark years, Andy began bringing a new dream to life — the freedom to drive again.<!-- endexcerpt -->
 
 Andy started integrating custom hand controls on vehicles, allowing for the ability to drive without pedals. Through the process, he became committed to helping people with similar injuries regain their mobility and independence. With his wife, Sara Garriques, Andy founded the <a href="https://www.bloodbrothersfoundation.org/" target="_blank">Blood Brothers Foundation</a> to fund vehicle modifications, including ramps, floor lifts, and hand controls so others living with physical disabilities can also find a sense of freedom.
 
